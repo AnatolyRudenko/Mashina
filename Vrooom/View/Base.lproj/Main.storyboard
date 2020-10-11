@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q6h-ic-LK0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TeXGyreAdventor-Bold.ttf">
+            <string>TeXGyreAdventor-Bold</string>
+        </array>
+        <array key="TeXGyreAdventor-Regular.ttf">
+            <string>TeXGyreAdventor-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="NEn-Y8-lcx">
+            <objects>
+                <viewController id="q6h-ic-LK0" customClass="InitialViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DL4-Wk-si1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="лого_машина" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-C7-dC5">
+                                <rect key="frame" x="0.0" y="74" width="414" height="500"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Em5-bE-kXy">
+                                <rect key="frame" x="108" y="589" width="198" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOD-Nj-q0O">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="afc-Te-NbR"/>
+                                            <constraint firstAttribute="height" constant="60" id="urD-xN-6Y5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="иконка_добавить"/>
+                                        <connections>
+                                            <action selector="addButtonPressed:" destination="q6h-ic-LK0" eventType="touchUpInside" id="icz-98-3x0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVt-EL-FXq">
+                                        <rect key="frame" x="138" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="0Ej-94-rpH"/>
+                                            <constraint firstAttribute="height" constant="60" id="efR-rm-8tZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="иконка_каталог"/>
+                                        <connections>
+                                            <action selector="listButtonPressed:" destination="q6h-ic-LK0" eventType="touchUpInside" id="P1q-Ms-ctG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" создай свой суперкар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-AE-piV">
+                                <rect key="frame" x="112.5" y="474" width="189.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-lD-UET">
+                                <rect key="frame" x="101.5" y="657" width="205" height="23.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="добавить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yba-IJ-KAX">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="каталог" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUE-eH-Yom">
+                                        <rect key="frame" x="144.5" y="0.0" width="60.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Em5-bE-kXy" firstAttribute="top" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="15" id="Has-Fx-y7o"/>
+                            <constraint firstItem="B1f-C7-dC5" firstAttribute="top" secondItem="DBZ-HM-qfQ" secondAttribute="top" constant="30" id="I8e-mh-CT1"/>
+                            <constraint firstItem="B1f-C7-dC5" firstAttribute="trailing" secondItem="DBZ-HM-qfQ" secondAttribute="trailing" id="Msz-c9-YJp"/>
+                            <constraint firstItem="u0e-lD-UET" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" constant="-3" id="e2J-Sh-x80"/>
+                            <constraint firstItem="u0e-lD-UET" firstAttribute="top" secondItem="Em5-bE-kXy" secondAttribute="bottom" constant="8" id="kcX-2K-fMe"/>
+                            <constraint firstItem="jdM-AE-piV" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="nQT-DL-mtM"/>
+                            <constraint firstItem="Em5-bE-kXy" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="oeu-Vl-05K"/>
+                            <constraint firstItem="jdM-AE-piV" firstAttribute="top" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="-100" id="qON-S3-1Rl"/>
+                            <constraint firstItem="B1f-C7-dC5" firstAttribute="leading" secondItem="DBZ-HM-qfQ" secondAttribute="leading" id="xTa-ha-4Yd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DBZ-HM-qfQ"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toList" id="d0d-Qj-fls"/>
+                        <segue destination="E6b-7E-fi8" kind="show" identifier="toEdit" id="A4T-T9-Uhf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8WZ-FM-yAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="76"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ListViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jyN-5e-fWn">
+                                <rect key="frame" x="0.0" y="100" width="414" height="742"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqG-wh-y2e">
+                                <rect key="frame" x="30" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ir6-7W-4LD"/>
+                                    <constraint firstAttribute="width" constant="50" id="Y4M-zd-EC6"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="назад_вглавное"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vp6-4H-CBM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КАТАЛОГ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-IW-pZp">
+                                <rect key="frame" x="116.5" y="25" width="181" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Ay-HM-rBw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jyN-5e-fWn" secondAttribute="bottom" id="A4z-p1-3V1"/>
+                            <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="DqG-wh-y2e" secondAttribute="bottom" constant="25" id="AtH-0l-Lc6"/>
+                            <constraint firstItem="jyN-5e-fWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Axb-P4-8MB"/>
+                            <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="BAl-S3-8Tk"/>
+                            <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="d3b-IW-pZp" secondAttribute="bottom" constant="25" id="EEO-bO-VSQ"/>
+                            <constraint firstItem="d3b-IW-pZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X2m-qe-zxD"/>
+                            <constraint firstItem="DqG-wh-y2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="c3a-XT-KVK"/>
+                            <constraint firstItem="jyN-5e-fWn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dID-HF-98N"/>
+                            <constraint firstItem="DqG-wh-y2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="k4M-I3-I0d"/>
+                            <constraint firstItem="d3b-IW-pZp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="wrr-i4-Av4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YdD-f9-XFb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1kA-Gc-hEM">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="BYZ-38-t0r" id="JBB-wi-kjW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="jyN-5e-fWn" id="yT5-lr-ofl"/>
+                        <segue destination="cmf-ZT-gAR" kind="show" identifier="fromListToConfirm" id="mjw-4U-VWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2758" y="92"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="7DH-Ix-Plc">
+            <objects>
+                <viewController id="E6b-7E-fi8" customClass="EditViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZTI-cB-15E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nz-W3-aW8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcw-qh-81U" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="OBU-lK-tyS">
+                                                <rect key="frame" x="30" y="30" width="354" height="639"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-8P-dev">
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="61"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIl-pJ-gs1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="25"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.13124972751830288" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем название" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-JZ-PlM" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="0bL-JZ-PlM" firstAttribute="leading" secondItem="i7a-8P-dev" secondAttribute="leading" id="Dn7-mt-TzM"/>
+                                                            <constraint firstAttribute="trailing" secondItem="0bL-JZ-PlM" secondAttribute="trailing" id="PEm-b4-weO"/>
+                                                            <constraint firstItem="UIl-pJ-gs1" firstAttribute="leading" secondItem="i7a-8P-dev" secondAttribute="leading" id="Yu0-Ec-Xuh"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="99P-IH-v4u">
+                                                        <rect key="frame" x="0.0" y="86" width="354" height="61"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cJ-PM-JSo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="25"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем модель" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="wt0-q2-NSq" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="1cJ-PM-JSo" firstAttribute="leading" secondItem="99P-IH-v4u" secondAttribute="leading" id="BmN-sM-Ks0"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wt0-q2-NSq" secondAttribute="trailing" id="jZW-h1-2eo"/>
+                                                            <constraint firstItem="wt0-q2-NSq" firstAttribute="leading" secondItem="99P-IH-v4u" secondAttribute="leading" id="xFx-p2-BMn"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0fy-4o-25N">
+                                                        <rect key="frame" x="0.0" y="172" width="354" height="61"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU3-gc-XyK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="25"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем год" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-ro-0mu" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="hU3-gc-XyK" firstAttribute="leading" secondItem="0fy-4o-25N" secondAttribute="leading" id="8ce-MS-4l1"/>
+                                                            <constraint firstItem="Qx4-ro-0mu" firstAttribute="leading" secondItem="0fy-4o-25N" secondAttribute="leading" id="9bE-F3-RP1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Qx4-ro-0mu" secondAttribute="trailing" id="jq8-5O-q6Q"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bfc-Zz-hEh">
+                                                        <rect key="frame" x="0.0" y="258" width="354" height="61"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пробег" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtR-Ef-OtN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="63" height="25"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем пробег" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="uec-WO-7gQ" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="uec-WO-7gQ" secondAttribute="trailing" id="0hX-UM-qx3"/>
+                                                            <constraint firstItem="uec-WO-7gQ" firstAttribute="leading" secondItem="Bfc-Zz-hEh" secondAttribute="leading" id="8cc-N8-PXe"/>
+                                                            <constraint firstItem="dtR-Ef-OtN" firstAttribute="leading" secondItem="Bfc-Zz-hEh" secondAttribute="leading" id="L2j-Hn-Ni6"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SFM-GA-nfC">
+                                                        <rect key="frame" x="0.0" y="344" width="354" height="61"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кузова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHj-kx-2dE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="25"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем тип кузова" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="25z-H5-5fn" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="25z-H5-5fn" secondAttribute="trailing" id="JCI-RC-jGJ"/>
+                                                            <constraint firstItem="25z-H5-5fn" firstAttribute="leading" secondItem="SFM-GA-nfC" secondAttribute="leading" id="OCG-12-XgB"/>
+                                                            <constraint firstItem="kHj-kx-2dE" firstAttribute="leading" secondItem="SFM-GA-nfC" secondAttribute="leading" id="PIt-59-TTy"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NGr-JE-ihW">
+                                                        <rect key="frame" x="0.0" y="430" width="354" height="61"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Производитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpG-pc-nnt">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="25"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем производителя" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-h8-lzP" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="7iZ-h8-lzP" firstAttribute="leading" secondItem="NGr-JE-ihW" secondAttribute="leading" id="DNq-8d-34a"/>
+                                                            <constraint firstItem="HpG-pc-nnt" firstAttribute="leading" secondItem="NGr-JE-ihW" secondAttribute="leading" id="Fm3-Lg-FzX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7iZ-h8-lzP" secondAttribute="trailing" id="uup-rF-tLR"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-b0-JgW">
+                                                        <rect key="frame" x="0.0" y="516" width="204.5" height="61"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-bQ-JJP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="25"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем страну" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="TcM-9p-mLF" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="30" width="204.5" height="31"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </textField>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="TcM-9p-mLF" secondAttribute="trailing" id="4T3-ef-p7W"/>
+                                                            <constraint firstItem="TcM-9p-mLF" firstAttribute="leading" secondItem="bZc-b0-JgW" secondAttribute="leading" id="Uty-oN-gvN"/>
+                                                            <constraint firstItem="0sa-bQ-JJP" firstAttribute="leading" secondItem="bZc-b0-JgW" secondAttribute="leading" id="y7N-1P-d9o"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-zG-6sL">
+                                                        <rect key="frame" x="0.0" y="602" width="206" height="37"/>
+                                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                        <state key="normal" title="Загрузить изображение">
+                                                            <color key="titleColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="loadImagePressed:" destination="E6b-7E-fi8" eventType="touchUpInside" id="31h-YC-J96"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0fy-4o-25N" secondAttribute="trailing" id="IwF-H1-XQM"/>
+                                                    <constraint firstItem="Bfc-Zz-hEh" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="Q02-Yn-5Zw"/>
+                                                    <constraint firstItem="SFM-GA-nfC" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="Q0L-sz-A4s"/>
+                                                    <constraint firstItem="0fy-4o-25N" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="Up4-e8-mAV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="99P-IH-v4u" secondAttribute="trailing" id="XYL-go-V0R"/>
+                                                    <constraint firstItem="99P-IH-v4u" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="bdm-Oz-exY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SFM-GA-nfC" secondAttribute="trailing" id="fwb-JH-bOU"/>
+                                                    <constraint firstAttribute="trailing" secondItem="i7a-8P-dev" secondAttribute="trailing" id="mUD-bI-iz1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NGr-JE-ihW" secondAttribute="trailing" id="nJP-R1-8uM"/>
+                                                    <constraint firstItem="i7a-8P-dev" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="nQA-Mr-aFd"/>
+                                                    <constraint firstItem="NGr-JE-ihW" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="oq4-xZ-XQD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Bfc-Zz-hEh" secondAttribute="trailing" id="zCa-e6-VeH"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-0z-RSK">
+                                                <rect key="frame" x="334" y="699" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="O6V-1k-o3L"/>
+                                                    <constraint firstAttribute="width" constant="50" id="l21-bL-IIQ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="продолжить"/>
+                                                <connections>
+                                                    <action selector="nextButtonPressed:" destination="E6b-7E-fi8" eventType="touchUpInside" id="uge-CA-ZQX"/>
+                                                    <segue destination="cmf-ZT-gAR" kind="show" identifier="toConfirm" id="9gm-Mt-FAz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="OBU-lK-tyS" firstAttribute="leading" secondItem="Dcw-qh-81U" secondAttribute="leading" constant="30" id="Dfd-hg-3Br"/>
+                                            <constraint firstItem="OBU-lK-tyS" firstAttribute="top" secondItem="Dcw-qh-81U" secondAttribute="top" constant="30" id="LqV-8w-lem"/>
+                                            <constraint firstAttribute="trailing" secondItem="OBU-lK-tyS" secondAttribute="trailing" constant="30" id="fwV-yq-ooz"/>
+                                            <constraint firstItem="7QT-0z-RSK" firstAttribute="top" secondItem="OBU-lK-tyS" secondAttribute="bottom" constant="30" id="mfW-Na-Wrk"/>
+                                            <constraint firstAttribute="trailing" secondItem="7QT-0z-RSK" secondAttribute="trailing" constant="30" id="uis-m0-RB9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="bottom" secondItem="9PX-Ng-zVU" secondAttribute="bottom" id="8Dg-9W-SoO"/>
+                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="top" secondItem="6Nz-W3-aW8" secondAttribute="top" id="8OZ-dX-z9b"/>
+                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="leading" secondItem="6Nz-W3-aW8" secondAttribute="leading" id="MsW-kg-Ht3"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dcw-qh-81U" secondAttribute="bottom" id="dMR-wh-HCe"/>
+                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="centerX" secondItem="6Nz-W3-aW8" secondAttribute="centerX" id="gta-gE-1xG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dcw-qh-81U" secondAttribute="trailing" id="piL-QO-rsb"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="DRS-Q1-5kG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="9PX-Ng-zVU"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="trailing" secondItem="PAG-2m-4Ap" secondAttribute="trailing" id="OiX-IR-JFH"/>
+                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="top" secondItem="PAG-2m-4Ap" secondAttribute="top" id="WGJ-Cy-VHF"/>
+                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="leading" secondItem="PAG-2m-4Ap" secondAttribute="leading" id="XJx-6t-KjL"/>
+                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="bottom" secondItem="PAG-2m-4Ap" secondAttribute="bottom" id="xfl-qb-Bdi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PAG-2m-4Ap"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BJO-1K-sqm"/>
+                    <connections>
+                        <outlet property="bodyTypeTextField" destination="25z-H5-5fn" id="3qc-aN-YqP"/>
+                        <outlet property="countryTextField" destination="TcM-9p-mLF" id="rRd-ag-PMV"/>
+                        <outlet property="manufacturerTextField" destination="7iZ-h8-lzP" id="gCh-Dh-Aqq"/>
+                        <outlet property="mileageTextField" destination="uec-WO-7gQ" id="R5H-pd-tJA"/>
+                        <outlet property="modelTextField" destination="wt0-q2-NSq" id="XkQ-e7-gie"/>
+                        <outlet property="nameTextField" destination="0bL-JZ-PlM" id="dbG-r1-baG"/>
+                        <outlet property="scrollView" destination="6Nz-W3-aW8" id="uMJ-0F-NsE"/>
+                        <outlet property="yearTextField" destination="Qx4-ro-0mu" id="EyP-qx-gWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5Y-pg-KaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="-248.4375"/>
+        </scene>
+        <!--Confirm View Controller-->
+        <scene sceneID="ZtM-vM-vF1">
+            <objects>
+                <viewController id="cmf-ZT-gAR" customClass="ConfirmViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ra1-x9-Lpc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Lj-3fD">
+                                <rect key="frame" x="30" y="61" width="354" height="728"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-1i-6vq">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-MG-53a">
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="43.5"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKH-47-5T9">
+                                                <rect key="frame" x="220" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="5Cm-hr-hnz"/>
+                                                    <constraint firstAttribute="height" constant="50" id="Vcb-Jc-WYF"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="иконка_редактировать"/>
+                                                <connections>
+                                                    <action selector="editButtonPressed:" destination="cmf-ZT-gAR" eventType="touchUpInside" id="LTk-Ee-KiG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33K-v4-s8g">
+                                                <rect key="frame" x="304" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6Zr-Hv-TuR"/>
+                                                    <constraint firstAttribute="width" constant="50" id="Met-a6-KCg"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="иконка_удалить"/>
+                                                <connections>
+                                                    <action selector="deleteButtonPressed:" destination="cmf-ZT-gAR" eventType="touchUpInside" id="t0n-Vr-9Vq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="JKH-47-5T9" firstAttribute="centerY" secondItem="1rB-1i-6vq" secondAttribute="centerY" id="Gng-UD-8vJ"/>
+                                            <constraint firstItem="33K-v4-s8g" firstAttribute="centerY" secondItem="1rB-1i-6vq" secondAttribute="centerY" id="sal-kg-V9m"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="exk-HF-7zF">
+                                        <rect key="frame" x="0.0" y="60" width="66.5" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70e-WX-b4V">
+                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs1-7g-ylw">
+                                                <rect key="frame" x="0.0" y="30" width="66.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="70e-WX-b4V" firstAttribute="leading" secondItem="exk-HF-7zF" secondAttribute="leading" id="GAQ-xB-KtX"/>
+                                            <constraint firstItem="zs1-7g-ylw" firstAttribute="leading" secondItem="exk-HF-7zF" secondAttribute="leading" id="mkW-aG-uOv"/>
+                                            <constraint firstAttribute="trailing" secondItem="zs1-7g-ylw" secondAttribute="trailing" id="tQm-5x-ePa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4oE-aF-wcE">
+                                        <rect key="frame" x="0.0" y="150" width="54" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxP-qx-XL2">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="25"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTW-ZR-xTs">
+                                                <rect key="frame" x="0.0" y="30" width="54" height="50"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="QTW-ZR-xTs" secondAttribute="trailing" id="DJt-mI-qeb"/>
+                                            <constraint firstItem="lxP-qx-XL2" firstAttribute="leading" secondItem="4oE-aF-wcE" secondAttribute="leading" id="Fak-YX-iTJ"/>
+                                            <constraint firstItem="QTW-ZR-xTs" firstAttribute="leading" secondItem="4oE-aF-wcE" secondAttribute="leading" id="R0r-vD-Ybw"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m3Y-5g-jxw">
+                                        <rect key="frame" x="0.0" y="240" width="63" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пробег" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g70-qR-fDF">
+                                                <rect key="frame" x="0.0" y="0.0" width="63" height="25"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-sU-omd">
+                                                <rect key="frame" x="0.0" y="30" width="63" height="50"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="WgS-sU-omd" firstAttribute="leading" secondItem="m3Y-5g-jxw" secondAttribute="leading" id="4EY-NH-cYG"/>
+                                            <constraint firstItem="g70-qR-fDF" firstAttribute="leading" secondItem="m3Y-5g-jxw" secondAttribute="leading" id="aTb-T4-RRg"/>
+                                            <constraint firstAttribute="trailing" secondItem="WgS-sU-omd" secondAttribute="trailing" id="d9c-cB-5oh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EsQ-Y8-wNr">
+                                        <rect key="frame" x="0.0" y="330" width="88.5" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кузова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-Sv-Hrr">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dZ-qx-aag">
+                                                <rect key="frame" x="0.0" y="30" width="88.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="bUd-Sv-Hrr" firstAttribute="leading" secondItem="EsQ-Y8-wNr" secondAttribute="leading" id="VXL-Uf-YxS"/>
+                                            <constraint firstAttribute="trailing" secondItem="1dZ-qx-aag" secondAttribute="trailing" id="q6C-6K-G1u"/>
+                                            <constraint firstItem="1dZ-qx-aag" firstAttribute="leading" secondItem="EsQ-Y8-wNr" secondAttribute="leading" id="wnq-Lp-eev"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="azS-ei-8CM">
+                                        <rect key="frame" x="0.0" y="420" width="128" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Производитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAk-tJ-k3a">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="25"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq8-vF-HHI">
+                                                <rect key="frame" x="0.0" y="30" width="128" height="50"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FAk-tJ-k3a" firstAttribute="leading" secondItem="azS-ei-8CM" secondAttribute="leading" id="IKF-Pb-u1o"/>
+                                            <constraint firstAttribute="trailing" secondItem="Xq8-vF-HHI" secondAttribute="trailing" id="Whj-gf-yxX"/>
+                                            <constraint firstItem="Xq8-vF-HHI" firstAttribute="leading" secondItem="azS-ei-8CM" secondAttribute="leading" id="jqw-O1-pYZ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RSJ-LQ-Xuh">
+                                        <rect key="frame" x="0.0" y="510" width="64.5" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-Kp-IHg">
+                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaY-XA-go3">
+                                                <rect key="frame" x="0.0" y="30" width="64.5" height="50"/>
+                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yaY-XA-go3" firstAttribute="leading" secondItem="RSJ-LQ-Xuh" secondAttribute="leading" id="VbP-xG-lVt"/>
+                                            <constraint firstItem="m8P-Kp-IHg" firstAttribute="leading" secondItem="RSJ-LQ-Xuh" secondAttribute="leading" id="k2o-Z9-sNy"/>
+                                            <constraint firstAttribute="trailing" secondItem="yaY-XA-go3" secondAttribute="trailing" id="kdF-l3-3t5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rnY-7o-ezl">
+                                        <rect key="frame" x="0.0" y="600" width="354" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="hTs-p6-SeX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rnY-7o-ezl" firstAttribute="centerX" secondItem="UYc-Lj-3fD" secondAttribute="centerX" id="46W-Mk-uWP"/>
+                                    <constraint firstItem="1rB-1i-6vq" firstAttribute="leading" secondItem="UYc-Lj-3fD" secondAttribute="leading" id="Fld-cb-YPc"/>
+                                    <constraint firstAttribute="trailing" secondItem="1rB-1i-6vq" secondAttribute="trailing" id="KFb-ai-L2p"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2K-It-q70">
+                                <rect key="frame" x="30" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="N6e-pQ-bd9"/>
+                                    <constraint firstAttribute="height" constant="50" id="rS6-EI-j37"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="иконка_назад"/>
+                                <connections>
+                                    <action selector="arrowPressed:" destination="cmf-ZT-gAR" eventType="touchUpInside" id="BC8-3x-xgd"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fF-Jq-kfS">
+                                <rect key="frame" x="30" y="371" width="354" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Что же это за машина без имени?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GS-4W-fII" userLabel="Что же это за машина без имени?">
+                                        <rect key="frame" x="0.0" y="11.5" width="354" height="77.5"/>
+                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="7GS-4W-fII" firstAttribute="centerY" secondItem="1fF-Jq-kfS" secondAttribute="centerY" id="7fG-FQ-i4A"/>
+                                    <constraint firstAttribute="height" constant="100" id="FsD-wQ-r7L"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="LyN-DC-6fI"/>
+                                    <constraint firstAttribute="trailing" secondItem="7GS-4W-fII" secondAttribute="trailing" id="YrD-mz-t1N"/>
+                                    <constraint firstItem="7GS-4W-fII" firstAttribute="centerX" secondItem="1fF-Jq-kfS" secondAttribute="centerX" id="r6V-Rx-nLV"/>
+                                    <constraint firstItem="7GS-4W-fII" firstAttribute="leading" secondItem="1fF-Jq-kfS" secondAttribute="leading" id="yu9-ca-Kg2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DJ9-iE-ep2" firstAttribute="trailing" secondItem="1fF-Jq-kfS" secondAttribute="trailing" constant="30" id="4Bl-zW-hQv"/>
+                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="D2E-QL-UMG"/>
+                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="KHr-0C-yJd"/>
+                            <constraint firstItem="I2K-It-q70" firstAttribute="top" secondItem="DJ9-iE-ep2" secondAttribute="top" id="LfZ-EZ-WdJ"/>
+                            <constraint firstItem="I2K-It-q70" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="MZy-xN-wkc"/>
+                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="centerY" secondItem="ra1-x9-Lpc" secondAttribute="centerY" id="Zkb-Nj-uuG"/>
+                            <constraint firstItem="UYc-Lj-3fD" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="c4f-4K-Dxt"/>
+                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="centerX" secondItem="ra1-x9-Lpc" secondAttribute="centerX" id="dL3-5i-8xA"/>
+                            <constraint firstItem="UYc-Lj-3fD" firstAttribute="top" secondItem="DJ9-iE-ep2" secondAttribute="top" constant="61" id="fR2-mJ-vau"/>
+                            <constraint firstItem="DJ9-iE-ep2" firstAttribute="trailing" secondItem="UYc-Lj-3fD" secondAttribute="trailing" constant="30" id="pyt-C7-QSD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DJ9-iE-ep2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pdX-PK-ayT"/>
+                    <connections>
+                        <outlet property="bodyTypeLabel" destination="1dZ-qx-aag" id="Dt5-68-VtK"/>
+                        <outlet property="carImageView" destination="rnY-7o-ezl" id="1RZ-Oo-Psx"/>
+                        <outlet property="countryLabel" destination="yaY-XA-go3" id="BMG-5z-UuX"/>
+                        <outlet property="manufacturerLabel" destination="Xq8-vF-HHI" id="6q0-lE-JpV"/>
+                        <outlet property="milageLabel" destination="WgS-sU-omd" id="KqL-aO-fhz"/>
+                        <outlet property="modelLabel" destination="zs1-7g-ylw" id="kKp-D3-kbD"/>
+                        <outlet property="nameLabel" destination="EMU-MG-53a" id="05O-rK-xde"/>
+                        <outlet property="popUpView" destination="1fF-Jq-kfS" id="cxS-qu-SRi"/>
+                        <outlet property="yearLabel" destination="QTW-ZR-xTs" id="1AB-VV-VLc"/>
+                        <segue destination="E6b-7E-fi8" kind="show" identifier="toEditFromConfirm" id="nkP-0p-mvL"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="toListFromConfirm" id="u4P-O5-k7e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWH-7J-5TN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644.9275362318842" y="-248.4375"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="mjw-4U-VWJ"/>
+        <segue reference="nkP-0p-mvL"/>
+        <segue reference="u4P-O5-k7e"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="иконка_добавить" width="170.5" height="170.5"/>
+        <image name="иконка_каталог" width="170.5" height="170.5"/>
+        <image name="иконка_назад" width="170.5" height="170.5"/>
+        <image name="иконка_редактировать" width="170.5" height="170.5"/>
+        <image name="иконка_удалить" width="160.5" height="160.5"/>
+        <image name="лого_машина" width="500" height="500"/>
+        <image name="назад_вглавное" width="170.5" height="170.5"/>
+        <image name="продолжить" width="170.5" height="170.5"/>
+    </resources>
+</document>

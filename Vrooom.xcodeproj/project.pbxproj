@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45DF01DC0B6BD6921593847E /* Pods_Vrooom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1050E82B87C9773C28C94D2A /* Pods_Vrooom.framework */; };
+		840B7FFF2521FE3B008522DF /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 840B7FFE2521FE3A008522DF /* default.realm */; };
+		8417270C25130CC000504EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417270B25130CC000504EEA /* AppDelegate.swift */; };
+		8417270E25130CC000504EEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417270D25130CC000504EEA /* SceneDelegate.swift */; };
+		8417271025130CC000504EEA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417270F25130CC000504EEA /* ListViewController.swift */; };
+		8417271325130CC000504EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417271125130CC000504EEA /* Main.storyboard */; };
+		8417271825130CD300504EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417271625130CD300504EEA /* LaunchScreen.storyboard */; };
+		8417272125130DB400504EEA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417271F25130DB400504EEA /* ListCell.swift */; };
+		8417272225130DB400504EEA /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8417272025130DB400504EEA /* CarTableViewCell.xib */; };
+		841D4E0B251490D000CBDD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D4E0A251490D000CBDD88 /* Assets.xcassets */; };
+		841D4E0D2514A38100CBDD88 /* HSUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E0C2514A38100CBDD88 /* HSUnderlineTextField.swift */; };
+		841D4E122514CF9100CBDD88 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E112514CF9100CBDD88 /* InitialViewController.swift */; };
+		841D4E142514D4A400CBDD88 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */; };
+		8424AE212517425E00BDB406 /* CarList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424AE202517425E00BDB406 /* CarList.swift */; };
+		8492147A25132D6E005C4C36 /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492147925132D6E005C4C36 /* CarData.swift */; };
+		8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492147B25132D84005C4C36 /* OperatedCar.swift */; };
+		84A4070B251378080067CDED /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4070A251378080067CDED /* EditViewController.swift */; };
+		84E87E1B25164DF7006A0E08 /* TeXGyreAdventor-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E87E1925164DF6006A0E08 /* TeXGyreAdventor-Bold.ttf */; };
+		84E87E1C25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E87E1A25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf */; };
+		84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F536D1251DB6CC00EB1F8B /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1050E82B87C9773C28C94D2A /* Pods_Vrooom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vrooom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DABF96BFBA2FD9B0B6CCE0F /* Pods-Vrooom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vrooom.release.xcconfig"; path = "Target Support Files/Pods-Vrooom/Pods-Vrooom.release.xcconfig"; sourceTree = "<group>"; };
+		840B7FFE2521FE3A008522DF /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		8417270825130CC000504EEA /* Vrooom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vrooom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8417270B25130CC000504EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8417270D25130CC000504EEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8417270F25130CC000504EEA /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		8417271225130CC000504EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8417271725130CD300504EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8417271925130CD300504EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8417271F25130DB400504EEA /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		8417272025130DB400504EEA /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		841D4E0A251490D000CBDD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		841D4E0C2514A38100CBDD88 /* HSUnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSUnderlineTextField.swift; sourceTree = "<group>"; };
+		841D4E112514CF9100CBDD88 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		8424AE202517425E00BDB406 /* CarList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarList.swift; sourceTree = "<group>"; };
+		8492147925132D6E005C4C36 /* CarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarData.swift; sourceTree = "<group>"; };
+		8492147B25132D84005C4C36 /* OperatedCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatedCar.swift; sourceTree = "<group>"; };
+		84A4070A251378080067CDED /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		84E87E1925164DF6006A0E08 /* TeXGyreAdventor-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TeXGyreAdventor-Bold.ttf"; sourceTree = "<group>"; };
+		84E87E1A25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TeXGyreAdventor-Regular.ttf"; sourceTree = "<group>"; };
+		84F536D1251DB6CC00EB1F8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FF6FD2BD9F64503ACF27763 /* Pods-Vrooom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vrooom.debug.xcconfig"; path = "Target Support Files/Pods-Vrooom/Pods-Vrooom.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8417270525130CC000504EEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45DF01DC0B6BD6921593847E /* Pods_Vrooom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		677C56B7DAC8A411D65FFFDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FF6FD2BD9F64503ACF27763 /* Pods-Vrooom.debug.xcconfig */,
+				4DABF96BFBA2FD9B0B6CCE0F /* Pods-Vrooom.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		841726FF25130CC000504EEA = {
+			isa = PBXGroup;
+			children = (
+				8417270A25130CC000504EEA /* Vrooom */,
+				84E87E1825164DB3006A0E08 /* Fonts */,
+				8417270925130CC000504EEA /* Products */,
+				677C56B7DAC8A411D65FFFDE /* Pods */,
+				8B74418298FC62CB907810F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8417270925130CC000504EEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8417270825130CC000504EEA /* Vrooom.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8417270A25130CC000504EEA /* Vrooom */ = {
+			isa = PBXGroup;
+			children = (
+				8417270B25130CC000504EEA /* AppDelegate.swift */,
+				8417270D25130CC000504EEA /* SceneDelegate.swift */,
+				841D4E0F2514CDFB00CBDD88 /* Model */,
+				841D4E102514CE2000CBDD88 /* View */,
+				841D4E0E2514CDE500CBDD88 /* Controllers */,
+				84F536D1251DB6CC00EB1F8B /* Constants.swift */,
+				840B7FFE2521FE3A008522DF /* default.realm */,
+				841D4E0A251490D000CBDD88 /* Assets.xcassets */,
+				8417271625130CD300504EEA /* LaunchScreen.storyboard */,
+				8417271925130CD300504EEA /* Info.plist */,
+			);
+			path = Vrooom;
+			sourceTree = "<group>";
+		};
+		841D4E0E2514CDE500CBDD88 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				841D4E112514CF9100CBDD88 /* InitialViewController.swift */,
+				84A4070A251378080067CDED /* EditViewController.swift */,
+				841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */,
+				8417270F25130CC000504EEA /* ListViewController.swift */,
+				8417271F25130DB400504EEA /* ListCell.swift */,
+				841D4E0C2514A38100CBDD88 /* HSUnderlineTextField.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		841D4E0F2514CDFB00CBDD88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8424AE202517425E00BDB406 /* CarList.swift */,
+				8492147925132D6E005C4C36 /* CarData.swift */,
+				8492147B25132D84005C4C36 /* OperatedCar.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		841D4E102514CE2000CBDD88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8417271125130CC000504EEA /* Main.storyboard */,
+				8417272025130DB400504EEA /* CarTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84E87E1825164DB3006A0E08 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84E87E1925164DF6006A0E08 /* TeXGyreAdventor-Bold.ttf */,
+				84E87E1A25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8B74418298FC62CB907810F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1050E82B87C9773C28C94D2A /* Pods_Vrooom.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8417270725130CC000504EEA /* Vrooom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8417271C25130CD300504EEA /* Build configuration list for PBXNativeTarget "Vrooom" */;
+			buildPhases = (
+				54F1649873A55DA069DB78C8 /* [CP] Check Pods Manifest.lock */,
+				8417270425130CC000504EEA /* Sources */,
+				8417270525130CC000504EEA /* Frameworks */,
+				8417270625130CC000504EEA /* Resources */,
+				B4888CCBAFFE73EA2CAF67F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vrooom;
+			productName = Vrooom;
+			productReference = 8417270825130CC000504EEA /* Vrooom.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8417270025130CC000504EEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Rudenko;
+				TargetAttributes = {
+					8417270725130CC000504EEA = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 8417270325130CC000504EEA /* Build configuration list for PBXProject "Vrooom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 841726FF25130CC000504EEA;
+			productRefGroup = 8417270925130CC000504EEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8417270725130CC000504EEA /* Vrooom */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8417270625130CC000504EEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8417271825130CD300504EEA /* LaunchScreen.storyboard in Resources */,
+				840B7FFF2521FE3B008522DF /* default.realm in Resources */,
+				8417272225130DB400504EEA /* CarTableViewCell.xib in Resources */,
+				8417271325130CC000504EEA /* Main.storyboard in Resources */,
+				84E87E1C25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf in Resources */,
+				841D4E0B251490D000CBDD88 /* Assets.xcassets in Resources */,
+				84E87E1B25164DF7006A0E08 /* TeXGyreAdventor-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54F1649873A55DA069DB78C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vrooom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4888CCBAFFE73EA2CAF67F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vrooom/Pods-Vrooom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Vrooom/Pods-Vrooom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Vrooom/Pods-Vrooom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8417270425130CC000504EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8417271025130CC000504EEA /* ListViewController.swift in Sources */,
+				8417270C25130CC000504EEA /* AppDelegate.swift in Sources */,
+				841D4E0D2514A38100CBDD88 /* HSUnderlineTextField.swift in Sources */,
+				841D4E122514CF9100CBDD88 /* InitialViewController.swift in Sources */,
+				8492147A25132D6E005C4C36 /* CarData.swift in Sources */,
+				841D4E142514D4A400CBDD88 /* ConfirmViewController.swift in Sources */,
+				8417272125130DB400504EEA /* ListCell.swift in Sources */,
+				8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */,
+				8417270E25130CC000504EEA /* SceneDelegate.swift in Sources */,
+				8424AE212517425E00BDB406 /* CarList.swift in Sources */,
+				84A4070B251378080067CDED /* EditViewController.swift in Sources */,
+				84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8417271125130CC000504EEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8417271225130CC000504EEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8417271625130CD300504EEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8417271725130CD300504EEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8417271A25130CD300504EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8417271B25130CD300504EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8417271D25130CD300504EEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF6FD2BD9F64503ACF27763 /* Pods-Vrooom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Vrooom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AnatolyRudenko.Vrooom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8417271E25130CD300504EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DABF96BFBA2FD9B0B6CCE0F /* Pods-Vrooom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Vrooom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AnatolyRudenko.Vrooom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8417270325130CC000504EEA /* Build configuration list for PBXProject "Vrooom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8417271A25130CD300504EEA /* Debug */,
+				8417271B25130CD300504EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8417271C25130CD300504EEA /* Build configuration list for PBXNativeTarget "Vrooom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8417271D25130CD300504EEA /* Debug */,
+				8417271E25130CD300504EEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8417270025130CC000504EEA /* Project object */;
+}

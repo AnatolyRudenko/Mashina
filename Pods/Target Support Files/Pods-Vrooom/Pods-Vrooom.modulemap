@@ -1,0 +1,6 @@
+framework module Pods_Vrooom {
+  umbrella header "Pods-Vrooom-umbrella.h"
+
+  export *
+  module * { export * }
+}
