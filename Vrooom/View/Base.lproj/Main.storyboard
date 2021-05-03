@@ -189,10 +189,10 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIl-pJ-gs1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="81.5" height="25"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.13124972751830288" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="textColor" red="0.0" green="0.12941176470588234" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем название" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-JZ-PlM" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем название" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-JZ-PlM" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -229,7 +229,7 @@
                                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем модель" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="wt0-q2-NSq" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем модель" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="wt0-q2-NSq" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -266,7 +266,7 @@
                                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем год" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-ro-0mu" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем год" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-ro-0mu" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -303,7 +303,7 @@
                                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем пробег" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="uec-WO-7gQ" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем пробег" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="uec-WO-7gQ" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -340,7 +340,7 @@
                                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем тип кузова" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="25z-H5-5fn" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем тип кузова" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="25z-H5-5fn" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -377,7 +377,7 @@
                                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем производителя" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-h8-lzP" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем производителя" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-h8-lzP" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -414,7 +414,7 @@
                                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем страну" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="TcM-9p-mLF" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем страну" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="TcM-9p-mLF" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="204.5" height="31"/>
                                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -790,9 +790,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mjw-4U-VWJ"/>
-        <segue reference="A4T-T9-Uhf"/>
-        <segue reference="d0d-Qj-fls"/>
+        <segue reference="9gm-Mt-FAz"/>
+        <segue reference="nkP-0p-mvL"/>
+        <segue reference="u4P-O5-k7e"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="иконка_добавить" width="170.5" height="170.5"/>

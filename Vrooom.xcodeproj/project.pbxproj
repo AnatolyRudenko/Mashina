@@ -16,10 +16,15 @@
 		8417272125130DB400504EEA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417271F25130DB400504EEA /* ListCell.swift */; };
 		8417272225130DB400504EEA /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8417272025130DB400504EEA /* CarTableViewCell.xib */; };
 		841D4E0B251490D000CBDD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D4E0A251490D000CBDD88 /* Assets.xcassets */; };
-		841D4E0D2514A38100CBDD88 /* HSUnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E0C2514A38100CBDD88 /* HSUnderlineTextField.swift */; };
+		841D4E0D2514A38100CBDD88 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */; };
 		841D4E122514CF9100CBDD88 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E112514CF9100CBDD88 /* InitialViewController.swift */; };
 		841D4E142514D4A400CBDD88 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */; };
 		8424AE212517425E00BDB406 /* RealmCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424AE202517425E00BDB406 /* RealmCar.swift */; };
+		843CBE6F263FA6F100A75177 /* CarPropertyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CBE6E263FA6F100A75177 /* CarPropertyView.swift */; };
+		843CBE75263FAB3700A75177 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CBE74263FAB3700A75177 /* Extensions.swift */; };
+		843CBE78263FAD5700A75177 /* ValueElement protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CBE77263FAD5700A75177 /* ValueElement protocol.swift */; };
+		843CBE7B263FB17900A75177 /* PropertyViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CBE7A263FB17900A75177 /* PropertyViewType.swift */; };
+		843CBE85263FC3CA00A75177 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CBE84263FC3CA00A75177 /* FontManager.swift */; };
 		8492147A25132D6E005C4C36 /* LocalCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492147925132D6E005C4C36 /* LocalCar.swift */; };
 		8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492147B25132D84005C4C36 /* OperatedCar.swift */; };
 		84A4070B251378080067CDED /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4070A251378080067CDED /* EditViewController.swift */; };
@@ -41,10 +46,15 @@
 		8417271F25130DB400504EEA /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		8417272025130DB400504EEA /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		841D4E0A251490D000CBDD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		841D4E0C2514A38100CBDD88 /* HSUnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSUnderlineTextField.swift; sourceTree = "<group>"; };
+		841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		841D4E112514CF9100CBDD88 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		8424AE202517425E00BDB406 /* RealmCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCar.swift; sourceTree = "<group>"; };
+		843CBE6E263FA6F100A75177 /* CarPropertyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPropertyView.swift; sourceTree = "<group>"; };
+		843CBE74263FAB3700A75177 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		843CBE77263FAD5700A75177 /* ValueElement protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ValueElement protocol.swift"; sourceTree = "<group>"; };
+		843CBE7A263FB17900A75177 /* PropertyViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewType.swift; sourceTree = "<group>"; };
+		843CBE84263FC3CA00A75177 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		8492147925132D6E005C4C36 /* LocalCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCar.swift; sourceTree = "<group>"; };
 		8492147B25132D84005C4C36 /* OperatedCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatedCar.swift; sourceTree = "<group>"; };
 		84A4070A251378080067CDED /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				8417270B25130CC000504EEA /* AppDelegate.swift */,
+				843CBE74263FAB3700A75177 /* Extensions.swift */,
+				843CBE77263FAD5700A75177 /* ValueElement protocol.swift */,
+				843CBE84263FC3CA00A75177 /* FontManager.swift */,
 				84707294263FA01000C9F7D1 /* Custom classes */,
 				841D4E0F2514CDFB00CBDD88 /* Model */,
 				841D4E102514CE2000CBDD88 /* View */,
@@ -128,6 +141,7 @@
 				8424AE202517425E00BDB406 /* RealmCar.swift */,
 				8492147925132D6E005C4C36 /* LocalCar.swift */,
 				8492147B25132D84005C4C36 /* OperatedCar.swift */,
+				843CBE7A263FB17900A75177 /* PropertyViewType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -137,6 +151,7 @@
 			children = (
 				8417271125130CC000504EEA /* Main.storyboard */,
 				8417272025130DB400504EEA /* CarTableViewCell.xib */,
+				843CBE6E263FA6F100A75177 /* CarPropertyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				8417271F25130DB400504EEA /* ListCell.swift */,
-				841D4E0C2514A38100CBDD88 /* HSUnderlineTextField.swift */,
+				841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */,
 			);
 			path = "Custom classes";
 			sourceTree = "<group>";
@@ -287,15 +302,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8417271025130CC000504EEA /* ListViewController.swift in Sources */,
+				843CBE78263FAD5700A75177 /* ValueElement protocol.swift in Sources */,
 				8417270C25130CC000504EEA /* AppDelegate.swift in Sources */,
-				841D4E0D2514A38100CBDD88 /* HSUnderlineTextField.swift in Sources */,
+				841D4E0D2514A38100CBDD88 /* UnderlineTextField.swift in Sources */,
 				841D4E122514CF9100CBDD88 /* InitialViewController.swift in Sources */,
 				8492147A25132D6E005C4C36 /* LocalCar.swift in Sources */,
 				841D4E142514D4A400CBDD88 /* ConfirmViewController.swift in Sources */,
+				843CBE6F263FA6F100A75177 /* CarPropertyView.swift in Sources */,
 				8417272125130DB400504EEA /* ListCell.swift in Sources */,
+				843CBE75263FAB3700A75177 /* Extensions.swift in Sources */,
 				8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */,
 				8424AE212517425E00BDB406 /* RealmCar.swift in Sources */,
+				843CBE7B263FB17900A75177 /* PropertyViewType.swift in Sources */,
 				84A4070B251378080067CDED /* EditViewController.swift in Sources */,
+				843CBE85263FC3CA00A75177 /* FontManager.swift in Sources */,
 				84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

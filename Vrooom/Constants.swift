@@ -17,7 +17,7 @@ struct K {
         static let toListFromConfirm = "toListFromConfirm"
         static let fromListToConfirm = "fromListToConfirm"
     }
-    struct  cell {
+    struct cell {
         static let nibName = "CarTableViewCell"
         static let reuseIdentifier = "cell"
     }
