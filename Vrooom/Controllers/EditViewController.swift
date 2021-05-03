@@ -33,17 +33,23 @@ class EditViewController: UIViewController {
             return
         }
         for type in PropertyType.allCases {
-            let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 60)
+            let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 40)
             let view = CarPropertyView(frame: frame, type: type, editable: true)
             self.stackView.addArrangedSubview(view)
         }
         self.addLoadImageButton()
-        self.view.layoutIfNeeded()
+        
     }
     
     private func addLoadImageButton() {
         let button = UIButton()
         button.setTitle("Загрузить изображение", for: .normal)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.tintColor = UIColor.black
+        button.contentHorizontalAlignment = .left
+        button.layer.borderWidth = 3
+        button.layer.borderColor = FontManager.customBlue.cgColor
+        button.layer.cornerRadius = 5
         button.addTarget(self, action: #selector(loadImagePressed), for: .touchUpInside)
         self.stackView.addArrangedSubview(button)
     }

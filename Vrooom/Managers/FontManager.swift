@@ -14,4 +14,11 @@ class FontManager {
         let font = UIFont.init(name: "TeXGyreAdventor-Regular", size: size)
         return font ?? UIFont.systemFont(ofSize: size)
     }
+    
+    class func texGyreBold(size: CGFloat) -> UIFont {
+        let font = UIFont.init(name: "TeXGyreAdventor-Bold", size: size)
+        return font ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    static var customBlue = #colorLiteral(red: 0, green: 0.1294117647, blue: 1, alpha: 1)
 }

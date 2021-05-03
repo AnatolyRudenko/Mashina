@@ -43,43 +43,35 @@ class CarPropertyView: UIView, UITextFieldDelegate {
     }
     
     private func viewSetup(frame: CGRect) {
+        self.heightAnchor.constraint(equalToConstant: frame.height).isActive = true
+        
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.spacing = 0
         stackView.alignment = .leading
         stackView.distribution = .fillEqually
-        stackView.backgroundColor = .red
-//        stackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
         
         let nameLabel = UILabel()
-        nameLabel.font = FontManager.texGyreRegular(size: 17)
+        nameLabel.font = FontManager.texGyreBold(size: 14)
         nameLabel.textColor = #colorLiteral(red: 0, green: 0.1294117647, blue: 1, alpha: 1)
         nameLabel.text = self.type.getName()
-        nameLabel.backgroundColor = .blue
-//        nameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
-//        nameLabel.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        
         let valueElement: ValueElement = self.editable ?
             self.createValueTextField() :
             self.createValueLabel()
         let valueElementAsView = valueElement as? UIView ?? UIView()
-//        valueElementAsView.heightAnchor.constraint(equalToConstant: 30).isActive = true
-//        valueElementAsView.widthAnchor.constraint(equalToConstant: 150).isActive = true
         
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(valueElementAsView)
-        stackView.layoutIfNeeded()
         
         self.valueElement = valueElement
         self.addSubview(stackView)
-        self.layoutIfNeeded()
         
         stackView.frame = frame
     }
     
     private func createValueLabel() -> ValueElement {
         let label = UILabel()
-        let font = FontManager.texGyreRegular(size: 20)
+        let font = FontManager.texGyreRegular(size: 16)
         label.font = font
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         return label as ValueElement

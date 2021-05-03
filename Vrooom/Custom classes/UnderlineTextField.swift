@@ -12,7 +12,7 @@ class UnderLineTextField: UITextField , UITextFieldDelegate { //adds an underlin
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.addUnderLine()
+//        self.addUnderLine()
         self.setupFont()
     }
     
@@ -33,7 +33,7 @@ class UnderLineTextField: UITextField , UITextFieldDelegate { //adds an underlin
     }
     
     private func setupFont() {
-        self.font = FontManager.texGyreRegular(size: 20)
+        self.font = FontManager.texGyreRegular(size: 16)
     }
 
     required init?(coder: NSCoder) {
