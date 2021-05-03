@@ -26,10 +26,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="лого_машина" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-C7-dC5">
-                                <rect key="frame" x="0.0" y="74" width="414" height="500"/>
+                                <rect key="frame" x="0.0" y="112.5" width="414" height="500"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Em5-bE-kXy">
-                                <rect key="frame" x="108" y="589" width="198" height="60"/>
+                                <rect key="frame" x="108" y="649.5" width="198" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOD-Nj-q0O">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -55,14 +55,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" создай свой суперкар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-AE-piV">
-                                <rect key="frame" x="112.5" y="474" width="189.5" height="23.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" создай свой суперкар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-AE-piV" userLabel="создай свой суперкар">
+                                <rect key="frame" x="112.5" y="504" width="189.5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-lD-UET">
-                                <rect key="frame" x="101.5" y="657" width="205" height="23.5"/>
+                                <rect key="frame" x="104.5" y="717.5" width="205" height="23.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="добавить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yba-IJ-KAX">
                                         <rect key="frame" x="0.0" y="0.0" width="73.5" height="23.5"/>
@@ -82,14 +82,14 @@
                         <viewLayoutGuide key="safeArea" id="DBZ-HM-qfQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Em5-bE-kXy" firstAttribute="top" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="15" id="Has-Fx-y7o"/>
-                            <constraint firstItem="B1f-C7-dC5" firstAttribute="top" secondItem="DBZ-HM-qfQ" secondAttribute="top" constant="30" id="I8e-mh-CT1"/>
+                            <constraint firstItem="Em5-bE-kXy" firstAttribute="centerY" secondItem="DBZ-HM-qfQ" secondAttribute="centerY" multiplier="1.5" id="7ZW-h7-NPO"/>
+                            <constraint firstItem="B1f-C7-dC5" firstAttribute="centerY" secondItem="DBZ-HM-qfQ" secondAttribute="centerY" multiplier="0.8" id="K6Y-5R-qmd"/>
                             <constraint firstItem="B1f-C7-dC5" firstAttribute="trailing" secondItem="DBZ-HM-qfQ" secondAttribute="trailing" id="Msz-c9-YJp"/>
-                            <constraint firstItem="u0e-lD-UET" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" constant="-3" id="e2J-Sh-x80"/>
+                            <constraint firstItem="u0e-lD-UET" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="e2J-Sh-x80"/>
+                            <constraint firstItem="jdM-AE-piV" firstAttribute="bottom" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="-85" id="kXe-qA-bsw"/>
                             <constraint firstItem="u0e-lD-UET" firstAttribute="top" secondItem="Em5-bE-kXy" secondAttribute="bottom" constant="8" id="kcX-2K-fMe"/>
                             <constraint firstItem="jdM-AE-piV" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="nQT-DL-mtM"/>
                             <constraint firstItem="Em5-bE-kXy" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="oeu-Vl-05K"/>
-                            <constraint firstItem="jdM-AE-piV" firstAttribute="top" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="-100" id="qON-S3-1Rl"/>
                             <constraint firstItem="B1f-C7-dC5" firstAttribute="leading" secondItem="DBZ-HM-qfQ" secondAttribute="leading" id="xTa-ha-4Yd"/>
                         </constraints>
                     </view>
