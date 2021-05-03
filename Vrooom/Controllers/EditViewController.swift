@@ -19,7 +19,7 @@ class EditViewController: UIViewController {
     @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    var carToEdit: CarData?
+    var carToEdit: LocalCar?
     var activeField: UITextField?
     var image: UIImage?
     var imagePicker = UIImagePickerController()
@@ -47,7 +47,7 @@ class EditViewController: UIViewController {
         if segue.identifier == K.segues.toConfirm {
             let svc = segue.destination as! ConfirmViewController
             
-            var carToSend = CarData(
+            var carToSend = LocalCar(
             name: nameTextField.text!,
             year: yearTextField.text!,
             mileage: mileageTextField.text!,

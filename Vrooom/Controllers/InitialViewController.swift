@@ -10,22 +10,6 @@ import UIKit
 import RealmSwift
 
 class InitialViewController: UIViewController {
-
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-//        if UserDefaults.isFirstLaunch() {
-//            let realm = try! Realm()
-////            var cars: Results<CarList>?
-//            let cars = realm.objects(CarList.self)
-//            let carImages: [UIImage]
-//            for index in 0...cars.count-1 {
-//                let image = UIImage(named: (cars[index].imageName!))
-//                UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
-//            }
-//        }
-    }
     
     @IBAction func addButtonPressed(_ sender: UIButton) {
         OperatedCar.newCar = true

@@ -9,8 +9,7 @@
 import Foundation
 import RealmSwift
 
-
-class CarList: Object {
+class RealmCar: Object {
     @objc dynamic var name: String?
     @objc dynamic var year: String?
     @objc dynamic var model: String?

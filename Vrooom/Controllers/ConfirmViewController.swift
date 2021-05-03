@@ -20,8 +20,8 @@ class ConfirmViewController: UIViewController {
     @IBOutlet weak var carImageView: UIImageView!
     @IBOutlet weak var popUpView: UIView!
     
-    var carToEdit: CarData?
-    var cars: Results<CarList>?
+    var carToEdit: LocalCar?
+    var cars: Results<RealmCar>?
     let realm = try! Realm()
     var toProceed = true
     var imagePath: String?
@@ -60,7 +60,7 @@ class ConfirmViewController: UIViewController {
         
         if segue.identifier == K.segues.toListFromConfirm {
             if toProceed {
-                let newCar = CarList()
+                let newCar = RealmCar()
                 newCar.name = nameLabel.text
                 newCar.year = yearLabel.text
                 newCar.model = modelLabel.text
@@ -86,7 +86,7 @@ class ConfirmViewController: UIViewController {
         
         if segue.identifier == K.segues.toEditFromConfirm {
             let svc = segue.destination as! EditViewController
-            self.carToEdit = CarData(name: nameLabel.text ?? "", year: yearLabel.text ?? "", mileage: milageLabel.text ?? "", model: modelLabel.text ?? "", bodyType: bodyTypeLabel.text ?? "", country: countryLabel.text ?? "", manufacturer: manufacturerLabel.text ?? "")
+            self.carToEdit = LocalCar(name: nameLabel.text ?? "", year: yearLabel.text ?? "", mileage: milageLabel.text ?? "", model: modelLabel.text ?? "", bodyType: bodyTypeLabel.text ?? "", country: countryLabel.text ?? "", manufacturer: manufacturerLabel.text ?? "")
             svc.carToEdit = self.carToEdit
         }
         carToEdit = nil
@@ -140,7 +140,7 @@ class ConfirmViewController: UIViewController {
 
     //MARK: - Car operations
     
-    func save(_ newCar: CarList) {
+    func save(_ newCar: RealmCar) {
         do {
             try realm.write {
                 realm.add(newCar)
@@ -150,7 +150,7 @@ class ConfirmViewController: UIViewController {
         }
     }
     
-    func edit(_ newCar: CarList) {
+    func edit(_ newCar: RealmCar) {
         if let safeIndex = OperatedCar.index, let car = cars?[safeIndex] {
             do {
                 try realm.write{
@@ -223,7 +223,7 @@ class ConfirmViewController: UIViewController {
     
     //MARK: - Prepare for realm
     func prepareRealm() { // not sure if this makes any sense. The goal is to save some time loading this viewController. Gets called from "prepare for segue" from other viewControllers
-        cars = realm.objects(CarList.self)
+        cars = realm.objects(RealmCar.self)
     }
     
     //MARK: - Dismiss keyboard

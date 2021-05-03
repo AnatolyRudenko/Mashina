@@ -14,7 +14,7 @@ class ListViewController: UIViewController {
 
     var selectedIndex: Int?
     let realm = try! Realm()
-    var cars: Results<CarList>?
+    var cars: Results<RealmCar>?
     var rowHeights:[Int:CGFloat] = [:]
     
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class ListViewController: UIViewController {
     }
     
     func loadCars() {
-        cars = realm.objects(CarList.self)
+        cars = realm.objects(RealmCar.self)
         tableView.reloadData()
     }
     
@@ -83,7 +83,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:ListCell = self.tableView.dequeueReusableCell(withIdentifier: K.cell.reuseIdentifier) as! ListCell
         
-        cell.nameLabel.text = cars?[indexPath.row].name ?? "Нет имени"
+        cell.setName(cars?[indexPath.row].name ?? "Нет имени")
         
         guard let safeImageName = cars?[indexPath.row].imageName else { //if car has no image info
             if let defaultImage = UIImage(named: "NoImage.png") {

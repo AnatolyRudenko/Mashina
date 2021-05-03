@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q6h-ic-LK0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q6h-ic-LK0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -77,7 +79,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DBZ-HM-qfQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Em5-bE-kXy" firstAttribute="top" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="15" id="Has-Fx-y7o"/>
                             <constraint firstItem="B1f-C7-dC5" firstAttribute="top" secondItem="DBZ-HM-qfQ" secondAttribute="top" constant="30" id="I8e-mh-CT1"/>
@@ -89,7 +92,6 @@
                             <constraint firstItem="jdM-AE-piV" firstAttribute="top" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="-100" id="qON-S3-1Rl"/>
                             <constraint firstItem="B1f-C7-dC5" firstAttribute="leading" secondItem="DBZ-HM-qfQ" secondAttribute="leading" id="xTa-ha-4Yd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="DBZ-HM-qfQ"/>
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toList" id="d0d-Qj-fls"/>
@@ -98,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8WZ-FM-yAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="76"/>
+            <point key="canvasLocation" x="93" y="108"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -110,7 +112,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jyN-5e-fWn">
                                 <rect key="frame" x="0.0" y="100" width="414" height="742"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqG-wh-y2e">
                                 <rect key="frame" x="30" y="25" width="50" height="50"/>
@@ -133,7 +135,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="jyN-5e-fWn" secondAttribute="bottom" id="A4z-p1-3V1"/>
                             <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="DqG-wh-y2e" secondAttribute="bottom" constant="25" id="AtH-0l-Lc6"/>
@@ -146,7 +149,6 @@
                             <constraint firstItem="DqG-wh-y2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="k4M-I3-I0d"/>
                             <constraint firstItem="d3b-IW-pZp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="wrr-i4-Av4"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="YdD-f9-XFb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1kA-Gc-hEM">
@@ -192,16 +194,16 @@
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем название" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-JZ-PlM" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
                                                                         <real key="value" value="1"/>
@@ -229,16 +231,16 @@
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем модель" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="wt0-q2-NSq" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
                                                                         <real key="value" value="1"/>
@@ -266,16 +268,16 @@
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем год" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-ro-0mu" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
                                                                         <real key="value" value="1"/>
@@ -303,16 +305,16 @@
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем пробег" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="uec-WO-7gQ" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
                                                                         <real key="value" value="1"/>
@@ -340,16 +342,16 @@
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем тип кузова" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="25z-H5-5fn" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
                                                                         <real key="value" value="1"/>
@@ -377,16 +379,16 @@
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем производителя" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-h8-lzP" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
                                                                         <real key="value" value="1"/>
@@ -414,16 +416,16 @@
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем страну" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="TcM-9p-mLF" customClass="HSUnderLineTextField" customModule="Vrooom" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="30" width="204.5" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
                                                                     </userDefinedRuntimeAttribute>
                                                                     <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
                                                                         <real key="value" value="1"/>
@@ -440,7 +442,7 @@
                                                             <constraint firstItem="0sa-bQ-JJP" firstAttribute="leading" secondItem="bZc-b0-JgW" secondAttribute="leading" id="y7N-1P-d9o"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-zG-6sL">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-zG-6sL">
                                                         <rect key="frame" x="0.0" y="602" width="206" height="37"/>
                                                         <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
                                                         <state key="normal" title="Загрузить изображение">
@@ -480,7 +482,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="OBU-lK-tyS" firstAttribute="leading" secondItem="Dcw-qh-81U" secondAttribute="leading" constant="30" id="Dfd-hg-3Br"/>
                                             <constraint firstItem="OBU-lK-tyS" firstAttribute="top" secondItem="Dcw-qh-81U" secondAttribute="top" constant="30" id="LqV-8w-lem"/>
@@ -502,14 +504,14 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="9PX-Ng-zVU"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="PAG-2m-4Ap"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Nz-W3-aW8" firstAttribute="trailing" secondItem="PAG-2m-4Ap" secondAttribute="trailing" id="OiX-IR-JFH"/>
                             <constraint firstItem="6Nz-W3-aW8" firstAttribute="top" secondItem="PAG-2m-4Ap" secondAttribute="top" id="WGJ-Cy-VHF"/>
                             <constraint firstItem="6Nz-W3-aW8" firstAttribute="leading" secondItem="PAG-2m-4Ap" secondAttribute="leading" id="XJx-6t-KjL"/>
                             <constraint firstItem="6Nz-W3-aW8" firstAttribute="bottom" secondItem="PAG-2m-4Ap" secondAttribute="bottom" id="xfl-qb-Bdi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="PAG-2m-4Ap"/>
                     </view>
                     <navigationItem key="navigationItem" id="BJO-1K-sqm"/>
                     <connections>
@@ -741,7 +743,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="7GS-4W-fII" firstAttribute="centerY" secondItem="1fF-Jq-kfS" secondAttribute="centerY" id="7fG-FQ-i4A"/>
                                     <constraint firstAttribute="height" constant="100" id="FsD-wQ-r7L"/>
@@ -752,7 +754,8 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DJ9-iE-ep2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DJ9-iE-ep2" firstAttribute="trailing" secondItem="1fF-Jq-kfS" secondAttribute="trailing" constant="30" id="4Bl-zW-hQv"/>
                             <constraint firstItem="1fF-Jq-kfS" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="D2E-QL-UMG"/>
@@ -765,7 +768,6 @@
                             <constraint firstItem="UYc-Lj-3fD" firstAttribute="top" secondItem="DJ9-iE-ep2" secondAttribute="top" constant="61" id="fR2-mJ-vau"/>
                             <constraint firstItem="DJ9-iE-ep2" firstAttribute="trailing" secondItem="UYc-Lj-3fD" secondAttribute="trailing" constant="30" id="pyt-C7-QSD"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="DJ9-iE-ep2"/>
                     </view>
                     <navigationItem key="navigationItem" id="pdX-PK-ayT"/>
                     <connections>
@@ -789,8 +791,8 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="mjw-4U-VWJ"/>
-        <segue reference="nkP-0p-mvL"/>
-        <segue reference="u4P-O5-k7e"/>
+        <segue reference="A4T-T9-Uhf"/>
+        <segue reference="d0d-Qj-fls"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="иконка_добавить" width="170.5" height="170.5"/>
@@ -801,5 +803,11 @@
         <image name="лого_машина" width="500" height="500"/>
         <image name="назад_вглавное" width="170.5" height="170.5"/>
         <image name="продолжить" width="170.5" height="170.5"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

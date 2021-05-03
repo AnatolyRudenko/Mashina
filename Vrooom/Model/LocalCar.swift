@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct CarData {
+struct LocalCar {
     var name: String
     var year: String
     var mileage: String
