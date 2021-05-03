@@ -10,7 +10,6 @@
 		45DF01DC0B6BD6921593847E /* Pods_Vrooom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1050E82B87C9773C28C94D2A /* Pods_Vrooom.framework */; };
 		840B7FFF2521FE3B008522DF /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 840B7FFE2521FE3A008522DF /* default.realm */; };
 		8417270C25130CC000504EEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417270B25130CC000504EEA /* AppDelegate.swift */; };
-		8417270E25130CC000504EEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417270D25130CC000504EEA /* SceneDelegate.swift */; };
 		8417271025130CC000504EEA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417270F25130CC000504EEA /* ListViewController.swift */; };
 		8417271325130CC000504EEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417271125130CC000504EEA /* Main.storyboard */; };
 		8417271825130CD300504EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417271625130CD300504EEA /* LaunchScreen.storyboard */; };
@@ -35,7 +34,6 @@
 		840B7FFE2521FE3A008522DF /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
 		8417270825130CC000504EEA /* Vrooom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vrooom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8417270B25130CC000504EEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8417270D25130CC000504EEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8417270F25130CC000504EEA /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		8417271225130CC000504EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8417271725130CD300504EEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				8417270B25130CC000504EEA /* AppDelegate.swift */,
-				8417270D25130CC000504EEA /* SceneDelegate.swift */,
 				841D4E0F2514CDFB00CBDD88 /* Model */,
 				841D4E102514CE2000CBDD88 /* View */,
 				841D4E0E2514CDE500CBDD88 /* Controllers */,
@@ -289,7 +286,6 @@
 				841D4E142514D4A400CBDD88 /* ConfirmViewController.swift in Sources */,
 				8417272125130DB400504EEA /* ListCell.swift in Sources */,
 				8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */,
-				8417270E25130CC000504EEA /* SceneDelegate.swift in Sources */,
 				8424AE212517425E00BDB406 /* CarList.swift in Sources */,
 				84A4070B251378080067CDED /* EditViewController.swift in Sources */,
 				84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */,
