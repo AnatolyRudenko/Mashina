@@ -10,14 +10,8 @@ import UIKit
 
 class EditViewController: UIViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var modelTextField: UITextField!
-    @IBOutlet weak var yearTextField: UITextField!
-    @IBOutlet weak var mileageTextField: UITextField!
-    @IBOutlet weak var bodyTypeTextField: UITextField!
-    @IBOutlet weak var manufacturerTextField: UITextField!
-    @IBOutlet weak var countryTextField: UITextField!
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet private weak var stackView: UIStackView!
     
     var carToEdit: LocalCar?
     var activeField: UITextField?
@@ -26,65 +20,59 @@ class EditViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildCar()
-        delegateTextFields()
         registerForKeyboardNotifications()
     }
     
-    @IBAction func nextButtonPressed(_ sender: UIButton) {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.setupPropertyViews()
     }
     
-    @IBAction func loadImagePressed(_ sender: Any) {
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
-            imagePicker.delegate = self
-            imagePicker.sourceType = .photoLibrary
-            imagePicker.allowsEditing = false
-            present(imagePicker, animated: true, completion: nil)
+    private func setupPropertyViews() {
+        guard self.stackView.arrangedSubviews.count < PropertyType.allCases.count else {
+            return
         }
+        for type in PropertyType.allCases {
+            let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 60)
+            let view = CarPropertyView(frame: frame, type: type, editable: true)
+            self.stackView.addArrangedSubview(view)
+        }
+        self.addLoadImageButton()
+        self.view.layoutIfNeeded()
     }
+    
+    private func addLoadImageButton() {
+        let button = UIButton()
+        button.setTitle("Загрузить изображение", for: .normal)
+        button.addTarget(self, action: #selector(loadImagePressed), for: .touchUpInside)
+        self.stackView.addArrangedSubview(button)
+    }
+    
     
     override func prepare (for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == K.segues.toConfirm {
             let svc = segue.destination as! ConfirmViewController
             
-            var carToSend = LocalCar(
-            name: nameTextField.text!,
-            year: yearTextField.text!,
-            mileage: mileageTextField.text!,
-            model: modelTextField.text!,
-            bodyType: bodyTypeTextField.text!,
-            country: countryTextField.text!,
-            manufacturer: manufacturerTextField.text!
-            )
+//            var carToSend = LocalCar(
+//            name: nameTextField.text!,
+//            year: yearTextField.text!,
+//            mileage: mileageTextField.text!,
+//            model: modelTextField.text!,
+//            bodyType: bodyTypeTextField.text!,
+//            country: countryTextField.text!,
+//            manufacturer: manufacturerTextField.text!
+//            )
             
-            if let safeImage = self.image {
-                carToSend.image = safeImage
-            }
-            
-            svc.carToEdit = carToSend
+//            svc.carToEdit = carToSend
             svc.prepareRealm()
             deregisterFromKeyboardNotifications()
         }
     }
+    
     func buildCar() {
         if let safeCar = carToEdit {
-            self.nameTextField.text = safeCar.name
-            self.modelTextField.text = safeCar.model
-            self.yearTextField.text = safeCar.year
-            self.mileageTextField.text = safeCar.mileage
-            self.bodyTypeTextField.text = safeCar.bodyType
-            self.manufacturerTextField.text = safeCar.manufacturer
-            self.countryTextField.text = safeCar.country
+//            self.nameTextField.text = safeCar.name
         }
-    }
-    func delegateTextFields() {
-        self.nameTextField.delegate = self
-        self.modelTextField.delegate = self
-        self.yearTextField.delegate = self
-        self.mileageTextField.delegate = self
-        self.bodyTypeTextField.delegate = self
-        self.manufacturerTextField.delegate = self
-        self.countryTextField.delegate = self
     }
     
     //MARK: - Keyboard Manager
@@ -145,6 +133,15 @@ extension EditViewController: UITextFieldDelegate {
 
 //MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension EditViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    @objc private func loadImagePressed() {
+        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
+            imagePicker.delegate = self
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = false
+            present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let imgUrl = info[UIImagePickerController.InfoKey.imageURL] as? URL{

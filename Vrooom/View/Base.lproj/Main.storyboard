@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q6h-ic-LK0">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -26,10 +26,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="лого_машина" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-C7-dC5">
-                                <rect key="frame" x="0.0" y="112.5" width="414" height="500"/>
+                                <rect key="frame" x="0.0" y="112.33333333333331" width="414" height="499.99999999999994"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Em5-bE-kXy">
-                                <rect key="frame" x="108" y="649.5" width="198" height="60"/>
+                                <rect key="frame" x="108" y="649.66666666666663" width="198" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOD-Nj-q0O">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -56,22 +56,22 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" создай свой суперкар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-AE-piV" userLabel="создай свой суперкар">
-                                <rect key="frame" x="112.5" y="504" width="189.5" height="23.5"/>
+                                <rect key="frame" x="121" y="508.66666666666669" width="172" height="18.666666666666686"/>
                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-lD-UET">
-                                <rect key="frame" x="104.5" y="717.5" width="205" height="23.5"/>
+                                <rect key="frame" x="107.33333333333333" y="717.66666666666663" width="199.33333333333337" height="18.666666666666629"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="добавить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yba-IJ-KAX">
-                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="18.666666666666668"/>
                                         <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="каталог" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUE-eH-Yom">
-                                        <rect key="frame" x="144.5" y="0.0" width="60.5" height="23.5"/>
+                                        <rect key="frame" x="141.33333333333331" y="0.0" width="58" height="18.666666666666668"/>
                                         <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -126,7 +126,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КАТАЛОГ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-IW-pZp">
-                                <rect key="frame" x="116.5" y="25" width="181" height="50"/>
+                                <rect key="frame" x="116.66666666666669" y="25" width="181" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="2Ay-HM-rBw"/>
                                 </constraints>
@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2758" y="92"/>
+            <point key="canvasLocation" x="2583" y="122"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="7DH-Ix-Plc">
@@ -174,355 +174,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nz-W3-aW8">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNB-en-Lkb">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dcw-qh-81U" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vB-z6-kIc" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="OBU-lK-tyS">
-                                                <rect key="frame" x="30" y="30" width="354" height="639"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="i7a-8P-dev">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="61"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIl-pJ-gs1">
-                                                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="25"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.12941176470588234" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем название" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0bL-JZ-PlM" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="0bL-JZ-PlM" firstAttribute="leading" secondItem="i7a-8P-dev" secondAttribute="leading" id="Dn7-mt-TzM"/>
-                                                            <constraint firstAttribute="trailing" secondItem="0bL-JZ-PlM" secondAttribute="trailing" id="PEm-b4-weO"/>
-                                                            <constraint firstItem="UIl-pJ-gs1" firstAttribute="leading" secondItem="i7a-8P-dev" secondAttribute="leading" id="Yu0-Ec-Xuh"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="99P-IH-v4u">
-                                                        <rect key="frame" x="0.0" y="86" width="354" height="61"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cJ-PM-JSo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="25"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем модель" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="wt0-q2-NSq" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="1cJ-PM-JSo" firstAttribute="leading" secondItem="99P-IH-v4u" secondAttribute="leading" id="BmN-sM-Ks0"/>
-                                                            <constraint firstAttribute="trailing" secondItem="wt0-q2-NSq" secondAttribute="trailing" id="jZW-h1-2eo"/>
-                                                            <constraint firstItem="wt0-q2-NSq" firstAttribute="leading" secondItem="99P-IH-v4u" secondAttribute="leading" id="xFx-p2-BMn"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0fy-4o-25N">
-                                                        <rect key="frame" x="0.0" y="172" width="354" height="61"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hU3-gc-XyK">
-                                                                <rect key="frame" x="0.0" y="0.0" width="31" height="25"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем год" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Qx4-ro-0mu" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="hU3-gc-XyK" firstAttribute="leading" secondItem="0fy-4o-25N" secondAttribute="leading" id="8ce-MS-4l1"/>
-                                                            <constraint firstItem="Qx4-ro-0mu" firstAttribute="leading" secondItem="0fy-4o-25N" secondAttribute="leading" id="9bE-F3-RP1"/>
-                                                            <constraint firstAttribute="trailing" secondItem="Qx4-ro-0mu" secondAttribute="trailing" id="jq8-5O-q6Q"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bfc-Zz-hEh">
-                                                        <rect key="frame" x="0.0" y="258" width="354" height="61"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пробег" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtR-Ef-OtN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="63" height="25"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем пробег" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="uec-WO-7gQ" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="uec-WO-7gQ" secondAttribute="trailing" id="0hX-UM-qx3"/>
-                                                            <constraint firstItem="uec-WO-7gQ" firstAttribute="leading" secondItem="Bfc-Zz-hEh" secondAttribute="leading" id="8cc-N8-PXe"/>
-                                                            <constraint firstItem="dtR-Ef-OtN" firstAttribute="leading" secondItem="Bfc-Zz-hEh" secondAttribute="leading" id="L2j-Hn-Ni6"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SFM-GA-nfC">
-                                                        <rect key="frame" x="0.0" y="344" width="354" height="61"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кузова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHj-kx-2dE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="25"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем тип кузова" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="25z-H5-5fn" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="25z-H5-5fn" secondAttribute="trailing" id="JCI-RC-jGJ"/>
-                                                            <constraint firstItem="25z-H5-5fn" firstAttribute="leading" secondItem="SFM-GA-nfC" secondAttribute="leading" id="OCG-12-XgB"/>
-                                                            <constraint firstItem="kHj-kx-2dE" firstAttribute="leading" secondItem="SFM-GA-nfC" secondAttribute="leading" id="PIt-59-TTy"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NGr-JE-ihW">
-                                                        <rect key="frame" x="0.0" y="430" width="354" height="61"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Производитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpG-pc-nnt">
-                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="25"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем производителя" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="7iZ-h8-lzP" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="30" width="354" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="7iZ-h8-lzP" firstAttribute="leading" secondItem="NGr-JE-ihW" secondAttribute="leading" id="DNq-8d-34a"/>
-                                                            <constraint firstItem="HpG-pc-nnt" firstAttribute="leading" secondItem="NGr-JE-ihW" secondAttribute="leading" id="Fm3-Lg-FzX"/>
-                                                            <constraint firstAttribute="trailing" secondItem="7iZ-h8-lzP" secondAttribute="trailing" id="uup-rF-tLR"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-b0-JgW">
-                                                        <rect key="frame" x="0.0" y="516" width="204.5" height="61"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sa-bQ-JJP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="25"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="здесь пишем страну" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="TcM-9p-mLF" customClass="UnderLineTextField" customModule="Vrooom" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="30" width="204.5" height="31"/>
-                                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
-                                                                        <color key="value" systemColor="opaqueSeparatorColor"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
-                                                                        <real key="value" value="1"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="TcM-9p-mLF" secondAttribute="trailing" id="4T3-ef-p7W"/>
-                                                            <constraint firstItem="TcM-9p-mLF" firstAttribute="leading" secondItem="bZc-b0-JgW" secondAttribute="leading" id="Uty-oN-gvN"/>
-                                                            <constraint firstItem="0sa-bQ-JJP" firstAttribute="leading" secondItem="bZc-b0-JgW" secondAttribute="leading" id="y7N-1P-d9o"/>
-                                                        </constraints>
-                                                    </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0u-zG-6sL">
-                                                        <rect key="frame" x="0.0" y="602" width="206" height="37"/>
-                                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                        <state key="normal" title="Загрузить изображение">
-                                                            <color key="titleColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="loadImagePressed:" destination="E6b-7E-fi8" eventType="touchUpInside" id="31h-YC-J96"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="0fy-4o-25N" secondAttribute="trailing" id="IwF-H1-XQM"/>
-                                                    <constraint firstItem="Bfc-Zz-hEh" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="Q02-Yn-5Zw"/>
-                                                    <constraint firstItem="SFM-GA-nfC" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="Q0L-sz-A4s"/>
-                                                    <constraint firstItem="0fy-4o-25N" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="Up4-e8-mAV"/>
-                                                    <constraint firstAttribute="trailing" secondItem="99P-IH-v4u" secondAttribute="trailing" id="XYL-go-V0R"/>
-                                                    <constraint firstItem="99P-IH-v4u" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="bdm-Oz-exY"/>
-                                                    <constraint firstAttribute="trailing" secondItem="SFM-GA-nfC" secondAttribute="trailing" id="fwb-JH-bOU"/>
-                                                    <constraint firstAttribute="trailing" secondItem="i7a-8P-dev" secondAttribute="trailing" id="mUD-bI-iz1"/>
-                                                    <constraint firstAttribute="trailing" secondItem="NGr-JE-ihW" secondAttribute="trailing" id="nJP-R1-8uM"/>
-                                                    <constraint firstItem="i7a-8P-dev" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="nQA-Mr-aFd"/>
-                                                    <constraint firstItem="NGr-JE-ihW" firstAttribute="leading" secondItem="OBU-lK-tyS" secondAttribute="leading" id="oq4-xZ-XQD"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Bfc-Zz-hEh" secondAttribute="trailing" id="zCa-e6-VeH"/>
-                                                </constraints>
-                                            </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-0z-RSK">
-                                                <rect key="frame" x="334" y="699" width="50" height="50"/>
+                                                <rect key="frame" x="334" y="80" width="50" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="O6V-1k-o3L"/>
+                                                    <constraint firstAttribute="width" secondItem="7QT-0z-RSK" secondAttribute="height" multiplier="1:1" id="CkH-8r-Wnk"/>
                                                     <constraint firstAttribute="width" constant="50" id="l21-bL-IIQ"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="продолжить"/>
                                                 <connections>
-                                                    <action selector="nextButtonPressed:" destination="E6b-7E-fi8" eventType="touchUpInside" id="uge-CA-ZQX"/>
                                                     <segue destination="cmf-ZT-gAR" kind="show" identifier="toConfirm" id="9gm-Mt-FAz"/>
                                                 </connections>
                                             </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0NS-sm-gIf">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24X-Nc-peV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="616-vd-9UR"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                            </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstItem="OBU-lK-tyS" firstAttribute="leading" secondItem="Dcw-qh-81U" secondAttribute="leading" constant="30" id="Dfd-hg-3Br"/>
-                                            <constraint firstItem="OBU-lK-tyS" firstAttribute="top" secondItem="Dcw-qh-81U" secondAttribute="top" constant="30" id="LqV-8w-lem"/>
-                                            <constraint firstAttribute="trailing" secondItem="OBU-lK-tyS" secondAttribute="trailing" constant="30" id="fwV-yq-ooz"/>
-                                            <constraint firstItem="7QT-0z-RSK" firstAttribute="top" secondItem="OBU-lK-tyS" secondAttribute="bottom" constant="30" id="mfW-Na-Wrk"/>
-                                            <constraint firstAttribute="trailing" secondItem="7QT-0z-RSK" secondAttribute="trailing" constant="30" id="uis-m0-RB9"/>
+                                            <constraint firstAttribute="trailing" secondItem="0NS-sm-gIf" secondAttribute="trailing" id="6kT-I1-DYp"/>
+                                            <constraint firstItem="0NS-sm-gIf" firstAttribute="leading" secondItem="0vB-z6-kIc" secondAttribute="leading" id="ENm-yE-19t"/>
+                                            <constraint firstItem="7QT-0z-RSK" firstAttribute="top" secondItem="0NS-sm-gIf" secondAttribute="bottom" constant="30" id="Rki-So-prQ"/>
+                                            <constraint firstItem="0NS-sm-gIf" firstAttribute="top" secondItem="0vB-z6-kIc" secondAttribute="top" id="fTU-vO-eWz"/>
+                                            <constraint firstAttribute="trailing" secondItem="7QT-0z-RSK" secondAttribute="trailing" constant="30" id="nkD-1V-sMj"/>
+                                            <constraint firstAttribute="bottom" secondItem="7QT-0z-RSK" secondAttribute="bottom" constant="30" id="wMa-w0-K19"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="bottom" secondItem="9PX-Ng-zVU" secondAttribute="bottom" id="8Dg-9W-SoO"/>
-                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="top" secondItem="6Nz-W3-aW8" secondAttribute="top" id="8OZ-dX-z9b"/>
-                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="leading" secondItem="6Nz-W3-aW8" secondAttribute="leading" id="MsW-kg-Ht3"/>
-                                    <constraint firstAttribute="bottom" secondItem="Dcw-qh-81U" secondAttribute="bottom" id="dMR-wh-HCe"/>
-                                    <constraint firstItem="Dcw-qh-81U" firstAttribute="centerX" secondItem="6Nz-W3-aW8" secondAttribute="centerX" id="gta-gE-1xG"/>
-                                    <constraint firstAttribute="trailing" secondItem="Dcw-qh-81U" secondAttribute="trailing" id="piL-QO-rsb"/>
+                                    <constraint firstItem="0vB-z6-kIc" firstAttribute="top" secondItem="TNB-en-Lkb" secondAttribute="top" id="21M-CV-w1e"/>
+                                    <constraint firstAttribute="trailing" secondItem="0vB-z6-kIc" secondAttribute="trailing" id="DUC-Ln-gdt"/>
+                                    <constraint firstAttribute="bottom" secondItem="0vB-z6-kIc" secondAttribute="bottom" id="Kht-SS-Z0m"/>
+                                    <constraint firstItem="0vB-z6-kIc" firstAttribute="leading" secondItem="TNB-en-Lkb" secondAttribute="leading" id="ed9-cV-JGo"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="DRS-Q1-5kG"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="9PX-Ng-zVU"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PAG-2m-4Ap"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="trailing" secondItem="PAG-2m-4Ap" secondAttribute="trailing" id="OiX-IR-JFH"/>
-                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="top" secondItem="PAG-2m-4Ap" secondAttribute="top" id="WGJ-Cy-VHF"/>
-                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="leading" secondItem="PAG-2m-4Ap" secondAttribute="leading" id="XJx-6t-KjL"/>
-                            <constraint firstItem="6Nz-W3-aW8" firstAttribute="bottom" secondItem="PAG-2m-4Ap" secondAttribute="bottom" id="xfl-qb-Bdi"/>
+                            <constraint firstItem="PAG-2m-4Ap" firstAttribute="trailing" secondItem="TNB-en-Lkb" secondAttribute="trailing" id="YMI-md-Cxk"/>
+                            <constraint firstItem="TNB-en-Lkb" firstAttribute="leading" secondItem="ZTI-cB-15E" secondAttribute="leading" id="hXx-IF-Aer"/>
+                            <constraint firstItem="0vB-z6-kIc" firstAttribute="width" secondItem="ZTI-cB-15E" secondAttribute="width" id="p5z-8g-jZn"/>
+                            <constraint firstItem="TNB-en-Lkb" firstAttribute="top" secondItem="ZTI-cB-15E" secondAttribute="top" id="r00-I7-X6h"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="TNB-en-Lkb" secondAttribute="bottom" id="ydj-Tb-rOd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BJO-1K-sqm"/>
                     <connections>
-                        <outlet property="bodyTypeTextField" destination="25z-H5-5fn" id="3qc-aN-YqP"/>
-                        <outlet property="countryTextField" destination="TcM-9p-mLF" id="rRd-ag-PMV"/>
-                        <outlet property="manufacturerTextField" destination="7iZ-h8-lzP" id="gCh-Dh-Aqq"/>
-                        <outlet property="mileageTextField" destination="uec-WO-7gQ" id="R5H-pd-tJA"/>
-                        <outlet property="modelTextField" destination="wt0-q2-NSq" id="XkQ-e7-gie"/>
-                        <outlet property="nameTextField" destination="0bL-JZ-PlM" id="dbG-r1-baG"/>
-                        <outlet property="scrollView" destination="6Nz-W3-aW8" id="uMJ-0F-NsE"/>
-                        <outlet property="yearTextField" destination="Qx4-ro-0mu" id="EyP-qx-gWe"/>
+                        <outlet property="scrollView" destination="TNB-en-Lkb" id="6f3-5a-FC7"/>
+                        <outlet property="stackView" destination="0NS-sm-gIf" id="JWr-mA-AQO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5Y-pg-KaJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -544,7 +259,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-MG-53a">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="186" height="43.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -578,16 +293,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="exk-HF-7zF">
-                                        <rect key="frame" x="0.0" y="60" width="66.5" height="80"/>
+                                        <rect key="frame" x="0.0" y="60" width="66.666666666666671" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70e-WX-b4V">
-                                                <rect key="frame" x="0.0" y="0.0" width="66.5" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="25"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs1-7g-ylw">
-                                                <rect key="frame" x="0.0" y="30" width="66.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="30" width="66.666666666666671" height="50"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -644,16 +359,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EsQ-Y8-wNr">
-                                        <rect key="frame" x="0.0" y="330" width="88.5" height="80"/>
+                                        <rect key="frame" x="0.0" y="330" width="88.666666666666671" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кузова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-Sv-Hrr">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="25"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dZ-qx-aag">
-                                                <rect key="frame" x="0.0" y="30" width="88.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="30" width="88.666666666666671" height="50"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -688,16 +403,16 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RSJ-LQ-Xuh">
-                                        <rect key="frame" x="0.0" y="510" width="64.5" height="80"/>
+                                        <rect key="frame" x="0.0" y="510" width="64.666666666666671" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-Kp-IHg">
-                                                <rect key="frame" x="0.0" y="0.0" width="64.5" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="25"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaY-XA-go3">
-                                                <rect key="frame" x="0.0" y="30" width="64.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="30" width="64.666666666666671" height="50"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -737,7 +452,7 @@
                                 <rect key="frame" x="30" y="371" width="354" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Что же это за машина без имени?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GS-4W-fII" userLabel="Что же это за машина без имени?">
-                                        <rect key="frame" x="0.0" y="11.5" width="354" height="77.5"/>
+                                        <rect key="frame" x="0.0" y="11.333333333333314" width="354" height="77.333333333333329"/>
                                         <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -795,19 +510,22 @@
         <segue reference="u4P-O5-k7e"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="иконка_добавить" width="170.5" height="170.5"/>
-        <image name="иконка_каталог" width="170.5" height="170.5"/>
-        <image name="иконка_назад" width="170.5" height="170.5"/>
-        <image name="иконка_редактировать" width="170.5" height="170.5"/>
-        <image name="иконка_удалить" width="160.5" height="160.5"/>
+        <image name="иконка_добавить" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="иконка_каталог" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="иконка_назад" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="иконка_редактировать" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="иконка_удалить" width="160.66667175292969" height="160.66667175292969"/>
         <image name="лого_машина" width="500" height="500"/>
-        <image name="назад_вглавное" width="170.5" height="170.5"/>
-        <image name="продолжить" width="170.5" height="170.5"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="назад_вглавное" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="продолжить" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
