@@ -7,4 +7,5 @@ target 'Vrooom' do
 
   # Pods for Vrooom
 pod 'RealmSwift'
+pod 'IQKeyboardManagerSwift'
 end

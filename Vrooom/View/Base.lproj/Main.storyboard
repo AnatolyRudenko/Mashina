@@ -56,22 +56,22 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" создай свой суперкар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-AE-piV" userLabel="создай свой суперкар">
-                                <rect key="frame" x="121" y="508.66666666666669" width="172" height="18.666666666666686"/>
+                                <rect key="frame" x="112.33333333333333" y="503.99999999999994" width="189.66666666666669" height="23.333333333333314"/>
                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="u0e-lD-UET">
-                                <rect key="frame" x="107.33333333333333" y="717.66666666666663" width="199.33333333333337" height="18.666666666666629"/>
+                                <rect key="frame" x="104.66666666666669" y="717.66666666666663" width="205" height="23.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="добавить" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yba-IJ-KAX">
-                                        <rect key="frame" x="0.0" y="0.0" width="70.333333333333329" height="18.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="73.333333333333329" height="23.333333333333332"/>
                                         <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="каталог" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUE-eH-Yom">
-                                        <rect key="frame" x="141.33333333333331" y="0.0" width="58" height="18.666666666666668"/>
+                                        <rect key="frame" x="144.33333333333331" y="0.0" width="60.666666666666657" height="23.333333333333332"/>
                                         <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -178,10 +178,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vB-z6-kIc" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QT-0z-RSK">
-                                                <rect key="frame" x="334" y="60" width="50" height="50"/>
+                                                <rect key="frame" x="334" y="70" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="7QT-0z-RSK" secondAttribute="height" multiplier="1:1" id="CkH-8r-Wnk"/>
                                                     <constraint firstAttribute="width" constant="50" id="l21-bL-IIQ"/>
@@ -192,7 +192,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0NS-sm-gIf">
-                                                <rect key="frame" x="30" y="30" width="354" height="0.0"/>
+                                                <rect key="frame" x="30" y="40" width="354" height="0.0"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="24X-Nc-peV">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="0.0"/>
@@ -208,7 +208,7 @@
                                             <constraint firstAttribute="trailing" secondItem="0NS-sm-gIf" secondAttribute="trailing" constant="30" id="6kT-I1-DYp"/>
                                             <constraint firstItem="0NS-sm-gIf" firstAttribute="leading" secondItem="0vB-z6-kIc" secondAttribute="leading" constant="30" id="ENm-yE-19t"/>
                                             <constraint firstItem="7QT-0z-RSK" firstAttribute="top" secondItem="0NS-sm-gIf" secondAttribute="bottom" constant="30" id="Rki-So-prQ"/>
-                                            <constraint firstItem="0NS-sm-gIf" firstAttribute="top" secondItem="0vB-z6-kIc" secondAttribute="top" constant="30" id="fTU-vO-eWz"/>
+                                            <constraint firstItem="0NS-sm-gIf" firstAttribute="top" secondItem="0vB-z6-kIc" secondAttribute="top" constant="40" id="fTU-vO-eWz"/>
                                             <constraint firstAttribute="trailing" secondItem="7QT-0z-RSK" secondAttribute="trailing" constant="30" id="nkD-1V-sMj"/>
                                             <constraint firstAttribute="bottom" secondItem="7QT-0z-RSK" secondAttribute="bottom" constant="30" id="wMa-w0-K19"/>
                                         </constraints>
