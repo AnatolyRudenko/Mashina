@@ -15,12 +15,6 @@ class PropertiesViewController: UIViewController {
     var localCar: LocalCar?
     var image: UIImage?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
     func setPropertyViewsIn(stackView: UIStackView) {
         guard stackView.arrangedSubviews.count < PropertyType.allCases.count else {
             return
@@ -42,6 +36,7 @@ class PropertiesViewController: UIViewController {
         if let image = self.image {
             car.image = image
         }
+        return car
     }
     
     func applyCar() {

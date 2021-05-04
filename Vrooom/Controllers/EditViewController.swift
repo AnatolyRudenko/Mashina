@@ -26,7 +26,7 @@ class EditViewController: PropertiesViewController {
     }
     
     private func addLoadImageButton() {
-        guard self.stackView.arrangedSubviews.count == PropertyType.allCases.count else { return }
+        guard self.stackView.arrangedSubviews.count - 1 == PropertyType.allCases.count else { return }
         let button = UIButton()
         button.setTitle("Загрузить изображение", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)

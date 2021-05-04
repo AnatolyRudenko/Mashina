@@ -249,8 +249,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Lj-3fD">
-                                <rect key="frame" x="30" y="61" width="354" height="728"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="569" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Lj-3fD">
+                                <rect key="frame" x="30" y="61" width="354" height="747"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-1i-6vq">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
@@ -284,150 +284,21 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="separatorColor"/>
                                         <constraints>
                                             <constraint firstItem="JKH-47-5T9" firstAttribute="centerY" secondItem="1rB-1i-6vq" secondAttribute="centerY" id="Gng-UD-8vJ"/>
                                             <constraint firstItem="33K-v4-s8g" firstAttribute="centerY" secondItem="1rB-1i-6vq" secondAttribute="centerY" id="sal-kg-V9m"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="exk-HF-7zF">
-                                        <rect key="frame" x="0.0" y="60" width="66.666666666666671" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70e-WX-b4V">
-                                                <rect key="frame" x="0.0" y="0.0" width="66.666666666666671" height="25"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs1-7g-ylw">
-                                                <rect key="frame" x="0.0" y="30" width="66.666666666666671" height="50"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="70e-WX-b4V" firstAttribute="leading" secondItem="exk-HF-7zF" secondAttribute="leading" id="GAQ-xB-KtX"/>
-                                            <constraint firstItem="zs1-7g-ylw" firstAttribute="leading" secondItem="exk-HF-7zF" secondAttribute="leading" id="mkW-aG-uOv"/>
-                                            <constraint firstAttribute="trailing" secondItem="zs1-7g-ylw" secondAttribute="trailing" id="tQm-5x-ePa"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4oE-aF-wcE">
-                                        <rect key="frame" x="0.0" y="150" width="54" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxP-qx-XL2">
-                                                <rect key="frame" x="0.0" y="0.0" width="31" height="25"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTW-ZR-xTs">
-                                                <rect key="frame" x="0.0" y="30" width="54" height="50"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="QTW-ZR-xTs" secondAttribute="trailing" id="DJt-mI-qeb"/>
-                                            <constraint firstItem="lxP-qx-XL2" firstAttribute="leading" secondItem="4oE-aF-wcE" secondAttribute="leading" id="Fak-YX-iTJ"/>
-                                            <constraint firstItem="QTW-ZR-xTs" firstAttribute="leading" secondItem="4oE-aF-wcE" secondAttribute="leading" id="R0r-vD-Ybw"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m3Y-5g-jxw">
-                                        <rect key="frame" x="0.0" y="240" width="63" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пробег" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g70-qR-fDF">
-                                                <rect key="frame" x="0.0" y="0.0" width="63" height="25"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-sU-omd">
-                                                <rect key="frame" x="0.0" y="30" width="63" height="50"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="WgS-sU-omd" firstAttribute="leading" secondItem="m3Y-5g-jxw" secondAttribute="leading" id="4EY-NH-cYG"/>
-                                            <constraint firstItem="g70-qR-fDF" firstAttribute="leading" secondItem="m3Y-5g-jxw" secondAttribute="leading" id="aTb-T4-RRg"/>
-                                            <constraint firstAttribute="trailing" secondItem="WgS-sU-omd" secondAttribute="trailing" id="d9c-cB-5oh"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EsQ-Y8-wNr">
-                                        <rect key="frame" x="0.0" y="330" width="88.666666666666671" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кузова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-Sv-Hrr">
-                                                <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="25"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dZ-qx-aag">
-                                                <rect key="frame" x="0.0" y="30" width="88.666666666666671" height="50"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="bUd-Sv-Hrr" firstAttribute="leading" secondItem="EsQ-Y8-wNr" secondAttribute="leading" id="VXL-Uf-YxS"/>
-                                            <constraint firstAttribute="trailing" secondItem="1dZ-qx-aag" secondAttribute="trailing" id="q6C-6K-G1u"/>
-                                            <constraint firstItem="1dZ-qx-aag" firstAttribute="leading" secondItem="EsQ-Y8-wNr" secondAttribute="leading" id="wnq-Lp-eev"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="azS-ei-8CM">
-                                        <rect key="frame" x="0.0" y="420" width="128" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Производитель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAk-tJ-k3a">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="25"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xq8-vF-HHI">
-                                                <rect key="frame" x="0.0" y="30" width="128" height="50"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="FAk-tJ-k3a" firstAttribute="leading" secondItem="azS-ei-8CM" secondAttribute="leading" id="IKF-Pb-u1o"/>
-                                            <constraint firstAttribute="trailing" secondItem="Xq8-vF-HHI" secondAttribute="trailing" id="Whj-gf-yxX"/>
-                                            <constraint firstItem="Xq8-vF-HHI" firstAttribute="leading" secondItem="azS-ei-8CM" secondAttribute="leading" id="jqw-O1-pYZ"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RSJ-LQ-Xuh">
-                                        <rect key="frame" x="0.0" y="510" width="64.666666666666671" height="80"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страна" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-Kp-IHg">
-                                                <rect key="frame" x="0.0" y="0.0" width="64.333333333333329" height="25"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="17"/>
-                                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yaY-XA-go3">
-                                                <rect key="frame" x="0.0" y="30" width="64.666666666666671" height="50"/>
-                                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="yaY-XA-go3" firstAttribute="leading" secondItem="RSJ-LQ-Xuh" secondAttribute="leading" id="VbP-xG-lVt"/>
-                                            <constraint firstItem="m8P-Kp-IHg" firstAttribute="leading" secondItem="RSJ-LQ-Xuh" secondAttribute="leading" id="k2o-Z9-sNy"/>
-                                            <constraint firstAttribute="trailing" secondItem="yaY-XA-go3" secondAttribute="trailing" id="kdF-l3-3t5"/>
-                                        </constraints>
-                                    </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rnY-7o-ezl">
-                                        <rect key="frame" x="0.0" y="600" width="354" height="128"/>
+                                        <rect key="frame" x="0.0" y="619" width="354" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="hTs-p6-SeX"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                 <constraints>
                                     <constraint firstItem="rnY-7o-ezl" firstAttribute="centerX" secondItem="UYc-Lj-3fD" secondAttribute="centerX" id="46W-Mk-uWP"/>
                                     <constraint firstItem="1rB-1i-6vq" firstAttribute="leading" secondItem="UYc-Lj-3fD" secondAttribute="leading" id="Fld-cb-YPc"/>
@@ -445,53 +316,23 @@
                                     <action selector="arrowPressed:" destination="cmf-ZT-gAR" eventType="touchUpInside" id="BC8-3x-xgd"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fF-Jq-kfS">
-                                <rect key="frame" x="30" y="371" width="354" height="100"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Что же это за машина без имени?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GS-4W-fII" userLabel="Что же это за машина без имени?">
-                                        <rect key="frame" x="0.0" y="11.333333333333314" width="354" height="77.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="25"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="7GS-4W-fII" firstAttribute="centerY" secondItem="1fF-Jq-kfS" secondAttribute="centerY" id="7fG-FQ-i4A"/>
-                                    <constraint firstAttribute="height" constant="100" id="FsD-wQ-r7L"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="LyN-DC-6fI"/>
-                                    <constraint firstAttribute="trailing" secondItem="7GS-4W-fII" secondAttribute="trailing" id="YrD-mz-t1N"/>
-                                    <constraint firstItem="7GS-4W-fII" firstAttribute="centerX" secondItem="1fF-Jq-kfS" secondAttribute="centerX" id="r6V-Rx-nLV"/>
-                                    <constraint firstItem="7GS-4W-fII" firstAttribute="leading" secondItem="1fF-Jq-kfS" secondAttribute="leading" id="yu9-ca-Kg2"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DJ9-iE-ep2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DJ9-iE-ep2" firstAttribute="trailing" secondItem="1fF-Jq-kfS" secondAttribute="trailing" constant="30" id="4Bl-zW-hQv"/>
-                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="D2E-QL-UMG"/>
-                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="KHr-0C-yJd"/>
                             <constraint firstItem="I2K-It-q70" firstAttribute="top" secondItem="DJ9-iE-ep2" secondAttribute="top" id="LfZ-EZ-WdJ"/>
                             <constraint firstItem="I2K-It-q70" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="MZy-xN-wkc"/>
-                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="centerY" secondItem="ra1-x9-Lpc" secondAttribute="centerY" id="Zkb-Nj-uuG"/>
                             <constraint firstItem="UYc-Lj-3fD" firstAttribute="leading" secondItem="DJ9-iE-ep2" secondAttribute="leading" constant="30" id="c4f-4K-Dxt"/>
-                            <constraint firstItem="1fF-Jq-kfS" firstAttribute="centerX" secondItem="ra1-x9-Lpc" secondAttribute="centerX" id="dL3-5i-8xA"/>
                             <constraint firstItem="UYc-Lj-3fD" firstAttribute="top" secondItem="DJ9-iE-ep2" secondAttribute="top" constant="61" id="fR2-mJ-vau"/>
                             <constraint firstItem="DJ9-iE-ep2" firstAttribute="trailing" secondItem="UYc-Lj-3fD" secondAttribute="trailing" constant="30" id="pyt-C7-QSD"/>
+                            <constraint firstItem="DJ9-iE-ep2" firstAttribute="bottom" secondItem="UYc-Lj-3fD" secondAttribute="bottom" constant="10" id="zs5-ip-9a3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pdX-PK-ayT"/>
                     <connections>
-                        <outlet property="bodyTypeLabel" destination="1dZ-qx-aag" id="Dt5-68-VtK"/>
                         <outlet property="carImageView" destination="rnY-7o-ezl" id="1RZ-Oo-Psx"/>
-                        <outlet property="countryLabel" destination="yaY-XA-go3" id="BMG-5z-UuX"/>
-                        <outlet property="manufacturerLabel" destination="Xq8-vF-HHI" id="6q0-lE-JpV"/>
-                        <outlet property="milageLabel" destination="WgS-sU-omd" id="KqL-aO-fhz"/>
-                        <outlet property="modelLabel" destination="zs1-7g-ylw" id="kKp-D3-kbD"/>
                         <outlet property="nameLabel" destination="EMU-MG-53a" id="05O-rK-xde"/>
-                        <outlet property="popUpView" destination="1fF-Jq-kfS" id="cxS-qu-SRi"/>
-                        <outlet property="yearLabel" destination="QTW-ZR-xTs" id="1AB-VV-VLc"/>
+                        <outlet property="stackView" destination="UYc-Lj-3fD" id="f5u-hc-Utt"/>
                         <segue destination="E6b-7E-fi8" kind="show" identifier="toEditFromConfirm" id="nkP-0p-mvL"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="toListFromConfirm" id="u4P-O5-k7e"/>
                     </connections>
@@ -515,8 +356,17 @@
         <image name="лого_машина" width="500" height="500"/>
         <image name="назад_вглавное" width="170.66667175292969" height="170.66667175292969"/>
         <image name="продолжить" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
