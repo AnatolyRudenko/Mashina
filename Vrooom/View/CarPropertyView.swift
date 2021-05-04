@@ -79,7 +79,6 @@ class CarPropertyView: UIView, UITextFieldDelegate {
     
     private func createValueTextField() -> ValueElement {
         let textField = UnderLineTextField(frame: CGRect())
-//        textField.delegate = parent
         textField.placeholder = self.type.getPlaceholderValue()
         return textField as ValueElement
     }

@@ -234,7 +234,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="BJO-1K-sqm"/>
                     <connections>
-                        <outlet property="scrollView" destination="TNB-en-Lkb" id="6f3-5a-FC7"/>
                         <outlet property="stackView" destination="0NS-sm-gIf" id="JWr-mA-AQO"/>
                     </connections>
                 </viewController>

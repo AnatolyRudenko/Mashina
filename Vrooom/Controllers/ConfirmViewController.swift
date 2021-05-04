@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class ConfirmViewController: UIViewController {
+class ConfirmViewController: PropertiesViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var modelLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
@@ -85,9 +85,9 @@ class ConfirmViewController: UIViewController {
         }
         
         if segue.identifier == K.segues.toEditFromConfirm {
-            let svc = segue.destination as! EditViewController
+            let dvc = segue.destination as! EditViewController
             self.carToEdit = LocalCar(name: nameLabel.text ?? "", year: yearLabel.text ?? "", mileage: milageLabel.text ?? "", model: modelLabel.text ?? "", bodyType: bodyTypeLabel.text ?? "", country: countryLabel.text ?? "", manufacturer: manufacturerLabel.text ?? "")
-            svc.carToEdit = self.carToEdit
+            dvc.localCar = self.carToEdit
         }
         carToEdit = nil
     }

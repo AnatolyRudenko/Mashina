@@ -54,4 +54,42 @@ enum PropertyType: CaseIterable {
             return "здесь пишем страну"
         }
     }
+    
+    func applyPropertyToCar(_ car: inout LocalCar, value: String) {
+        switch self {
+        case .name:
+            car.name = value
+        case .model:
+            car.model = value
+        case .year:
+            car.year = value
+        case .mileage:
+            car.mileage = value
+        case .bodyType:
+            car.bodyType = value
+        case .manufacturer:
+            car.manufacturer = value
+        case .country:
+            car.country = value
+        }
+    }
+    
+    func extractPropertyFromCar(_ car: LocalCar) -> String {
+        switch self {
+        case .name:
+            return car.name ?? ""
+        case .model:
+            return car.model ?? ""
+        case .year:
+            return car.year ?? ""
+        case .mileage:
+            return car.mileage ?? ""
+        case .bodyType:
+            return car.bodyType ?? ""
+        case .manufacturer:
+            return car.manufacturer ?? ""
+        case .country:
+            return car.country ?? ""
+        }
+    }
 }
