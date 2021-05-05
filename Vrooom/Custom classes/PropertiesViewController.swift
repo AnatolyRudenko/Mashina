@@ -19,11 +19,15 @@ class PropertiesViewController: UIViewController {
         guard stackView.arrangedSubviews.count < PropertyType.allCases.count else {
             return
         }
-        for type in PropertyType.allCases {
+        for (index, type) in PropertyType.allCases.enumerated() {
+            
             let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 40)
             let view = CarPropertyView(frame: frame, type: type, editable: true)
-            stackView.addArrangedSubview(view)
             self.propertyViews.append(view)
+            if index == 0 && !self.editable {
+                continue
+            }
+            stackView.addArrangedSubview(view)
         }
     }
     

@@ -13,7 +13,7 @@ class ConfirmViewController: PropertiesViewController {
     
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var carImageView: UIImageView!
+    private weak var carImageView: UIImageView?
     weak var popUpView: UIView!
     
     private var shouldSave = true
@@ -25,19 +25,28 @@ class ConfirmViewController: PropertiesViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        super.setPropertyViewsIn(stackView: self.stackView)
+        self.setPropertyViewsIn(stackView: self.stackView)
         self.applyCar()
     }
     
     override func setPropertyViewsIn(stackView: UIStackView) {
-//        self.stackView
         super.setPropertyViewsIn(stackView: stackView)
+        self.addImageView()
     }
         
+    private func addImageView() {
+        guard self.carImageView == nil else { return }
+        let imageView = UIImageView()
+        imageView.setContentHuggingPriority(UILayoutPriority(rawValue: 249), for: .vertical)
+        imageView.backgroundColor = .blue
+        self.carImageView = imageView
+        self.stackView.addArrangedSubview(imageView)
+    }
+    
     override func applyCar() {
         super.applyCar()
         self.nameLabel.text = super.localCar?.name
-        self.carImageView.image = super.localCar?.image
+        self.carImageView?.image = super.localCar?.image
     }
     
     //MARK: - Buttons functionality
