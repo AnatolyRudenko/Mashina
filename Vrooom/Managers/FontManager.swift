@@ -8,14 +8,14 @@
 
 import UIKit
 
-class FontManager {
+struct FontManager {
     
-    class func texGyreRegular(size: CGFloat) -> UIFont {
+    static func texGyreRegular(size: CGFloat) -> UIFont {
         let font = UIFont.init(name: "TeXGyreAdventor-Regular", size: size)
         return font ?? UIFont.systemFont(ofSize: size)
     }
     
-    class func texGyreBold(size: CGFloat) -> UIFont {
+    static func texGyreBold(size: CGFloat) -> UIFont {
         let font = UIFont.init(name: "TeXGyreAdventor-Bold", size: size)
         return font ?? UIFont.systemFont(ofSize: size)
     }

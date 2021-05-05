@@ -10,86 +10,58 @@ import UIKit
 
 class UnderLineTextField: UITextField , UITextFieldDelegate { //adds an underline to a textField
 
+    private var line: CALayer?
+    private let lineWidth: CGFloat = 1
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-//        self.addUnderLine()
+        self.addUnderLine()
         self.setupFont()
+        self.addUnderLine()
+        self.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+    }
+    
+    @objc
+    private func textFieldDidChange() {
+        self.redrawUnderLine()
+    }
+    
+    private func redrawUnderLine() {
+        let size: CGSize
+        if let font = self.font,
+           let text = self.textToOperate() {
+            size = text.sizeOfString(usingFont: font)
+        } else {
+            size = CGSize(width: self.frame.width, height: self.frame.height)
+        }
+        let frame = CGRect(x: 0,
+                           y: size.height - self.lineWidth,
+                           width: size.width,
+                           height: lineWidth)
+        self.line?.frame = frame
     }
     
     private func addUnderLine() {
         let bottomLine = CALayer()
-        let lineWidth: CGFloat = 1
-//        bottomLine.frame = CGRect(x: 0,
-//                                  y: self.bounds.maxY - lineWidth,
-//                                  width: self.bounds.width,
-//                                  height: lineWidth)
-        bottomLine.frame = CGRect(x: 0,
-                                  y: 10,
-                                  width: 100,
-                                  height: lineWidth)
         bottomLine.backgroundColor = UIColor.black.cgColor
         self.borderStyle = UITextField.BorderStyle.none
         self.layer.addSublayer(bottomLine)
+        self.line = bottomLine
     }
     
     private func setupFont() {
         self.font = FontManager.texGyreRegular(size: 16)
     }
+    
+    private func textToOperate() -> String? {
+        guard let text = self.text,
+              !text.isEmpty else {
+            return self.placeholder
+        }
+        return text
+    }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
-    
-    
-//    let border = CALayer()
-//
-//    @IBInspectable open var lineColor : UIColor = UIColor.black {
-//        didSet{
-//            border.borderColor = lineColor.cgColor
-//        }
-//    }
-//
-//    @IBInspectable open var selectedLineColor : UIColor = UIColor.black {
-//        didSet{
-//        }
-//    }
-//
-//
-//    @IBInspectable open var lineHeight : CGFloat = CGFloat(1.0) {
-//        didSet{
-//            border.frame = CGRect(x: 0, y: self.frame.size.height - lineHeight, width:  self.frame.size.width, height: self.frame.size.height)
-//        }
-//    }
-//
-//    required init?(coder aDecoder: (NSCoder?)) {
-//        super.init(coder: aDecoder!)
-//        self.delegate=self;
-//        border.borderColor = lineColor.cgColor
-//        self.attributedPlaceholder = NSAttributedString(string: self.placeholder ?? "",
-//                                                               attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
-//
-//
-//        border.frame = CGRect(x: 0, y: self.frame.size.height - lineHeight, width:  self.frame.size.width, height: self.frame.size.height)
-//        border.borderWidth = lineHeight
-//        self.layer.addSublayer(border)
-//        self.layer.masksToBounds = true
-//    }
-//
-//    override func draw(_ rect: CGRect) {
-//        border.frame = CGRect(x: 0, y: self.frame.size.height - lineHeight, width:  self.frame.size.width, height: self.frame.size.height)
-//    }
-//
-//    override func awakeFromNib() {
-//        super.awakeFromNib()
-//        border.frame = CGRect(x: 0, y: self.frame.size.height - lineHeight, width:  self.frame.size.width, height: self.frame.size.height)
-//        self.delegate = self
-//    }
-//
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        border.borderColor = selectedLineColor.cgColor
-//    }
-//
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        border.borderColor = lineColor.cgColor
-//    }
 }

@@ -21,4 +21,7 @@ struct K {
         static let nibName = "CarTableViewCell"
         static let reuseIdentifier = "cell"
     }
+    struct strings {
+        
+    }
 }

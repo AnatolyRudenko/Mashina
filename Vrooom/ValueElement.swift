@@ -16,6 +16,7 @@ protocol ValueElement {
 extension UnderLineTextField: ValueElement {
     func setValue(_ text: String) {
         self.text = text
+        self.sendActions(for: .editingChanged)
     }
     func readValue() -> String {
         return self.text ?? ""

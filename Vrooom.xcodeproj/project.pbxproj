@@ -159,7 +159,6 @@
 			children = (
 				8417271125130CC000504EEA /* Main.storyboard */,
 				8417272025130DB400504EEA /* CarTableViewCell.xib */,
-				843CBE6E263FA6F100A75177 /* CarPropertyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +180,7 @@
 				841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */,
 				84CD8CEC264125A2000988FB /* PropertiesViewController.swift */,
 				8467854326426E7700E2B8F0 /* PopUpView.swift */,
+				843CBE6E263FA6F100A75177 /* CarPropertyView.swift */,
 			);
 			path = "Custom classes";
 			sourceTree = "<group>";
