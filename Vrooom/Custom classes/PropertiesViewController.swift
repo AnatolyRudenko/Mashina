@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PropertiesViewController: UIViewController {
+final class PropertiesViewController: UIViewController {
 
     var propertyViews = [CarPropertyView]()
     var editable = true

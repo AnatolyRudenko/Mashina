@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarPropertyView: UIView, UITextFieldDelegate {
+final class CarPropertyView: UIView, UITextFieldDelegate {
     
     var type: PropertyType
     func setValue(_ text: String) {

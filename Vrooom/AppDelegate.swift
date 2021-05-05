@@ -25,11 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func setupRealmDB() { //preloaded DB extraction
-        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path
+        guard let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path else { return }
         let path = Bundle.main.path(forResource: "default", ofType: "realm")
-        if !FileManager.default.fileExists(atPath: defaultPath!), let bundledPath = path {
+        if !FileManager.default.fileExists(atPath: defaultPath), let bundledPath = path {
             do {
-                try FileManager.default.copyItem(atPath: bundledPath, toPath: defaultPath!)
+                try FileManager.default.copyItem(atPath: bundledPath, toPath: defaultPath)
             } catch {
                 print("Error copying pre-populated Realm \(error)")
             }

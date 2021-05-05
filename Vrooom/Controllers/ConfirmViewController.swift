@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ConfirmViewController: PropertiesViewController {
+final class ConfirmViewController: PropertiesViewController {
     
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var nameLabel: UILabel!
@@ -65,7 +65,7 @@ class ConfirmViewController: PropertiesViewController {
     
     @IBAction func arrowPressed(_ sender: UIButton) {
         guard self.nameLabel.text != "" else { //cant' create an unnamed car
-            _ = PopUpView(text: "Что же это за машина без имени?",
+            _ = PopUpView(text: K.strings.unnamedCarPopUp,
                           parentView: self.view)
             return
         }

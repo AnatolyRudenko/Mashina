@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditViewController: PropertiesViewController {
+final class EditViewController: PropertiesViewController {
 
     @IBOutlet private weak var stackView: UIStackView!
     
@@ -67,7 +67,7 @@ extension EditViewController: UIImagePickerControllerDelegate, UINavigationContr
             imagePicker.allowsEditing = false
             present(imagePicker, animated: true, completion: nil)
         } else {
-            _ = PopUpView(text: "Доступ к библиотеке ограничен. Перейдите в настройки и разрешите доступ к фото",
+            _ = PopUpView(text: K.strings.libraryAccessDenied,
                           parentView: self.view)
         }
     }

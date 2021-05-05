@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import RealmSwift
 
-class ListViewController: UIViewController {
+final class ListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     

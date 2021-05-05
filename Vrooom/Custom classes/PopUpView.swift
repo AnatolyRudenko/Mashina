@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PopUpView: UIView {
+final class PopUpView: UIView {
     
     let animationDuration = 0.3
     

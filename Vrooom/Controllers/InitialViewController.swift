@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+final class InitialViewController: UIViewController {
     
     @IBAction private func addButtonPressed(_ sender: UIButton) {
         OperatedCar.newCar = true

@@ -117,7 +117,7 @@
 			children = (
 				8417270B25130CC000504EEA /* AppDelegate.swift */,
 				843CBE74263FAB3700A75177 /* Extensions.swift */,
-				843CBE77263FAD5700A75177 /* ValueElement.swift */,
+				846785562642BE7700E2B8F0 /* Protocols */,
 				843CBE88263FCD6000A75177 /* Managers */,
 				84707294263FA01000C9F7D1 /* Custom classes */,
 				841D4E0F2514CDFB00CBDD88 /* Model */,
@@ -171,6 +171,14 @@
 				84CD8CF4264141AB000988FB /* RealmManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		846785562642BE7700E2B8F0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				843CBE77263FAD5700A75177 /* ValueElement.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		84707294263FA01000C9F7D1 /* Custom classes */ = {

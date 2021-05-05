@@ -22,6 +22,7 @@ struct K {
         static let reuseIdentifier = "cell"
     }
     struct strings {
-        
+        static let libraryAccessDenied = "Доступ к библиотеке ограничен. Перейдите в настройки и разрешите доступ к фото"
+        static let unnamedCarPopUp = "Что же это за машина без имени?"
     }
 }
