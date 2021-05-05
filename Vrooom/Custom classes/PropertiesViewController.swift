@@ -22,7 +22,7 @@ class PropertiesViewController: UIViewController {
         for (index, type) in PropertyType.allCases.enumerated() {
             
             let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 40)
-            let view = CarPropertyView(frame: frame, type: type, editable: true)
+            let view = CarPropertyView(frame: frame, type: type, editable: self.editable)
             self.propertyViews.append(view)
             if index == 0 && !self.editable {
                 continue
@@ -37,9 +37,9 @@ class PropertiesViewController: UIViewController {
             let value = view.readValue()
             view.type.applyPropertyToCar(&car, value: value)
         }
-        if let image = self.image {
-            car.image = image
-        }
+        car.image = self.image == nil ?
+            ImageManager().defaultImage :
+            self.image
         return car
     }
     

@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import RealmSwift
 
 class ConfirmViewController: PropertiesViewController {
     
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var nameLabel: UILabel!
     private weak var carImageView: UIImageView?
-    weak var popUpView: UIView!
+    weak var popUpView: PopUpView?
     
     private var shouldSave = true
     
@@ -25,20 +24,23 @@ class ConfirmViewController: PropertiesViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.setPropertyViewsIn(stackView: self.stackView)
-        self.applyCar()
+        self.visualSetup()
     }
     
-    override func setPropertyViewsIn(stackView: UIStackView) {
-        super.setPropertyViewsIn(stackView: stackView)
+    private func visualSetup() {
+        guard stackView.arrangedSubviews.count < PropertyType.allCases.count else {
+            return
+        }
+        super.setPropertyViewsIn(stackView: self.stackView)
         self.addImageView()
+        self.applyCar()
     }
         
     private func addImageView() {
         guard self.carImageView == nil else { return }
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
         imageView.setContentHuggingPriority(UILayoutPriority(rawValue: 249), for: .vertical)
-        imageView.backgroundColor = .blue
         self.carImageView = imageView
         self.stackView.addArrangedSubview(imageView)
     }
@@ -63,11 +65,22 @@ class ConfirmViewController: PropertiesViewController {
     
     @IBAction func arrowPressed(_ sender: UIButton) {
         guard self.nameLabel.text != "" else { //cant' create an unnamed car
-//            popUpView.isHidden = false
+            self.showPopUpView()
             return
         }
         self.shouldSave = true
         performSegue(withIdentifier: K.segues.toListFromConfirm, sender: nil)
+    }
+    
+    private func showPopUpView() {
+        guard self.popUpView == nil else {
+            self.popUpView?.present()
+            return
+        }
+        let popUpView = PopUpView(text: "Что же это за машина без имени?",
+                                  parentViewSize: self.view.bounds.size)
+        self.popUpView = popUpView
+        self.view.addSubview(popUpView)
     }
     
     //MARK: - Segue settings
@@ -86,14 +99,6 @@ class ConfirmViewController: PropertiesViewController {
         if segue.identifier == K.segues.toEditFromConfirm {
             let dvc = segue.destination as? EditViewController
             dvc?.localCar = super.buildLocalCar()
-        }
-    }
-    
-    //MARK: - Dismiss keyboard
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { //to dismiss popUpVIew
-        let touch = touches.first
-        if touch?.view != self.popUpView {
-            self.dismiss(animated: true, completion: nil)
         }
     }
 }

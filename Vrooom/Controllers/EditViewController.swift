@@ -21,12 +21,25 @@ class EditViewController: PropertiesViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        self.visualSetup()
+    }
+    
+    private func visualSetup() {
+        guard stackView.arrangedSubviews.count < PropertyType.allCases.count else {
+            return
+        }
         super.setPropertyViewsIn(stackView: self.stackView)
         self.addLoadImageButton()
+        self.moveButtonToBottom()
+    }
+    
+    private func moveButtonToBottom() {
+        let buttonView = self.stackView.arrangedSubviews[0]
+        self.stackView.removeArrangedSubview(buttonView)
+        self.stackView.addArrangedSubview(buttonView)
     }
     
     private func addLoadImageButton() {
-        guard self.stackView.arrangedSubviews.count - 1 == PropertyType.allCases.count else { return }
         let button = UIButton()
         button.setTitle("Загрузить изображение", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)

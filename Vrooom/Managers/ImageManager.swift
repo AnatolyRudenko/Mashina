@@ -10,7 +10,7 @@ import UIKit
 
 struct ImageManager {
     
-    private let defaultImage = #imageLiteral(resourceName: "NoImage")
+    let defaultImage = #imageLiteral(resourceName: "NoImage")
     
     func saveImageAndGetItsPath(image: UIImage, name: String) -> String { //call this to save an image
         let imageFileName = "\(name).png"
