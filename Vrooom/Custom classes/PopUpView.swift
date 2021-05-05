@@ -10,18 +10,21 @@ import UIKit
 
 class PopUpView: UIView {
     
+    let animationDuration = 0.3
+    
     init(text: String,
-         parentViewSize: CGSize) {
-        super.init(frame: CGRect())
+         parentView: UIView) {
+        super.init(frame: UIScreen.main.bounds)
         self.alpha = 0
-        self.addBlur(parentViewSize)
+        self.addBlur()
         self.setupLabel(text)
+        parentView.addSubview(self)
         self.present()
     }
     
-    func present() {
+    private func present() {
         self.isHidden = false
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: self.animationDuration) {
             self.alpha = 1
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
@@ -29,11 +32,19 @@ class PopUpView: UIView {
         }
     }
     
-    private func addBlur(_ parentViewSize: CGSize) {
+    private func dissapear() {
+        UIView.animate(withDuration: self.animationDuration) {
+            self.alpha = 0
+        } completion: { _ in
+            self.isHidden = true
+        }
+    }
+    
+    private func addBlur() {
         let frame = CGRect(x: 0,
                            y: 0,
-                           width: parentViewSize.width,
-                           height: parentViewSize.height)
+                           width: UIScreen.main.bounds.width,
+                           height: UIScreen.main.bounds.height)
         let color: UIColor = .black
         let transparentColor = color.withAlphaComponent(0.6)
         self.backgroundColor = transparentColor
@@ -64,14 +75,6 @@ class PopUpView: UIView {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { //to dismiss popUpVIew
         self.dissapear()
-    }
-    
-    private func dissapear() {
-        UIView.animate(withDuration: 0.3) {
-            self.alpha = 0
-        } completion: { _ in
-            self.isHidden = true
-        }
     }
     
     required init?(coder: NSCoder) {

@@ -16,7 +16,7 @@ struct ImageManager {
         let imageFileName = "\(name).png"
         let imagePath = fileInDocumentsDirectory(imageFileName)
         writeImage(image, path: imagePath)
-        return imagePath
+        return imageFileName
     }
 
     func getImageFromImageName(_ path: String?) -> UIImage { //call this to get image from its path

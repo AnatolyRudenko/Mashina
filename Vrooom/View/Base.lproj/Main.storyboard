@@ -114,40 +114,48 @@
                                 <rect key="frame" x="0.0" y="100" width="414" height="742"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqG-wh-y2e">
-                                <rect key="frame" x="30" y="25" width="50" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fA0-Zi-9s6" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqG-wh-y2e">
+                                        <rect key="frame" x="30" y="25" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ir6-7W-4LD"/>
+                                            <constraint firstAttribute="width" secondItem="DqG-wh-y2e" secondAttribute="height" multiplier="1:1" id="SXc-PN-gwk"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="назад_вглавное"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vp6-4H-CBM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КАТАЛОГ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-IW-pZp">
+                                        <rect key="frame" x="103.66666666666669" y="15.333333333333332" width="207" height="61.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ir6-7W-4LD"/>
-                                    <constraint firstAttribute="width" constant="50" id="Y4M-zd-EC6"/>
+                                    <constraint firstItem="DqG-wh-y2e" firstAttribute="leading" secondItem="fA0-Zi-9s6" secondAttribute="leading" constant="30" id="Edg-PO-eAd"/>
+                                    <constraint firstAttribute="height" constant="100" id="Hrb-vw-Vff"/>
+                                    <constraint firstItem="d3b-IW-pZp" firstAttribute="centerX" secondItem="fA0-Zi-9s6" secondAttribute="centerX" id="ooE-JK-Rlo"/>
+                                    <constraint firstItem="d3b-IW-pZp" firstAttribute="centerY" secondItem="DqG-wh-y2e" secondAttribute="centerY" multiplier="0.92" id="plF-gX-2i4"/>
+                                    <constraint firstItem="DqG-wh-y2e" firstAttribute="centerY" secondItem="fA0-Zi-9s6" secondAttribute="centerY" id="sQg-zB-1N2"/>
+                                    <constraint firstItem="d3b-IW-pZp" firstAttribute="width" secondItem="fA0-Zi-9s6" secondAttribute="width" multiplier="0.5" id="vM9-S3-Vsw"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="назад_вглавное"/>
-                                <connections>
-                                    <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vp6-4H-CBM"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="КАТАЛОГ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3b-IW-pZp">
-                                <rect key="frame" x="116.66666666666669" y="25" width="181" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="2Ay-HM-rBw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.1312497275" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="jyN-5e-fWn" secondAttribute="bottom" id="A4z-p1-3V1"/>
-                            <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="DqG-wh-y2e" secondAttribute="bottom" constant="25" id="AtH-0l-Lc6"/>
                             <constraint firstItem="jyN-5e-fWn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Axb-P4-8MB"/>
-                            <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="BAl-S3-8Tk"/>
-                            <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="d3b-IW-pZp" secondAttribute="bottom" constant="25" id="EEO-bO-VSQ"/>
-                            <constraint firstItem="d3b-IW-pZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X2m-qe-zxD"/>
-                            <constraint firstItem="DqG-wh-y2e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="c3a-XT-KVK"/>
+                            <constraint firstItem="fA0-Zi-9s6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pfv-BH-ci1"/>
+                            <constraint firstItem="fA0-Zi-9s6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VOT-eZ-v4m"/>
                             <constraint firstItem="jyN-5e-fWn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dID-HF-98N"/>
-                            <constraint firstItem="DqG-wh-y2e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="k4M-I3-I0d"/>
-                            <constraint firstItem="d3b-IW-pZp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="wrr-i4-Av4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fA0-Zi-9s6" secondAttribute="trailing" id="och-PN-k6a"/>
+                            <constraint firstItem="jyN-5e-fWn" firstAttribute="top" secondItem="fA0-Zi-9s6" secondAttribute="bottom" id="yju-PH-m6h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YdD-f9-XFb">
@@ -164,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="122"/>
+            <point key="canvasLocation" x="2582.608695652174" y="121.875"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="7DH-Ix-Plc">
@@ -234,7 +242,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-1i-6vq">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-MG-53a">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-MG-53a">
                                                 <rect key="frame" x="0.0" y="0.0" width="214" height="43.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Bold" family="TeX Gyre Adventor" pointSize="28"/>
                                                 <nil key="textColor"/>
@@ -311,7 +319,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9gm-Mt-FAz"/>
+        <segue reference="mjw-4U-VWJ"/>
         <segue reference="nkP-0p-mvL"/>
         <segue reference="u4P-O5-k7e"/>
     </inferredMetricsTieBreakers>

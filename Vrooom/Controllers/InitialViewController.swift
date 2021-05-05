@@ -7,16 +7,15 @@
 //
 
 import UIKit
-import RealmSwift
 
 class InitialViewController: UIViewController {
     
-    @IBAction func addButtonPressed(_ sender: UIButton) {
+    @IBAction private func addButtonPressed(_ sender: UIButton) {
         OperatedCar.newCar = true
         performSegue(withIdentifier: K.segues.toEdit, sender: nil)
     }
     
-    @IBAction func listButtonPressed(_ sender: UIButton) {
+    @IBAction private func listButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: K.segues.toList, sender: nil)
     }
 }

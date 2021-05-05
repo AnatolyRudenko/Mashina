@@ -10,35 +10,35 @@ import UIKit
 import RealmSwift
 
 class ListViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-
-    var selectedIndex: Int?
-    let realm = try! Realm()
-    var cars: Results<RealmCar>?
-    var rowHeights:[Int:CGFloat] = [:]
     
+    @IBOutlet private weak var tableView: UITableView!
+    
+    private var realmManager: RealmManager?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCars()
-        tableView.register(UINib(nibName: K.cell.nibName, bundle: nil), forCellReuseIdentifier: K.cell.reuseIdentifier)
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.realmManager = RealmManager()
+        self.setupTable()
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
          self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-    func loadCars() {
-        cars = realm.objects(RealmCar.self)
-        tableView.reloadData()
+    private func setupTable() {
+        self.tableView.register(UINib(nibName: K.cell.nibName, bundle: nil),
+                                forCellReuseIdentifier: K.cell.reuseIdentifier)
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == K.segues.fromListToConfirm {
-            if let svc = segue.destination as? ConfirmViewController {
+        if segue.identifier == K.segues.fromListToConfirm,
+           let dvc = segue.destination as? ConfirmViewController,
+           let index = OperatedCar.index,
+           let realmCar = self.realmManager?.cars?[index] {
             OperatedCar.newCar = false
-            }
+            dvc.localCar = self.realmManager?.convertRealmCarToLocal(realmCar)
         }
     }
 }
@@ -48,14 +48,16 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cars?.count ?? 1
+        return self.realmManager?.cars?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:ListCell = self.tableView.dequeueReusableCell(withIdentifier: K.cell.reuseIdentifier) as! ListCell
-        let car = cars?[indexPath.row]
+        guard let cell:ListCell = self.tableView.dequeueReusableCell(withIdentifier: K.cell.reuseIdentifier)
+                as? ListCell else {
+            return UITableViewCell()
+        }
+        let car = self.realmManager?.cars?[indexPath.row]
         cell.setName(car?.name ?? "Нет имени")
-        
         let image = ImageManager().getImageFromImageName(car?.imageName)
         cell.setImage(image)
         return cell

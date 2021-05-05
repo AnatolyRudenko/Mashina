@@ -11,17 +11,17 @@ import RealmSwift
 
 struct RealmManager {
     
-    var cars: Results<RealmCar>?
+    var cars: Results<CarList>?
     let realm = try! Realm()
     
     init() {
-        self.cars = realm.objects(RealmCar.self)
+        self.cars = realm.objects(CarList.self)
     }
     
     //MARK: - Car operations
     func save(_ localCar: LocalCar?) {
         guard let localCar = localCar else { return }
-        let newCar = self.createRealmCar(localCar: localCar)
+        let newCar = self.createRealmCar(from: localCar)
         do {
             try realm.write {
                 realm.add(newCar)
@@ -37,7 +37,7 @@ struct RealmManager {
               let carToEdit = cars?[safeIndex]
         else { return }
         
-        let newCar = self.createRealmCar(localCar: localCar)
+        let newCar = self.createRealmCar(from: localCar)
         do {
             try realm.write {
                 carToEdit.name = newCar.name
@@ -69,8 +69,8 @@ struct RealmManager {
         }
     }
     
-    func createRealmCar(localCar: LocalCar) -> RealmCar {
-        let car = RealmCar()
+    func createRealmCar(from localCar: LocalCar) -> CarList {
+        let car = CarList()
         car.name = localCar.name
         car.model = localCar.model
         car.year = localCar.year
@@ -84,7 +84,7 @@ struct RealmManager {
         return car
     }
     
-    func convertRealmCarToLocal(_ realmCar: RealmCar) -> LocalCar {
+    func convertRealmCarToLocal(_ realmCar: CarList) -> LocalCar {
         var car = LocalCar()
         car.name = realmCar.name
         car.model = realmCar.model

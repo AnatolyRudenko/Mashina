@@ -12,9 +12,8 @@ class ConfirmViewController: PropertiesViewController {
     
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var nameLabel: UILabel!
-    private weak var carImageView: UIImageView?
-    weak var popUpView: PopUpView?
     
+    private weak var carImageView: UIImageView?
     private var shouldSave = true
     
     override func viewDidLoad() {
@@ -39,7 +38,7 @@ class ConfirmViewController: PropertiesViewController {
     private func addImageView() {
         guard self.carImageView == nil else { return }
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         imageView.setContentHuggingPriority(UILayoutPriority(rawValue: 249), for: .vertical)
         self.carImageView = imageView
         self.stackView.addArrangedSubview(imageView)
@@ -56,6 +55,7 @@ class ConfirmViewController: PropertiesViewController {
         OperatedCar.newCar ?
             self.dismiss(animated: true, completion: nil) :
             performSegue(withIdentifier: K.segues.toEditFromConfirm, sender: nil)
+        
     }
     
     @IBAction func deleteButtonPressed(_ sender: UIButton) {
@@ -65,22 +65,12 @@ class ConfirmViewController: PropertiesViewController {
     
     @IBAction func arrowPressed(_ sender: UIButton) {
         guard self.nameLabel.text != "" else { //cant' create an unnamed car
-            self.showPopUpView()
+            _ = PopUpView(text: "Что же это за машина без имени?",
+                          parentView: self.view)
             return
         }
         self.shouldSave = true
         performSegue(withIdentifier: K.segues.toListFromConfirm, sender: nil)
-    }
-    
-    private func showPopUpView() {
-        guard self.popUpView == nil else {
-            self.popUpView?.present()
-            return
-        }
-        let popUpView = PopUpView(text: "Что же это за машина без имени?",
-                                  parentViewSize: self.view.bounds.size)
-        self.popUpView = popUpView
-        self.view.addSubview(popUpView)
     }
     
     //MARK: - Segue settings

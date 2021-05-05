@@ -12,8 +12,6 @@ class EditViewController: PropertiesViewController {
 
     @IBOutlet private weak var stackView: UIStackView!
     
-    var imagePicker = UIImagePickerController()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         super.editable = true
@@ -31,6 +29,7 @@ class EditViewController: PropertiesViewController {
         super.setPropertyViewsIn(stackView: self.stackView)
         self.addLoadImageButton()
         self.moveButtonToBottom()
+        super.applyCar()
     }
     
     private func moveButtonToBottom() {
@@ -62,10 +61,14 @@ class EditViewController: PropertiesViewController {
 extension EditViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @objc private func loadImagePressed() {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.sourceType = .photoLibrary
             imagePicker.allowsEditing = false
             present(imagePicker, animated: true, completion: nil)
+        } else {
+            _ = PopUpView(text: "Доступ к библиотеке ограничен. Перейдите в настройки и разрешите доступ к фото",
+                          parentView: self.view)
         }
     }
     
@@ -75,12 +78,13 @@ extension EditViewController: UIImagePickerControllerDelegate, UINavigationContr
         if let imgUrl = info[UIImagePickerController.InfoKey.imageURL] as? URL {
             let imgName = imgUrl.lastPathComponent
             let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
-            let localPath = documentDirectory?.appending(imgName)
 
-            let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-            let data = image.pngData()! as NSData
-            data.write(toFile: localPath!, atomically: true)
-            _ = URL.init(fileURLWithPath: localPath!)
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage,
+               let data = image.pngData() as? NSData,
+               let localPath = documentDirectory?.appending(imgName) {
+                data.write(toFile: localPath, atomically: true)
+                _ = URL.init(fileURLWithPath: localPath)
+            }
         }
         
         picker.dismiss(animated: true, completion: nil)
