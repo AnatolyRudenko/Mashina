@@ -20,5 +20,7 @@ struct FontManager {
         return font ?? UIFont.systemFont(ofSize: size)
     }
     
-    static var customBlue = #colorLiteral(red: 0, green: 0.1294117647, blue: 1, alpha: 1)
+    static var customBlue = UIColor(named: "customBlue")
+    static var blueAndWhite = UIColor(named: "blueAndWhite")
+
 }

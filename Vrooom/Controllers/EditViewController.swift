@@ -41,9 +41,9 @@ final class EditViewController: PropertiesViewController {
     private func addLoadImageButton() {
         let button = UIButton()
         button.setTitle("Загрузить изображение", for: .normal)
-        button.setTitleColor(UIColor.black, for: .normal)
+        button.setTitleColor(.label, for: .normal)
         button.layer.borderWidth = 3
-        button.layer.borderColor = FontManager.customBlue.cgColor
+        button.layer.borderColor = FontManager.customBlue?.cgColor
         button.layer.cornerRadius = 5
         button.addTarget(self, action: #selector(loadImagePressed), for: .touchUpInside)
         self.stackView.addArrangedSubview(button)

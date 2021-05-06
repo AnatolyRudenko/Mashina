@@ -38,10 +38,6 @@ final class CarPropertyView: UIView, UITextFieldDelegate {
         self.viewSetup(frame: frame)
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     private func viewSetup(frame: CGRect) {
         self.heightAnchor.constraint(equalToConstant: frame.height).isActive = true
         
@@ -53,7 +49,7 @@ final class CarPropertyView: UIView, UITextFieldDelegate {
         
         let nameLabel = UILabel()
         nameLabel.font = FontManager.texGyreBold(size: 14)
-        nameLabel.textColor = #colorLiteral(red: 0, green: 0.1294117647, blue: 1, alpha: 1)
+        nameLabel.textColor = FontManager.blueAndWhite
         nameLabel.text = self.type.getName()
         let valueElement: ValueElement = self.editable ?
             self.createValueTextField() :
@@ -73,7 +69,7 @@ final class CarPropertyView: UIView, UITextFieldDelegate {
         let label = UILabel()
         let font = FontManager.texGyreRegular(size: 16)
         label.font = font
-        label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        label.textColor = .label
         return label as ValueElement
     }
     
@@ -82,5 +78,9 @@ final class CarPropertyView: UIView, UITextFieldDelegate {
         textField.placeholder = self.type.getPlaceholderValue()
         textField.sendActions(for: .editingChanged)
         return textField as ValueElement
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

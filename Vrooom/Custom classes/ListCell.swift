@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ListCell: UITableViewCell {
+final class ListCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var carImageView: UIImageView!
     @IBOutlet private weak var imageHeightConstraint: NSLayoutConstraint!
