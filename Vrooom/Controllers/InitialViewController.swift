@@ -12,7 +12,7 @@ final class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.darkModeIcon()
+        _ = IconManager.init(dark: self.traitCollection.userInterfaceStyle == .dark)
     }
     
     @IBAction private func addButtonPressed(_ sender: UIButton) {
@@ -22,16 +22,6 @@ final class InitialViewController: UIViewController {
     
     @IBAction private func listButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: K.segues.toList, sender: nil)
-    }
-    
-    private func darkModeIcon() {
-        if #available(iOS 13.0, *) {
-            if self.traitCollection.userInterfaceStyle == .dark {
-               UIApplication.shared.setAlternateIconName("лого_машина")
-            } else {
-                UIApplication.shared.setAlternateIconName(nil)
-            }
-        }
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q6h-ic-LK0">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -56,7 +56,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" создай свой суперкар" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdM-AE-piV" userLabel="создай свой суперкар">
-                                <rect key="frame" x="112.33333333333333" y="503.99999999999994" width="189.66666666666669" height="23.333333333333314"/>
+                                <rect key="frame" x="112.33333333333333" y="513.66666666666663" width="189.66666666666669" height="23.333333333333371"/>
                                 <fontDescription key="fontDescription" name="TeXGyreAdventor-Regular" family="TeX Gyre Adventor" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,9 +78,12 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="лого_машина" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-C7-dC5">
-                                <rect key="frame" x="0.0" y="112" width="414" height="499.99999999999994"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="лого_машина" translatesAutoresizingMaskIntoConstraints="NO" id="B1f-C7-dC5">
+                                <rect key="frame" x="-43.333333333333343" y="107.00000000000003" width="500.66666666666674" height="510.66666666666674"/>
                                 <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B1f-C7-dC5" secondAttribute="height" multiplier="50:51" id="F8j-Xd-nf1"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DBZ-HM-qfQ"/>
@@ -88,13 +91,13 @@
                         <constraints>
                             <constraint firstItem="Em5-bE-kXy" firstAttribute="centerY" secondItem="DBZ-HM-qfQ" secondAttribute="centerY" multiplier="1.5" id="7ZW-h7-NPO"/>
                             <constraint firstItem="B1f-C7-dC5" firstAttribute="centerY" secondItem="DBZ-HM-qfQ" secondAttribute="centerY" multiplier="0.8" id="K6Y-5R-qmd"/>
-                            <constraint firstItem="B1f-C7-dC5" firstAttribute="trailing" secondItem="DBZ-HM-qfQ" secondAttribute="trailing" id="Msz-c9-YJp"/>
+                            <constraint firstItem="B1f-C7-dC5" firstAttribute="height" secondItem="DL4-Wk-si1" secondAttribute="height" multiplier="0.57" id="dtw-cT-eMp"/>
                             <constraint firstItem="u0e-lD-UET" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="e2J-Sh-x80"/>
-                            <constraint firstItem="jdM-AE-piV" firstAttribute="bottom" secondItem="B1f-C7-dC5" secondAttribute="bottom" constant="-85" id="kXe-qA-bsw"/>
                             <constraint firstItem="u0e-lD-UET" firstAttribute="top" secondItem="Em5-bE-kXy" secondAttribute="bottom" constant="8" id="kcX-2K-fMe"/>
                             <constraint firstItem="jdM-AE-piV" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="nQT-DL-mtM"/>
                             <constraint firstItem="Em5-bE-kXy" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="oeu-Vl-05K"/>
-                            <constraint firstItem="B1f-C7-dC5" firstAttribute="leading" secondItem="DBZ-HM-qfQ" secondAttribute="leading" id="xTa-ha-4Yd"/>
+                            <constraint firstItem="jdM-AE-piV" firstAttribute="centerY" secondItem="B1f-C7-dC5" secondAttribute="centerY" multiplier="1.45" id="vS7-8F-A45"/>
+                            <constraint firstItem="B1f-C7-dC5" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="w89-FB-y6e"/>
                         </constraints>
                     </view>
                     <connections>
@@ -104,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8WZ-FM-yAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93" y="108"/>
+            <point key="canvasLocation" x="92.753623188405811" y="107.8125"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -200,7 +203,7 @@
                                                     <constraint firstAttribute="width" secondItem="7QT-0z-RSK" secondAttribute="height" multiplier="1:1" id="CkH-8r-Wnk"/>
                                                 </constraints>
                                                 <color key="tintColor" name="customBlue"/>
-                                                <state key="normal" title="Button" image="продолжить"/>
+                                                <state key="normal" image="продолжить"/>
                                                 <connections>
                                                     <segue destination="cmf-ZT-gAR" kind="show" identifier="toConfirm" id="9gm-Mt-FAz"/>
                                                 </connections>
@@ -343,7 +346,7 @@
         <image name="назад_вглавное" width="170.66667175292969" height="170.66667175292969"/>
         <image name="продолжить" width="170.66667175292969" height="170.66667175292969"/>
         <namedColor name="customBlue">
-            <color red="0.0" green="0.12941176470588234" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.1289999932050705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
