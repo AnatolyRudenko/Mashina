@@ -18,7 +18,7 @@ struct IconManager {
     private func switchIcon() {
         if #available(iOS 13.0, *), self.shouldSwitchIcon() {
             let icon: String? = self.dark ? "mashina_dark" : nil
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { // без этого возвращается ошибка "Operation cancelled"
                 UIApplication.shared.setAlternateIconName(icon)
             }
             UserDefaults.standard.set(self.dark, forKey: K.UD.darkTheme)

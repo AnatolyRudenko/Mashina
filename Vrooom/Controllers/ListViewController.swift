@@ -29,6 +29,7 @@ final class ListViewController: UIViewController {
                                 forCellReuseIdentifier: K.cell.reuseIdentifier)
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.tableView.tableFooterView = UIView()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
