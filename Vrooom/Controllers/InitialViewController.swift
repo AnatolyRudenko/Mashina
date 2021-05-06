@@ -7,32 +7,26 @@
 //
 
 import UIKit
-import RealmSwift
 
-class InitialViewController: UIViewController {
-
+final class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        if UserDefaults.isFirstLaunch() {
-//            let realm = try! Realm()
-////            var cars: Results<CarList>?
-//            let cars = realm.objects(CarList.self)
-//            let carImages: [UIImage]
-//            for index in 0...cars.count-1 {
-//                let image = UIImage(named: (cars[index].imageName!))
-//                UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
-//            }
-//        }
+        self.switchIconIfNeeded()
     }
     
-    @IBAction func addButtonPressed(_ sender: UIButton) {
+    private func switchIconIfNeeded() {
+        if #available(iOS 12.0, *) {
+            _ = IconManager.init(dark: self.traitCollection.userInterfaceStyle == .dark)
+        }
+    }
+    
+    @IBAction private func addButtonPressed(_ sender: UIButton) {
         OperatedCar.newCar = true
         performSegue(withIdentifier: K.segues.toEdit, sender: nil)
     }
     
-    @IBAction func listButtonPressed(_ sender: UIButton) {
+    @IBAction private func listButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: K.segues.toList, sender: nil)
     }
 }

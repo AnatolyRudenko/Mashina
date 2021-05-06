@@ -8,9 +8,8 @@
 
 import Foundation
 
-class OperatedCar {
+final class OperatedCar {
     static var index: Int?
     static var newCar = false
-    static var imagePath: String? = nil
 }
 
