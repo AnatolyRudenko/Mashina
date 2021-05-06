@@ -66,7 +66,11 @@ final class PopUpView: UIView {
         label.numberOfLines = 0
         label.text = text
         label.textAlignment = .center
-        label.backgroundColor = .white
+        if #available(iOS 13.0, *) {
+            label.backgroundColor = .secondarySystemBackground
+        } else {
+            label.backgroundColor = .white
+        }
         label.layer.cornerRadius = 30
         label.clipsToBounds = true
         
