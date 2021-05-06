@@ -12,7 +12,13 @@ final class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        _ = IconManager.init(dark: self.traitCollection.userInterfaceStyle == .dark)
+        self.switchIconIfNeeded()
+    }
+    
+    private func switchIconIfNeeded() {
+        if #available(iOS 12.0, *) {
+            _ = IconManager.init(dark: self.traitCollection.userInterfaceStyle == .dark)
+        }
     }
     
     @IBAction private func addButtonPressed(_ sender: UIButton) {

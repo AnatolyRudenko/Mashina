@@ -39,7 +39,7 @@ final class ConfirmViewController: PropertiesViewController {
         guard self.carImageView == nil else { return }
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .label
+        imageView.tintColor = FontManager.labelColor
         imageView.setContentHuggingPriority(UILayoutPriority(rawValue: 249), for: .vertical)
         self.carImageView = imageView
         self.stackView.addArrangedSubview(imageView)

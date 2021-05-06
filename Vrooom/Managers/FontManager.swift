@@ -22,5 +22,11 @@ struct FontManager {
     
     static var customBlue = UIColor(named: "customBlue")
     static var blueAndWhite = UIColor(named: "blueAndWhite")
-
+    static var labelColor: UIColor {
+        if #available(iOS 13.0, *) {
+            return .label
+        } else {
+            return .black
+        }
+    }
 }

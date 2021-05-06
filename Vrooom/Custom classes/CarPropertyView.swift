@@ -69,7 +69,7 @@ final class CarPropertyView: UIView, UITextFieldDelegate {
         let label = UILabel()
         let font = FontManager.texGyreRegular(size: 16)
         label.font = font
-        label.textColor = .label
+        label.textColor = FontManager.labelColor
         return label as ValueElement
     }
     

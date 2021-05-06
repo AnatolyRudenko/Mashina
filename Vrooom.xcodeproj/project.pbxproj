@@ -105,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				8417270A25130CC000504EEA /* Vrooom */,
-				84E87E1825164DB3006A0E08 /* Fonts */,
 				8417270925130CC000504EEA /* Products */,
 				677C56B7DAC8A411D65FFFDE /* Pods */,
 				8B74418298FC62CB907810F8 /* Frameworks */,
@@ -123,19 +122,14 @@
 		8417270A25130CC000504EEA /* Vrooom */ = {
 			isa = PBXGroup;
 			children = (
-				84BDC7C62643B3B8006B5A71 /* mashina_dark.png */,
-				84BDC7C42643B3B8006B5A71 /* mashina_dark@2x.png */,
-				84BDC7C52643B3B8006B5A71 /* mashina_dark@3x.png */,
 				8417270B25130CC000504EEA /* AppDelegate.swift */,
-				843CBE74263FAB3700A75177 /* Extensions.swift */,
 				846785562642BE7700E2B8F0 /* Protocols */,
 				843CBE88263FCD6000A75177 /* Managers */,
 				84707294263FA01000C9F7D1 /* Custom classes */,
 				841D4E0F2514CDFB00CBDD88 /* Model */,
 				841D4E102514CE2000CBDD88 /* View */,
 				841D4E0E2514CDE500CBDD88 /* Controllers */,
-				84F536D1251DB6CC00EB1F8B /* Constants.swift */,
-				840B7FFE2521FE3A008522DF /* default.realm */,
+				84BDC7CF2643BA87006B5A71 /* Supporting files */,
 				841D4E0A251490D000CBDD88 /* Assets.xcassets */,
 				8417271625130CD300504EEA /* LaunchScreen.storyboard */,
 				8417271925130CD300504EEA /* Info.plist */,
@@ -203,6 +197,28 @@
 				843CBE6E263FA6F100A75177 /* CarPropertyView.swift */,
 			);
 			path = "Custom classes";
+			sourceTree = "<group>";
+		};
+		84BDC7CE2643BA6A006B5A71 /* DarkTheme appIcon */ = {
+			isa = PBXGroup;
+			children = (
+				84BDC7C62643B3B8006B5A71 /* mashina_dark.png */,
+				84BDC7C42643B3B8006B5A71 /* mashina_dark@2x.png */,
+				84BDC7C52643B3B8006B5A71 /* mashina_dark@3x.png */,
+			);
+			path = "DarkTheme appIcon";
+			sourceTree = "<group>";
+		};
+		84BDC7CF2643BA87006B5A71 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				843CBE74263FAB3700A75177 /* Extensions.swift */,
+				84F536D1251DB6CC00EB1F8B /* Constants.swift */,
+				840B7FFE2521FE3A008522DF /* default.realm */,
+				84E87E1825164DB3006A0E08 /* Fonts */,
+				84BDC7CE2643BA6A006B5A71 /* DarkTheme appIcon */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		84E87E1825164DB3006A0E08 /* Fonts */ = {
@@ -508,9 +524,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FF6FD2BD9F64503ACF27763 /* Pods-Vrooom.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Vrooom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,9 +542,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4DABF96BFBA2FD9B0B6CCE0F /* Pods-Vrooom.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Vrooom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -43,7 +43,7 @@ final class UnderLineTextField: UITextField , UITextFieldDelegate { //adds an un
     
     private func addUnderLine() {
         let bottomLine = CALayer()
-        bottomLine.backgroundColor = UIColor.label.cgColor
+        bottomLine.backgroundColor = FontManager.labelColor.cgColor
         self.borderStyle = UITextField.BorderStyle.none
         self.layer.addSublayer(bottomLine)
         self.line = bottomLine
