@@ -9,8 +9,7 @@
 import Foundation
 import RealmSwift
 
-
-class CarList: Object {
+final class CarList: Object { //RealmCar. По-хорошему бы переименовать в RealmCar, но долго заполнять новую БД, а ключ для доступа для редактирования канул в небытие
     @objc dynamic var name: String?
     @objc dynamic var year: String?
     @objc dynamic var model: String?
