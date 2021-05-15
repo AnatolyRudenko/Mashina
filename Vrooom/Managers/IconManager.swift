@@ -9,7 +9,7 @@
 import UIKit
 
 struct IconManager {
-    var dark: Bool
+    private var dark: Bool
     init(dark: Bool) {
         self.dark = dark
         self.switchIcon()
