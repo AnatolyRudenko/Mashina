@@ -12,11 +12,10 @@ final class ListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
-    private var realmManager: RealmManager?
+    private var realmManager = RealmManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.realmManager = RealmManager()
         self.setupTable()
     }
     
@@ -36,9 +35,9 @@ final class ListViewController: UIViewController {
         if segue.identifier == K.segues.fromListToConfirm,
            let dvc = segue.destination as? ConfirmViewController,
            let index = OperatedCar.index,
-           let realmCar = self.realmManager?.cars?[index] {
+           let realmCar = self.realmManager.cars?[index] {
             OperatedCar.newCar = false
-            dvc.localCar = self.realmManager?.convertRealmCarToLocal(realmCar)
+            dvc.localCar = self.realmManager.convertRealmCarToLocal(realmCar)
         }
     }
 }
@@ -46,9 +45,14 @@ final class ListViewController: UIViewController {
     //MARK: - UITableViewDelegate, UITableViewDataSource
 
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
-
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 10;
+        return UITableView.automaticDimension
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.realmManager?.cars?.count ?? 0
+        return self.realmManager.cars?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,7 +60,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
                 as? ListCell else {
             return UITableViewCell()
         }
-        let car = self.realmManager?.cars?[indexPath.row]
+        let car = self.realmManager.cars?[indexPath.row]
         cell.setName(car?.name ?? "Нет имени")
         let image = ImageManager().getImageFromImageName(car?.imageName)
         cell.setImage(image)

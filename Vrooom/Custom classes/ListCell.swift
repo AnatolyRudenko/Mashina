@@ -11,16 +11,18 @@ import UIKit
 final class ListCell: UITableViewCell {
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var carImageView: UIImageView!
-    @IBOutlet private weak var imageHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var imageViewHeightConstraint: NSLayoutConstraint!
     
     func setName(_ name: String) {
         self.nameLabel.text = name
     }
     
     func setImage(_ image: UIImage) {
-        let hRatio = image.size.height / image.size.width
-        let newImageHeight = hRatio * UIScreen.main.bounds.width
-        imageHeightConstraint.constant = newImageHeight
+        if imageView?.bounds.height != image.size.height {
+            let hRatio = image.size.height / image.size.width
+            let newImageHeight = hRatio * UIScreen.main.bounds.width
+            imageViewHeightConstraint.constant = newImageHeight
+        }
         carImageView.image = image
         carImageView.layoutIfNeeded()
     }

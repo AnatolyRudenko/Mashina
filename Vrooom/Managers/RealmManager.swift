@@ -11,8 +11,8 @@ import RealmSwift
 
 struct RealmManager {
     
-    var cars: Results<CarList>?
-    let realm = try! Realm()
+    private(set) var cars: Results<CarList>?
+    private let realm = try! Realm()
     
     init() {
         self.cars = realm.objects(CarList.self)
