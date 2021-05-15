@@ -13,6 +13,10 @@ final class ListCell: UITableViewCell {
     @IBOutlet private weak var carImageView: UIImageView!
     @IBOutlet private weak var imageViewHeightConstraint: NSLayoutConstraint!
     
+    lazy var cellHeightWithoutImage: CGFloat = {
+        return self.bounds.height - self.imageViewHeightConstraint.constant
+    }()
+    
     func setName(_ name: String) {
         self.nameLabel.text = name
     }

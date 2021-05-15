@@ -29,5 +29,14 @@ final class InitialViewController: UIViewController {
     @IBAction private func listButtonPressed(_ sender: UIButton) {
         performSegue(withIdentifier: K.segues.toList, sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == K.segues.toList,
+           let dvc = segue.destination as? ListViewController {
+            DispatchQueue.main.async {
+                dvc.prepareContent()
+            }
+        }
+    }
 }
 
