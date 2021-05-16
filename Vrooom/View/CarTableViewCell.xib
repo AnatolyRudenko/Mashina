@@ -61,7 +61,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="carImageView" destination="k1Z-4i-tlj" id="lbK-nM-gMw"/>
-                <outlet property="imageHeightConstraint" destination="tCa-3O-fEW" id="GlH-tk-4hD"/>
+                <outlet property="imageViewHeightConstraint" destination="tCa-3O-fEW" id="GlH-tk-4hD"/>
                 <outlet property="nameLabel" destination="WbV-wz-unC" id="8Wj-93-S1h"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="162.38839285714286"/>

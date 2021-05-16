@@ -77,19 +77,24 @@ final class ConfirmViewController: PropertiesViewController {
     //MARK: - Segue settings
     override func prepare (for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == K.segues.toListFromConfirm {
+        if segue.identifier == K.segues.toListFromConfirm,
+           let dvc = segue.destination as? ListViewController {
+            let database = Database().instance()
             if self.shouldSave {
                 OperatedCar.newCar ?
-                    RealmManager().save(super.localCar) : // add car
-                    RealmManager().edit(super.localCar) // edit car
+                    database.save(super.localCar) : // add car
+                    database.edit(super.localCar) // edit car
             } else {
-                RealmManager().delete() //delete car
+                database.delete() //delete car
+            }
+            DispatchQueue.main.async {
+                dvc.prepareContent()
             }
         }
         
-        if segue.identifier == K.segues.toEditFromConfirm {
-            let dvc = segue.destination as? EditViewController
-            dvc?.localCar = super.buildLocalCar()
+        if segue.identifier == K.segues.toEditFromConfirm,
+           let dvc = segue.destination as? EditViewController {
+            dvc.localCar = super.buildLocalCar()
         }
     }
 }

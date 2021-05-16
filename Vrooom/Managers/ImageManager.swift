@@ -15,7 +15,8 @@ struct ImageManager {
     func saveImageAndGetItsPath(image: UIImage, name: String) -> String { //call this to save an image and get its path extension back
         let imageFileName = "\(name).png"
         let imagePath = fileInDocumentsDirectory(imageFileName)
-        writeImage(image, path: imagePath)
+        let resizedImage = resizeImageToFitScreenWidth(image) //Чтоб не ресайзить картинку в cellForRow
+        writeImage(resizedImage, path: imagePath)
         return imageFileName
     }
     
@@ -33,6 +34,25 @@ struct ImageManager {
         return loadedImage ?? self.defaultImage
     }
     
+    private func resizeImageToFitScreenWidth(_ image: UIImage) -> UIImage {
+        let size = image.size
+        let targetWidth = UIScreen.main.bounds.width
+        guard size.width != targetWidth else { return image }
+        let ratio = size.width > targetWidth ?
+            targetWidth / size.width :
+            size.width / targetWidth
+        
+        let newSize = CGSize(width: size.width * ratio, height: size.height * ratio)
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        image.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage ?? image
+    }
+    
+    // MARK: - Supporting methods
+    
     private func loadImageFromPath(_ path: String) -> UIImage? {
         let image = UIImage(contentsOfFile: path)
         if image == nil {
@@ -40,7 +60,6 @@ struct ImageManager {
         }
         return image
     }
-    
     private func getDocumentsURL() -> URL {
         let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         return documentsURL
