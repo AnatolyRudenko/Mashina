@@ -19,9 +19,6 @@ struct RealmManager: DatabaseProtocol {
     }
     
     //MARK: - Database protocol
-    var instance: DatabaseProtocol {
-        return self
-    }
     
     var cars: [CarList] {
         if let realmCars = self.realmCars {
