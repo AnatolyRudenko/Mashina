@@ -9,16 +9,35 @@
 import Foundation
 import RealmSwift
 
-struct RealmManager {
+struct RealmManager: DatabaseProtocol {
     
-    private(set) var cars: Results<CarList>?
+    private(set) var realmCars: Results<CarList>?
     private let realm = try! Realm()
     
     init() {
-        self.cars = realm.objects(CarList.self)
+        self.realmCars = realm.objects(CarList.self)
     }
     
-    //MARK: - Car operations
+    //MARK: - Database protocol
+    var instance: DatabaseProtocol {
+        return self
+    }
+    
+    var cars: [CarList] {
+        if let realmCars = self.realmCars {
+            return Array(realmCars)
+        } else {
+            return [CarList]()
+        }
+    }
+    
+    func createDBCar(from localCar: LocalCar) -> CarList {
+        return self.createRealmCar(from: localCar)
+    }
+    func convertDBCarToLocal(_ dbCar: CarList) -> LocalCar {
+        return self.convertRealmCarToLocal(dbCar)
+    }
+    
     func save(_ localCar: LocalCar?) {
         guard let localCar = localCar else { return }
         let newCar = self.createRealmCar(from: localCar)
@@ -34,7 +53,7 @@ struct RealmManager {
     func edit(_ localCar: LocalCar?) {
         guard let localCar = localCar,
               let safeIndex = OperatedCar.index,
-              let carToEdit = cars?[safeIndex]
+              let carToEdit = realmCars?[safeIndex]
         else { return }
         
         let newCar = self.createRealmCar(from: localCar)
@@ -57,7 +76,7 @@ struct RealmManager {
     func delete() {
         guard !OperatedCar.newCar,
               let index = OperatedCar.index,
-              let car = cars?[index]
+              let car = realmCars?[index]
         else { return }
         
         do {
@@ -69,7 +88,8 @@ struct RealmManager {
         }
     }
     
-    func createRealmCar(from localCar: LocalCar) -> CarList {
+    //MARK: - Private methods
+    private func createRealmCar(from localCar: LocalCar) -> CarList {
         let car = CarList()
         car.name = localCar.name
         car.model = localCar.model
@@ -84,7 +104,7 @@ struct RealmManager {
         return car
     }
     
-    func convertRealmCarToLocal(_ realmCar: CarList) -> LocalCar {
+    private func convertRealmCarToLocal(_ realmCar: CarList) -> LocalCar {
         var car = LocalCar()
         car.name = realmCar.name
         car.model = realmCar.model

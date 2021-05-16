@@ -26,6 +26,7 @@
 		843CBE7B263FB17900A75177 /* PropertyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CBE7A263FB17900A75177 /* PropertyType.swift */; };
 		843CBE85263FC3CA00A75177 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CBE84263FC3CA00A75177 /* FontManager.swift */; };
 		8467854426426E7700E2B8F0 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8467854326426E7700E2B8F0 /* PopUpView.swift */; };
+		8488232C2650B95300453BB9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8488232B2650B95300453BB9 /* Database.swift */; };
 		8492147A25132D6E005C4C36 /* LocalCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492147925132D6E005C4C36 /* LocalCar.swift */; };
 		8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8492147B25132D84005C4C36 /* OperatedCar.swift */; };
 		84A4070B251378080067CDED /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A4070A251378080067CDED /* EditViewController.swift */; };
@@ -64,6 +65,7 @@
 		843CBE7A263FB17900A75177 /* PropertyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyType.swift; sourceTree = "<group>"; };
 		843CBE84263FC3CA00A75177 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		8467854326426E7700E2B8F0 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		8488232B2650B95300453BB9 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		8492147925132D6E005C4C36 /* LocalCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCar.swift; sourceTree = "<group>"; };
 		8492147B25132D84005C4C36 /* OperatedCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatedCar.swift; sourceTree = "<group>"; };
 		84A4070A251378080067CDED /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				8492147925132D6E005C4C36 /* LocalCar.swift */,
 				8492147B25132D84005C4C36 /* OperatedCar.swift */,
 				843CBE7A263FB17900A75177 /* PropertyType.swift */,
+				8488232B2650B95300453BB9 /* Database.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				8492147A25132D6E005C4C36 /* LocalCar.swift in Sources */,
 				841D4E142514D4A400CBDD88 /* ConfirmViewController.swift in Sources */,
 				843CBE6F263FA6F100A75177 /* CarPropertyView.swift in Sources */,
+				8488232C2650B95300453BB9 /* Database.swift in Sources */,
 				8417272125130DB400504EEA /* ListCell.swift in Sources */,
 				843CBE75263FAB3700A75177 /* Extensions.swift in Sources */,
 				8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */,

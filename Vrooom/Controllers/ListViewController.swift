@@ -12,7 +12,7 @@ final class ListViewController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
-    private var realmManager: RealmManager?
+    private var database: DatabaseProtocol?
     private var cellImages: [UIImage]?
     private var cellHeights = [CGFloat]()
 
@@ -26,8 +26,8 @@ final class ListViewController: UIViewController {
     }
     
     func prepareContent() {
-        self.realmManager = RealmManager()
-        guard let cars = self.realmManager?.cars else { return }
+        self.database = Database().instance()
+        guard let cars = self.database?.cars else { return }
         let imageManager = ImageManager()
         self.cellImages = []
         for car in cars {
@@ -56,9 +56,9 @@ final class ListViewController: UIViewController {
         if segue.identifier == K.segues.fromListToConfirm,
            let dvc = segue.destination as? ConfirmViewController,
            let index = OperatedCar.index,
-           let realmCar = self.realmManager?.cars?[index] {
+           let dbCar = self.database?.cars[index] {
             OperatedCar.newCar = false
-            dvc.localCar = self.realmManager?.convertRealmCarToLocal(realmCar)
+            dvc.localCar = self.database?.convertDBCarToLocal(dbCar)
         }
     }
 }
@@ -75,7 +75,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.realmManager?.cars?.count ?? 0
+        return self.database?.cars.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -83,7 +83,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
                 as? ListCell else {
             return UITableViewCell()
         }
-        let car = self.realmManager?.cars?[indexPath.row]
+        let car = self.database?.cars[indexPath.row]
         let image = self.cellImages?[indexPath.row] ?? ImageManager().getImageFromImageName(car?.imageName)
         self.saveCellHeight(index: indexPath.row, cellHeight: cell.cellHeightWithoutImage, image: image)
         cell.setName(car?.name ?? "Нет имени")

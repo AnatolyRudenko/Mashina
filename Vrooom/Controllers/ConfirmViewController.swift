@@ -79,13 +79,13 @@ final class ConfirmViewController: PropertiesViewController {
         
         if segue.identifier == K.segues.toListFromConfirm,
            let dvc = segue.destination as? ListViewController {
-            
+            let database = Database().instance()
             if self.shouldSave {
                 OperatedCar.newCar ?
-                    RealmManager().save(super.localCar) : // add car
-                    RealmManager().edit(super.localCar) // edit car
+                    database.save(super.localCar) : // add car
+                    database.edit(super.localCar) // edit car
             } else {
-                RealmManager().delete() //delete car
+                database.delete() //delete car
             }
             DispatchQueue.main.async {
                 dvc.prepareContent()
