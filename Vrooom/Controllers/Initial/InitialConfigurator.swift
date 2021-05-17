@@ -9,6 +9,7 @@
 import Foundation
 
 final class InitialConfigurator: InitialConfiguratorProtocol {
+    
     func configure(with viewController: InitialViewController) {
         let presenter = InitialPresenter(view: viewController)
         let interactor = InitialInteractor(presenter: presenter)

@@ -47,6 +47,7 @@
 		84D9515426522C2200625C40 /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9515326522C2200625C40 /* ListPresenter.swift */; };
 		84D9515726522C2C00625C40 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9515626522C2C00625C40 /* ListInteractor.swift */; };
 		84D951672652353A00625C40 /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D951662652353A00625C40 /* ListConfigurator.swift */; };
+		84D9516C26523E3B00625C40 /* ConfirmProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9516B26523E3B00625C40 /* ConfirmProtocols.swift */; };
 		84E87E1B25164DF7006A0E08 /* TeXGyreAdventor-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E87E1925164DF6006A0E08 /* TeXGyreAdventor-Bold.ttf */; };
 		84E87E1C25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E87E1A25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf */; };
 		84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F536D1251DB6CC00EB1F8B /* Constants.swift */; };
@@ -96,6 +97,7 @@
 		84D9515326522C2200625C40 /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		84D9515626522C2C00625C40 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		84D951662652353A00625C40 /* ListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
+		84D9516B26523E3B00625C40 /* ConfirmProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmProtocols.swift; sourceTree = "<group>"; };
 		84E87E1925164DF6006A0E08 /* TeXGyreAdventor-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TeXGyreAdventor-Bold.ttf"; sourceTree = "<group>"; };
 		84E87E1A25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TeXGyreAdventor-Regular.ttf"; sourceTree = "<group>"; };
 		84F536D1251DB6CC00EB1F8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -163,7 +165,7 @@
 			children = (
 				848823372650C5BF00453BB9 /* Initial */,
 				84A4070A251378080067CDED /* EditViewController.swift */,
-				841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */,
+				84D9516A26523E2C00625C40 /* Confirm */,
 				84D9514C26522A3400625C40 /* List */,
 			);
 			path = Controllers;
@@ -256,10 +258,19 @@
 				84D951662652353A00625C40 /* ListConfigurator.swift */,
 				84D9515326522C2200625C40 /* ListPresenter.swift */,
 				84D9515626522C2C00625C40 /* ListInteractor.swift */,
-				84D9515026522AE000625C40 /* ListProtocols.swift */,
 				84D9514D26522A4700625C40 /* ListRouter.swift */,
+				84D9515026522AE000625C40 /* ListProtocols.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		84D9516A26523E2C00625C40 /* Confirm */ = {
+			isa = PBXGroup;
+			children = (
+				841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */,
+				84D9516B26523E3B00625C40 /* ConfirmProtocols.swift */,
+			);
+			path = Confirm;
 			sourceTree = "<group>";
 		};
 		84E87E1825164DB3006A0E08 /* Fonts */ = {
@@ -411,6 +422,7 @@
 				84CD8CF82641449E000988FB /* ImageManager.swift in Sources */,
 				8417270C25130CC000504EEA /* AppDelegate.swift in Sources */,
 				841D4E0D2514A38100CBDD88 /* UnderlineTextField.swift in Sources */,
+				84D9516C26523E3B00625C40 /* ConfirmProtocols.swift in Sources */,
 				84D9514E26522A4700625C40 /* ListRouter.swift in Sources */,
 				84D9515426522C2200625C40 /* ListPresenter.swift in Sources */,
 				8467854426426E7700E2B8F0 /* PopUpView.swift in Sources */,

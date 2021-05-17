@@ -15,18 +15,18 @@ protocol InitialConfiguratorProtocol {
 protocol InitialViewProtocol: class {}
 
 protocol InitialPresenterProtocol: class {
-    var router: InitialRouterProtocol! { set get }
+    var router: InitialRouterProtocol! { get set }
     func addButtonClicked()
     func listButtonClicked()
     func switchIconIfNeeded(darkTheme: Bool)
 }
 
 protocol InitialInteractorProtocol {
-    func newCar()
+    func setGlobalCarProperties()
     func switchIconIfNeeded(darkTheme: Bool)
 }
 
 protocol InitialRouterProtocol {
-    func goToEditVC(on view: InitialViewProtocol)
-    func goToListVC(on view: InitialViewProtocol)
+    func goToEditVC(from view: InitialViewProtocol)
+    func goToListVC(from view: InitialViewProtocol)
 }

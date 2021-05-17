@@ -18,12 +18,12 @@ final class InitialPresenter: InitialPresenterProtocol {
     }
     
     func addButtonClicked() {
-        self.interactor.newCar()
-        self.router.goToEditVC(on: view)
+        self.interactor.setGlobalCarProperties()
+        self.router.goToEditVC(from: view)
     }
     
     func listButtonClicked() {
-        self.router.goToListVC(on: view)
+        self.router.goToListVC(from: view)
     }
     
     func switchIconIfNeeded(darkTheme: Bool) {

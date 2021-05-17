@@ -16,7 +16,7 @@ final class InitialInteractor: InitialInteractorProtocol {
         self.presenter = presenter
     }
     
-    func newCar() {
+    func setGlobalCarProperties() {
         OperatedCar.newCar = true
     }
     

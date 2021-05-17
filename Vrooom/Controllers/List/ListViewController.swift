@@ -16,29 +16,20 @@ final class ListViewController: UIViewController, ListViewProtocol {
     @IBOutlet private weak var tableView: UITableView!
     
     private var database: DatabaseProtocol?
-    private var cellImages: [UIImage]?
     private var cellHeights = [CGFloat]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupTable()
+        presenter.configureView()
     }
     
     @IBAction private func backButtonPressed(_ sender: UIButton) {
-         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+         
     }
     
     func prepareContent() {
-        DispatchQueue.main.async {
-            self.database = Database().instance()
-            guard let cars = self.database?.cars else { return }
-            let imageManager = ImageManager()
-            self.cellImages = []
-            for car in cars {
-                let image = imageManager.getImageFromImageName(car.imageName)
-                self.cellImages?.append(image)
-            }
-        }
+        configurator.configure(with: self)
+        presenter.prepareContent()
     }
     
     private func setupTable() {
@@ -55,16 +46,6 @@ final class ListViewController: UIViewController, ListViewProtocol {
               else { return }
         let height = cellHeight + image.size.height
         self.cellHeights.append(height)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == K.segues.fromListToConfirm,
-           let dvc = segue.destination as? ConfirmViewController,
-           let index = OperatedCar.index,
-           let dbCar = self.database?.cars[index] {
-            OperatedCar.newCar = false
-            dvc.localCar = self.database?.convertDBCarToLocal(dbCar)
-        }
     }
 }
 
@@ -97,7 +78,6 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        OperatedCar.index = indexPath.row
-        self.performSegue(withIdentifier: K.segues.fromListToConfirm, sender: nil)
+        self.presenter.carCellTapped(index: indexPath.row)
     }
 }

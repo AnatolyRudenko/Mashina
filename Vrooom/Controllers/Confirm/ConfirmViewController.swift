@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ConfirmViewController: PropertiesViewController {
+final class ConfirmViewController: PropertiesViewController, ConfirmViewProtocol {
     
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var nameLabel: UILabel!
