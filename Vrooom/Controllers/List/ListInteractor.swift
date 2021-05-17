@@ -10,31 +10,27 @@ import UIKit
 
 final class ListInteractor: ListInteractorProtocol {
     
-    func getCellImages() -> [UIImage]? {
-        var images = [UIImage]()
-        for car in self.dbCars {
-            if let image = self.imageManager?.getImageFromImageName(car.imageName) {
-                images.append(image)
-            }
-        }
-        return images.count == 0 ? nil : images
-    }
-    
+    weak var presenter: ListPresenterProtocol!
+    var database: DatabaseProtocol?
     var imageManager: ImageManager?
-    
-    
     var dbCars: [CarList] {
         return self.database?.cars ?? []
     }
-    
-    var database: DatabaseProtocol?
-    
-    weak var presenter: ListPresenterProtocol!
     
     required init(presenter: ListPresenterProtocol) {
         self.presenter = presenter
         self.database = Database().instance()
         self.imageManager = ImageManager()
+    }
+    
+    func getCellImages() -> [UIImage] {
+        var images = [UIImage]()
+        guard let imageManager = self.imageManager else { return images }
+        for car in self.dbCars {
+            let image = imageManager.getImageFromImageName(car.imageName)
+            images.append(image)
+        }
+        return images
     }
     
     func setGlobalCarProperties(index: Int) {

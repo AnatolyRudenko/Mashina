@@ -14,24 +14,26 @@ protocol ListConfiguratorProtocol: class {
     
 protocol ListViewProtocol: class {
     func prepareContent()
-    
+    func setupTable()
 }
 
 protocol ListPresenterProtocol: class {
     var router: ListRouterProtocol! { get set }
     var dbCars: [CarList] { get }
-    var cellImages: [UIImage]? { get }
+    var cellImages: [UIImage] { get }
+    var cellHeights: [CGFloat] { get }
     func configureView()
-    func prepareContent()
+    func prepareCellImages()
     func backButtonPressed()
     func carCellTapped(index: Int)
+    func saveCellHeight(index: Int, cellHeight: CGFloat, imageSize: CGSize)
 }
 
 protocol ListInteractorProtocol {
     var database: DatabaseProtocol? { get }
     var imageManager: ImageManager? { get }
     var dbCars: [CarList] { get }
-    func getCellImages() -> [UIImage]?
+    func getCellImages() -> [UIImage]
     func setGlobalCarProperties(index: Int)
     func getLocalCar(at index: Int) -> LocalCar
 }

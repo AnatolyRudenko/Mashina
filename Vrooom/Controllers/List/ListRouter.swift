@@ -21,12 +21,11 @@ class ListRouter: ListRouterProtocol {
     }
     
     func goToConfirmVC(from view: ListViewProtocol, with localCar: LocalCar) {
-        guard let dvc:ConfirmViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Confirm") as? ConfirmViewController else { return }
+        guard let dvc:ConfirmViewController = UIStoryboard(name: "Main",
+                                                           bundle: nil).instantiateViewController(withIdentifier: "Confirm")
+                as? ConfirmViewController else { return }
         let dvcInterfaceInstance = dvc as ConfirmViewProtocol
-        
         dvcInterfaceInstance.localCar = localCar
-        
         viewController.present(dvc, animated: true, completion: nil)
     }
-    
 }

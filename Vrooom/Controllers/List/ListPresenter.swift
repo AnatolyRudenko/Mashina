@@ -9,20 +9,38 @@
 import UIKit
 
 class ListPresenter: ListPresenterProtocol {
+    
+    weak var view: ListViewProtocol!
+    var interactor: ListInteractorProtocol!
+    var router: ListRouterProtocol!
+    
+    lazy var cellImages = [UIImage]()
+    lazy var cellHeights = [CGFloat]()
+    
+    required init(view: ListViewProtocol) {
+        self.view = view
+    }
+    
     var dbCars: [CarList] {
         return self.interactor.dbCars
     }
     
-    var cellImages: [UIImage]?
-    
-    func prepareContent() {
+    func prepareCellImages() {
         DispatchQueue.main.async {
             self.cellImages = self.interactor.getCellImages()
         }
     }
     
+    func saveCellHeight(index: Int, cellHeight: CGFloat, imageSize: CGSize) {
+        guard self.cellHeights.count == index,
+              UIScreen.main.bounds.width == imageSize.width
+              else { return }
+        let height = cellHeight + imageSize.height
+        self.cellHeights.append(height)
+    }
+    
     func configureView() {
-        
+        self.view?.setupTable()
     }
     
     func backButtonPressed() {
@@ -33,13 +51,5 @@ class ListPresenter: ListPresenterProtocol {
         self.interactor.setGlobalCarProperties(index: index)
         let car = self.interactor.getLocalCar(at: index)
         self.router.goToConfirmVC(from: self.view, with: car)
-    }
-    
-    weak var view: ListViewProtocol!
-    var interactor: ListInteractorProtocol!
-    var router: ListRouterProtocol!
-    
-    required init(view: ListViewProtocol) {
-        self.view = view
     }
 }

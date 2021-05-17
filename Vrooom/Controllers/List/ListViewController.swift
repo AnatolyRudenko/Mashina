@@ -15,37 +15,26 @@ final class ListViewController: UIViewController, ListViewProtocol {
     
     @IBOutlet private weak var tableView: UITableView!
     
-    private var database: DatabaseProtocol?
-    private var cellHeights = [CGFloat]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.configureView()
     }
     
     @IBAction private func backButtonPressed(_ sender: UIButton) {
-         
+        self.presenter.backButtonPressed()
     }
     
     func prepareContent() {
         configurator.configure(with: self)
-        presenter.prepareContent()
+        presenter.prepareCellImages()
     }
     
-    private func setupTable() {
+    func setupTable() {
         self.tableView.register(UINib(nibName: K.cell.nibName, bundle: nil),
                                 forCellReuseIdentifier: K.cell.reuseIdentifier)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.tableFooterView = UIView()
-    }
-    
-    private func saveCellHeight(index: Int, cellHeight: CGFloat, image: UIImage) {
-        guard self.cellHeights.count == index,
-              UIScreen.main.bounds.width == image.size.width
-              else { return }
-        let height = cellHeight + image.size.height
-        self.cellHeights.append(height)
     }
 }
 
@@ -54,14 +43,14 @@ final class ListViewController: UIViewController, ListViewProtocol {
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        guard self.cellHeights.count > indexPath.row else {
+        guard self.presenter.cellHeights.count > indexPath.row else {
             return UITableView.automaticDimension
         }
-        return self.cellHeights[indexPath.row]
+        return self.presenter.cellHeights[indexPath.row]
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.database?.cars.count ?? 0
+        return self.presenter.dbCars.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,10 +58,10 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
                 as? ListCell else {
             return UITableViewCell()
         }
-        let car = self.database?.cars[indexPath.row]
-        let image = self.cellImages?[indexPath.row] ?? ImageManager().getImageFromImageName(car?.imageName)
-        self.saveCellHeight(index: indexPath.row, cellHeight: cell.cellHeightWithoutImage, image: image)
-        cell.setName(car?.name ?? "Нет имени")
+        let car = self.presenter.dbCars[indexPath.row]
+        let image = self.presenter.cellImages[indexPath.row]
+        self.presenter.saveCellHeight(index: indexPath.row, cellHeight: cell.cellHeightWithoutImage, imageSize: image.size)
+        cell.setName(car.name ?? "Нет имени")
         cell.setImage(image)
         return cell
     }
