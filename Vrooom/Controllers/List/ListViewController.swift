@@ -8,14 +8,17 @@
 
 import UIKit
 
-final class ListViewController: UIViewController {
+final class ListViewController: UIViewController, ListViewProtocol {
+    
+    var presenter: ListPresenterProtocol!
+    let configurator: ListConfiguratorProtocol = ListConfigurator()
     
     @IBOutlet private weak var tableView: UITableView!
     
     private var database: DatabaseProtocol?
     private var cellImages: [UIImage]?
     private var cellHeights = [CGFloat]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTable()
@@ -26,13 +29,15 @@ final class ListViewController: UIViewController {
     }
     
     func prepareContent() {
-        self.database = Database().instance()
-        guard let cars = self.database?.cars else { return }
-        let imageManager = ImageManager()
-        self.cellImages = []
-        for car in cars {
-            let image = imageManager.getImageFromImageName(car.imageName)
-            self.cellImages?.append(image)
+        DispatchQueue.main.async {
+            self.database = Database().instance()
+            guard let cars = self.database?.cars else { return }
+            let imageManager = ImageManager()
+            self.cellImages = []
+            for car in cars {
+                let image = imageManager.getImageFromImageName(car.imageName)
+                self.cellImages?.append(image)
+            }
         }
     }
     

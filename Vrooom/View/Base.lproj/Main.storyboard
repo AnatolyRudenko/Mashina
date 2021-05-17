@@ -21,7 +21,7 @@
         <!--Initial View Controller-->
         <scene sceneID="NEn-Y8-lcx">
             <objects>
-                <viewController id="q6h-ic-LK0" customClass="InitialViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Initial" id="q6h-ic-LK0" customClass="InitialViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DL4-Wk-si1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,19 +100,15 @@
                             <constraint firstItem="B1f-C7-dC5" firstAttribute="centerX" secondItem="DL4-Wk-si1" secondAttribute="centerX" id="w89-FB-y6e"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="toList" id="d0d-Qj-fls"/>
-                        <segue destination="E6b-7E-fi8" kind="show" identifier="toEdit" id="A4T-T9-Uhf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8WZ-FM-yAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92.753623188405811" y="107.8125"/>
+            <point key="canvasLocation" x="100" y="138"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ListViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="List" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ListViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,7 +182,7 @@
         <!--Edit View Controller-->
         <scene sceneID="7DH-Ix-Plc">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="E6b-7E-fi8" customClass="EditViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Edit" modalPresentationStyle="fullScreen" id="E6b-7E-fi8" customClass="EditViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZTI-cB-15E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +238,7 @@
         <!--Confirm View Controller-->
         <scene sceneID="ZtM-vM-vF1">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="cmf-ZT-gAR" customClass="ConfirmViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Confirm" modalPresentationStyle="fullScreen" id="cmf-ZT-gAR" customClass="ConfirmViewController" customModule="Vrooom" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ra1-x9-Lpc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,9 +330,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9gm-Mt-FAz"/>
         <segue reference="nkP-0p-mvL"/>
-        <segue reference="d0d-Qj-fls"/>
+        <segue reference="9gm-Mt-FAz"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="иконка_добавить" width="170.66667175292969" height="170.66667175292969"/>
