@@ -15,6 +15,7 @@
 		8417271825130CD300504EEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8417271625130CD300504EEA /* LaunchScreen.storyboard */; };
 		8417272125130DB400504EEA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417271F25130DB400504EEA /* ListCell.swift */; };
 		8417272225130DB400504EEA /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8417272025130DB400504EEA /* CarTableViewCell.xib */; };
+		8418F5FE26537F60005B6F14 /* EditProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F5FD26537F60005B6F14 /* EditProtocols.swift */; };
 		841D4E0B251490D000CBDD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D4E0A251490D000CBDD88 /* Assets.xcassets */; };
 		841D4E0D2514A38100CBDD88 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */; };
 		841D4E122514CF9100CBDD88 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E112514CF9100CBDD88 /* InitialViewController.swift */; };
@@ -48,6 +49,14 @@
 		84D9515726522C2C00625C40 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9515626522C2C00625C40 /* ListInteractor.swift */; };
 		84D951672652353A00625C40 /* ListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D951662652353A00625C40 /* ListConfigurator.swift */; };
 		84D9516C26523E3B00625C40 /* ConfirmProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9516B26523E3B00625C40 /* ConfirmProtocols.swift */; };
+		84D9517126525FD800625C40 /* ConfirmConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9517026525FD800625C40 /* ConfirmConfigurator.swift */; };
+		84D9517426525FE200625C40 /* ConfirmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9517326525FE200625C40 /* ConfirmPresenter.swift */; };
+		84D9517726525FF200625C40 /* ConfirmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9517626525FF200625C40 /* ConfirmInteractor.swift */; };
+		84D9517A2652600F00625C40 /* ConfirmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D951792652600F00625C40 /* ConfirmRouter.swift */; };
+		84D9518126526DDC00625C40 /* PropertiesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518026526DDC00625C40 /* PropertiesConfigurator.swift */; };
+		84D9518426526DEE00625C40 /* PropertiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518326526DEE00625C40 /* PropertiesPresenter.swift */; };
+		84D9518726526E0100625C40 /* PropertiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518626526E0100625C40 /* PropertiesInteractor.swift */; };
+		84D9518A26526E3500625C40 /* PropertiesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518926526E3500625C40 /* PropertiesProtocols.swift */; };
 		84E87E1B25164DF7006A0E08 /* TeXGyreAdventor-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E87E1925164DF6006A0E08 /* TeXGyreAdventor-Bold.ttf */; };
 		84E87E1C25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E87E1A25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf */; };
 		84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F536D1251DB6CC00EB1F8B /* Constants.swift */; };
@@ -65,6 +74,7 @@
 		8417271925130CD300504EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8417271F25130DB400504EEA /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		8417272025130DB400504EEA /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		8418F5FD26537F60005B6F14 /* EditProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProtocols.swift; sourceTree = "<group>"; };
 		841D4E0A251490D000CBDD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		841D4E112514CF9100CBDD88 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +108,14 @@
 		84D9515626522C2C00625C40 /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		84D951662652353A00625C40 /* ListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConfigurator.swift; sourceTree = "<group>"; };
 		84D9516B26523E3B00625C40 /* ConfirmProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmProtocols.swift; sourceTree = "<group>"; };
+		84D9517026525FD800625C40 /* ConfirmConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmConfigurator.swift; sourceTree = "<group>"; };
+		84D9517326525FE200625C40 /* ConfirmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPresenter.swift; sourceTree = "<group>"; };
+		84D9517626525FF200625C40 /* ConfirmInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmInteractor.swift; sourceTree = "<group>"; };
+		84D951792652600F00625C40 /* ConfirmRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmRouter.swift; sourceTree = "<group>"; };
+		84D9518026526DDC00625C40 /* PropertiesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesConfigurator.swift; sourceTree = "<group>"; };
+		84D9518326526DEE00625C40 /* PropertiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesPresenter.swift; sourceTree = "<group>"; };
+		84D9518626526E0100625C40 /* PropertiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesInteractor.swift; sourceTree = "<group>"; };
+		84D9518926526E3500625C40 /* PropertiesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesProtocols.swift; sourceTree = "<group>"; };
 		84E87E1925164DF6006A0E08 /* TeXGyreAdventor-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TeXGyreAdventor-Bold.ttf"; sourceTree = "<group>"; };
 		84E87E1A25164DF7006A0E08 /* TeXGyreAdventor-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TeXGyreAdventor-Regular.ttf"; sourceTree = "<group>"; };
 		84F536D1251DB6CC00EB1F8B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -151,7 +169,7 @@
 				84707294263FA01000C9F7D1 /* Custom classes */,
 				841D4E0F2514CDFB00CBDD88 /* Model */,
 				841D4E102514CE2000CBDD88 /* View */,
-				841D4E0E2514CDE500CBDD88 /* Controllers */,
+				84D9517C26526CE200625C40 /* Modules */,
 				84BDC7CF2643BA87006B5A71 /* Supporting files */,
 				841D4E0A251490D000CBDD88 /* Assets.xcassets */,
 				8417271625130CD300504EEA /* LaunchScreen.storyboard */,
@@ -160,15 +178,16 @@
 			path = Vrooom;
 			sourceTree = "<group>";
 		};
-		841D4E0E2514CDE500CBDD88 /* Controllers */ = {
+		841D4E0E2514CDE500CBDD88 /* Storyboard Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				848823372650C5BF00453BB9 /* Initial */,
 				84A4070A251378080067CDED /* EditViewController.swift */,
+				8418F5FD26537F60005B6F14 /* EditProtocols.swift */,
 				84D9516A26523E2C00625C40 /* Confirm */,
 				84D9514C26522A3400625C40 /* List */,
 			);
-			path = Controllers;
+			path = "Storyboard Controllers";
 			sourceTree = "<group>";
 		};
 		841D4E0F2514CDFB00CBDD88 /* Model */ = {
@@ -209,7 +228,6 @@
 			children = (
 				8417271F25130DB400504EEA /* ListCell.swift */,
 				841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */,
-				84CD8CEC264125A2000988FB /* PropertiesViewController.swift */,
 				8467854326426E7700E2B8F0 /* PopUpView.swift */,
 				843CBE6E263FA6F100A75177 /* CarPropertyView.swift */,
 			);
@@ -268,9 +286,34 @@
 			isa = PBXGroup;
 			children = (
 				841D4E132514D4A400CBDD88 /* ConfirmViewController.swift */,
+				84D9517026525FD800625C40 /* ConfirmConfigurator.swift */,
+				84D9517326525FE200625C40 /* ConfirmPresenter.swift */,
+				84D9517626525FF200625C40 /* ConfirmInteractor.swift */,
+				84D951792652600F00625C40 /* ConfirmRouter.swift */,
 				84D9516B26523E3B00625C40 /* ConfirmProtocols.swift */,
 			);
 			path = Confirm;
+			sourceTree = "<group>";
+		};
+		84D9517C26526CE200625C40 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84D9517E26526D2500625C40 /* PropertiesViewController */,
+				841D4E0E2514CDE500CBDD88 /* Storyboard Controllers */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84D9517E26526D2500625C40 /* PropertiesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84CD8CEC264125A2000988FB /* PropertiesViewController.swift */,
+				84D9518026526DDC00625C40 /* PropertiesConfigurator.swift */,
+				84D9518326526DEE00625C40 /* PropertiesPresenter.swift */,
+				84D9518626526E0100625C40 /* PropertiesInteractor.swift */,
+				84D9518926526E3500625C40 /* PropertiesProtocols.swift */,
+			);
+			path = PropertiesViewController;
 			sourceTree = "<group>";
 		};
 		84E87E1825164DB3006A0E08 /* Fonts */ = {
@@ -413,12 +456,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D951672652353A00625C40 /* ListConfigurator.swift in Sources */,
+				84D9518A26526E3500625C40 /* PropertiesProtocols.swift in Sources */,
 				84D9515126522AE000625C40 /* ListProtocols.swift in Sources */,
 				8417271025130CC000504EEA /* ListViewController.swift in Sources */,
 				848823342650C5B800453BB9 /* InitialConfigurator.swift in Sources */,
 				843CBE78263FAD5700A75177 /* ValueElement.swift in Sources */,
+				84D9518726526E0100625C40 /* PropertiesInteractor.swift in Sources */,
 				848823432650C63700453BB9 /* InitialRouter.swift in Sources */,
 				848823402650C5F000453BB9 /* InitialPresenter.swift in Sources */,
+				84D9518426526DEE00625C40 /* PropertiesPresenter.swift in Sources */,
 				84CD8CF82641449E000988FB /* ImageManager.swift in Sources */,
 				8417270C25130CC000504EEA /* AppDelegate.swift in Sources */,
 				841D4E0D2514A38100CBDD88 /* UnderlineTextField.swift in Sources */,
@@ -431,11 +477,16 @@
 				84BDC7CC2643B858006B5A71 /* IconManager.swift in Sources */,
 				8492147A25132D6E005C4C36 /* LocalCar.swift in Sources */,
 				841D4E142514D4A400CBDD88 /* ConfirmViewController.swift in Sources */,
+				84D9517726525FF200625C40 /* ConfirmInteractor.swift in Sources */,
+				84D9517A2652600F00625C40 /* ConfirmRouter.swift in Sources */,
 				843CBE6F263FA6F100A75177 /* CarPropertyView.swift in Sources */,
+				8418F5FE26537F60005B6F14 /* EditProtocols.swift in Sources */,
 				8488232C2650B95300453BB9 /* Database.swift in Sources */,
+				84D9517126525FD800625C40 /* ConfirmConfigurator.swift in Sources */,
 				8417272125130DB400504EEA /* ListCell.swift in Sources */,
 				84D9515726522C2C00625C40 /* ListInteractor.swift in Sources */,
 				843CBE75263FAB3700A75177 /* Extensions.swift in Sources */,
+				84D9517426525FE200625C40 /* ConfirmPresenter.swift in Sources */,
 				8488233A2650C5D300453BB9 /* InitialProtocols.swift in Sources */,
 				8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */,
 				8424AE212517425E00BDB406 /* CarList.swift in Sources */,
@@ -443,6 +494,7 @@
 				84A4070B251378080067CDED /* EditViewController.swift in Sources */,
 				843CBE85263FC3CA00A75177 /* FontManager.swift in Sources */,
 				84CD8CED264125A2000988FB /* PropertiesViewController.swift in Sources */,
+				84D9518126526DDC00625C40 /* PropertiesConfigurator.swift in Sources */,
 				84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */,
 				8488233D2650C5E800453BB9 /* InitialInteractor.swift in Sources */,
 			);

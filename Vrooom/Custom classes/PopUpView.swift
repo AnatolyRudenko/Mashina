@@ -12,13 +12,11 @@ final class PopUpView: UIView {
     
     let animationDuration = 0.3
     
-    init(text: String,
-         parentView: UIView) {
+    init(text: String) {
         super.init(frame: UIScreen.main.bounds)
         self.alpha = 0
         self.addBlur()
         self.setupLabel(text)
-        parentView.addSubview(self)
         self.present()
     }
     

@@ -1,27 +1,32 @@
 //
-//  PropertiesViewController.swift
+//  PropertiesPresenter.swift
 //  Vrooom
 //
-//  Created by Admin on 04.05.2021.
+//  Created by Admin on 17.05.2021.
 //  Copyright © 2021 Rudenko. All rights reserved.
 //
 
 import UIKit
 
-class PropertiesViewController: UIViewController {
-
+class PropertiesPresenter: PropertiesPresenterProtocol {
+    
+    var parentInteractor: PropertiesInteractorProtocol!
+    lazy var editable = true
+    lazy var visualSetupIsOver = false
+    
     var propertyViews = [CarPropertyView]()
-    var editable = true
     var localCar: LocalCar?
     var image: UIImage?
     
+    required init(localCar: LocalCar?) {
+        self.localCar = localCar
+        self.parentInteractor = PropertiesInteractor(presenter: self)
+    }
+    
     func setPropertyViewsIn(stackView: UIStackView) {
-        guard stackView.arrangedSubviews.count < PropertyType.allCases.count else {
-            return
-        }
+        guard !self.visualSetupIsOver else { return }
         for (index, type) in PropertyType.allCases.enumerated() {
-            
-            let frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 40)
+            let frame = CGRect(x: 0, y: 0, width: stackView.bounds.width, height: 40)
             let view = CarPropertyView(frame: frame, type: type, editable: self.editable)
             self.propertyViews.append(view)
             if index == 0 && !self.editable {
@@ -29,6 +34,7 @@ class PropertiesViewController: UIViewController {
             }
             stackView.addArrangedSubview(view)
         }
+        self.visualSetupIsOver = true
     }
     
     func buildLocalCar() -> LocalCar {
@@ -38,7 +44,7 @@ class PropertiesViewController: UIViewController {
             view.type.applyPropertyToCar(&car, value: value)
         }
         car.image = self.image == nil ?
-            ImageManager().defaultImage :
+            self.parentInteractor.getCarImage() :
             self.image
         return car
     }

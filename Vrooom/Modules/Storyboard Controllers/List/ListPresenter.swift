@@ -13,16 +13,14 @@ class ListPresenter: ListPresenterProtocol {
     weak var view: ListViewProtocol!
     var interactor: ListInteractorProtocol!
     var router: ListRouterProtocol!
-    
     lazy var cellImages = [UIImage]()
     lazy var cellHeights = [CGFloat]()
+    var dbCars: [CarList] {
+        return self.interactor.dbCars
+    }
     
     required init(view: ListViewProtocol) {
         self.view = view
-    }
-    
-    var dbCars: [CarList] {
-        return self.interactor.dbCars
     }
     
     func prepareCellImages() {
