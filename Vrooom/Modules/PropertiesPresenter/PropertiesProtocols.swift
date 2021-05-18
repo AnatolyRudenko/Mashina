@@ -14,11 +14,13 @@ protocol PropertiesPresenterProtocol: class {
     var propertyViews: [CarPropertyView] { get }
     var image: UIImage? { get }
     
+    func setPropertyView(_ view: CarPropertyView)
     func setPropertyViewsIn(stackView: UIStackView)
     func buildLocalCar() -> LocalCar
     func applyCar()
 }
 
 protocol PropertiesInteractorProtocol {
+    func addCarPropertyViews(to stackView: UIStackView)
     func getCarImage() -> UIImage
 }

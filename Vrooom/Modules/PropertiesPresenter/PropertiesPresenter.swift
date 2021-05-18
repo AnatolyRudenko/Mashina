@@ -19,20 +19,16 @@ class PropertiesPresenter: PropertiesPresenterProtocol {
     var image: UIImage?
     
     required init(localCar: LocalCar?) {
-        self.parentInteractor = PropertiesInteractor()
+        self.parentInteractor = PropertiesInteractor(presenter: self)
         self.localCar = localCar
     }
     
+    func setPropertyView(_ view: CarPropertyView) {
+        self.propertyViews.append(view)
+    }
+    
     func setPropertyViewsIn(stackView: UIStackView) {
-        for (index, type) in PropertyType.allCases.enumerated() {
-            let frame = CGRect(x: 0, y: 0, width: stackView.bounds.width, height: 40)
-            let view = CarPropertyView(frame: frame, type: type, editable: self.editable)
-            self.propertyViews.append(view)
-            if index == 0 && !self.editable {
-                continue
-            }
-            stackView.addArrangedSubview(view)
-        }
+        self.parentInteractor.addCarPropertyViews(to: stackView)
         self.visualSetupIsOver = true
     }
     
