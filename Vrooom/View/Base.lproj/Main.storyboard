@@ -243,10 +243,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Lj-3fD">
-                                <rect key="frame" x="30" y="119" width="354" height="50"/>
+                                <rect key="frame" x="30" y="119" width="354" height="733"/>
                                 <subviews>
                                     <stackView contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-1i-6vq">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="733"/>
                                         <subviews>
                                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-MG-53a">
                                                 <rect key="frame" x="0.0" y="0.0" width="214" height="43.333333333333336"/>
@@ -258,8 +258,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKH-47-5T9">
                                                 <rect key="frame" x="234" y="0.0" width="50" height="50"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="5Cm-hr-hnz"/>
                                                     <constraint firstAttribute="height" constant="50" id="Vcb-Jc-WYF"/>
+                                                    <constraint firstAttribute="width" secondItem="JKH-47-5T9" secondAttribute="height" multiplier="1:1" id="iiW-KD-6N1"/>
                                                 </constraints>
                                                 <color key="tintColor" name="customBlue"/>
                                                 <state key="normal" title="Button" image="иконка_редактировать"/>
@@ -271,7 +271,7 @@
                                                 <rect key="frame" x="304" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="6Zr-Hv-TuR"/>
-                                                    <constraint firstAttribute="width" constant="50" id="Met-a6-KCg"/>
+                                                    <constraint firstAttribute="width" secondItem="33K-v4-s8g" secondAttribute="height" multiplier="1:1" id="NVp-lv-anv"/>
                                                 </constraints>
                                                 <color key="tintColor" name="customBlue"/>
                                                 <state key="normal" title="Button" image="иконка_удалить"/>
@@ -280,10 +280,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="JKH-47-5T9" firstAttribute="centerY" secondItem="1rB-1i-6vq" secondAttribute="centerY" id="Gng-UD-8vJ"/>
-                                            <constraint firstItem="33K-v4-s8g" firstAttribute="centerY" secondItem="1rB-1i-6vq" secondAttribute="centerY" id="sal-kg-V9m"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
