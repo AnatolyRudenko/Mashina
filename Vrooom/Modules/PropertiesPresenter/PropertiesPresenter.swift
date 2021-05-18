@@ -19,12 +19,11 @@ class PropertiesPresenter: PropertiesPresenterProtocol {
     var image: UIImage?
     
     required init(localCar: LocalCar?) {
+        self.parentInteractor = PropertiesInteractor()
         self.localCar = localCar
-        self.parentInteractor = PropertiesInteractor(presenter: self)
     }
     
     func setPropertyViewsIn(stackView: UIStackView) {
-        guard !self.visualSetupIsOver else { return }
         for (index, type) in PropertyType.allCases.enumerated() {
             let frame = CGRect(x: 0, y: 0, width: stackView.bounds.width, height: 40)
             let view = CarPropertyView(frame: frame, type: type, editable: self.editable)

@@ -23,9 +23,9 @@ final class ConfirmRouter: ConfirmRouterProtocol {
     
     func goToEditVC(from view: ConfirmViewProtocol, with localCar: LocalCar) {
         guard let dvc:EditViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Edit") as? EditViewController else { return }
-        viewController.present(dvc, animated: true, completion: nil)
         let dvcInterfaceInstance = dvc as EditViewProtocol
         dvcInterfaceInstance.localCar = localCar
+        viewController.present(dvc, animated: true, completion: nil)
     }
     
     func goToListVC(from view: ConfirmViewProtocol) {

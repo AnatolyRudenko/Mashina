@@ -8,15 +8,6 @@
 
 import UIKit
 
-//protocol PropertiesConfiguratorProtocol {
-//    func configure(with viewController: PropertiesViewController)
-//}
-//
-//protocol PropertiesViewProtocol: class {
-//    var localCar: LocalCar? { get set }
-//    var editable: Bool { set get }
-//}
-
 protocol PropertiesPresenterProtocol: class {
     var visualSetupIsOver: Bool { get set }
     var editable: Bool { get }

@@ -10,12 +10,6 @@ import UIKit
 
 final class PropertiesInteractor: PropertiesInteractorProtocol {
     
-    weak var presenter: PropertiesPresenterProtocol!
-    
-    required init(presenter: PropertiesPresenterProtocol) {
-        self.presenter = presenter
-    }
-    
     func getCarImage() -> UIImage {
         return ImageManager().defaultImage
     }

@@ -16,6 +16,10 @@
 		8417272125130DB400504EEA /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417271F25130DB400504EEA /* ListCell.swift */; };
 		8417272225130DB400504EEA /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8417272025130DB400504EEA /* CarTableViewCell.xib */; };
 		8418F5FE26537F60005B6F14 /* EditProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F5FD26537F60005B6F14 /* EditProtocols.swift */; };
+		8418F60426539DF3005B6F14 /* EditConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F60326539DF3005B6F14 /* EditConfigurator.swift */; };
+		8418F60726539DFA005B6F14 /* EditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F60626539DFA005B6F14 /* EditPresenter.swift */; };
+		8418F60A26539E07005B6F14 /* EditInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F60926539E07005B6F14 /* EditInteractor.swift */; };
+		8418F60D26539E13005B6F14 /* EditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418F60C26539E13005B6F14 /* EditRouter.swift */; };
 		841D4E0B251490D000CBDD88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841D4E0A251490D000CBDD88 /* Assets.xcassets */; };
 		841D4E0D2514A38100CBDD88 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */; };
 		841D4E122514CF9100CBDD88 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841D4E112514CF9100CBDD88 /* InitialViewController.swift */; };
@@ -40,7 +44,6 @@
 		84BDC7C82643B3B8006B5A71 /* mashina_dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BDC7C52643B3B8006B5A71 /* mashina_dark@3x.png */; };
 		84BDC7C92643B3B8006B5A71 /* mashina_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BDC7C62643B3B8006B5A71 /* mashina_dark.png */; };
 		84BDC7CC2643B858006B5A71 /* IconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BDC7CB2643B858006B5A71 /* IconManager.swift */; };
-		84CD8CED264125A2000988FB /* PropertiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD8CEC264125A2000988FB /* PropertiesViewController.swift */; };
 		84CD8CF5264141AB000988FB /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD8CF4264141AB000988FB /* RealmManager.swift */; };
 		84CD8CF82641449E000988FB /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD8CF72641449E000988FB /* ImageManager.swift */; };
 		84D9514E26522A4700625C40 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9514D26522A4700625C40 /* ListRouter.swift */; };
@@ -53,7 +56,6 @@
 		84D9517426525FE200625C40 /* ConfirmPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9517326525FE200625C40 /* ConfirmPresenter.swift */; };
 		84D9517726525FF200625C40 /* ConfirmInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9517626525FF200625C40 /* ConfirmInteractor.swift */; };
 		84D9517A2652600F00625C40 /* ConfirmRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D951792652600F00625C40 /* ConfirmRouter.swift */; };
-		84D9518126526DDC00625C40 /* PropertiesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518026526DDC00625C40 /* PropertiesConfigurator.swift */; };
 		84D9518426526DEE00625C40 /* PropertiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518326526DEE00625C40 /* PropertiesPresenter.swift */; };
 		84D9518726526E0100625C40 /* PropertiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518626526E0100625C40 /* PropertiesInteractor.swift */; };
 		84D9518A26526E3500625C40 /* PropertiesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D9518926526E3500625C40 /* PropertiesProtocols.swift */; };
@@ -75,6 +77,10 @@
 		8417271F25130DB400504EEA /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		8417272025130DB400504EEA /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
 		8418F5FD26537F60005B6F14 /* EditProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProtocols.swift; sourceTree = "<group>"; };
+		8418F60326539DF3005B6F14 /* EditConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditConfigurator.swift; sourceTree = "<group>"; };
+		8418F60626539DFA005B6F14 /* EditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresenter.swift; sourceTree = "<group>"; };
+		8418F60926539E07005B6F14 /* EditInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInteractor.swift; sourceTree = "<group>"; };
+		8418F60C26539E13005B6F14 /* EditRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRouter.swift; sourceTree = "<group>"; };
 		841D4E0A251490D000CBDD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841D4E0C2514A38100CBDD88 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		841D4E112514CF9100CBDD88 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +105,6 @@
 		84BDC7C52643B3B8006B5A71 /* mashina_dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mashina_dark@3x.png"; sourceTree = "<group>"; };
 		84BDC7C62643B3B8006B5A71 /* mashina_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mashina_dark.png; sourceTree = "<group>"; };
 		84BDC7CB2643B858006B5A71 /* IconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconManager.swift; sourceTree = "<group>"; };
-		84CD8CEC264125A2000988FB /* PropertiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewController.swift; sourceTree = "<group>"; };
 		84CD8CF4264141AB000988FB /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		84CD8CF72641449E000988FB /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		84D9514D26522A4700625C40 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
@@ -112,7 +117,6 @@
 		84D9517326525FE200625C40 /* ConfirmPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPresenter.swift; sourceTree = "<group>"; };
 		84D9517626525FF200625C40 /* ConfirmInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmInteractor.swift; sourceTree = "<group>"; };
 		84D951792652600F00625C40 /* ConfirmRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmRouter.swift; sourceTree = "<group>"; };
-		84D9518026526DDC00625C40 /* PropertiesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesConfigurator.swift; sourceTree = "<group>"; };
 		84D9518326526DEE00625C40 /* PropertiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesPresenter.swift; sourceTree = "<group>"; };
 		84D9518626526E0100625C40 /* PropertiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesInteractor.swift; sourceTree = "<group>"; };
 		84D9518926526E3500625C40 /* PropertiesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesProtocols.swift; sourceTree = "<group>"; };
@@ -178,12 +182,24 @@
 			path = Vrooom;
 			sourceTree = "<group>";
 		};
+		8418F60F26539E2F005B6F14 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				84A4070A251378080067CDED /* EditViewController.swift */,
+				8418F60326539DF3005B6F14 /* EditConfigurator.swift */,
+				8418F60626539DFA005B6F14 /* EditPresenter.swift */,
+				8418F60926539E07005B6F14 /* EditInteractor.swift */,
+				8418F60C26539E13005B6F14 /* EditRouter.swift */,
+				8418F5FD26537F60005B6F14 /* EditProtocols.swift */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
 		841D4E0E2514CDE500CBDD88 /* Storyboard Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				848823372650C5BF00453BB9 /* Initial */,
-				84A4070A251378080067CDED /* EditViewController.swift */,
-				8418F5FD26537F60005B6F14 /* EditProtocols.swift */,
+				8418F60F26539E2F005B6F14 /* Edit */,
 				84D9516A26523E2C00625C40 /* Confirm */,
 				84D9514C26522A3400625C40 /* List */,
 			);
@@ -298,22 +314,20 @@
 		84D9517C26526CE200625C40 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				84D9517E26526D2500625C40 /* PropertiesViewController */,
+				84D9517E26526D2500625C40 /* PropertiesPresenter */,
 				841D4E0E2514CDE500CBDD88 /* Storyboard Controllers */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		84D9517E26526D2500625C40 /* PropertiesViewController */ = {
+		84D9517E26526D2500625C40 /* PropertiesPresenter */ = {
 			isa = PBXGroup;
 			children = (
-				84CD8CEC264125A2000988FB /* PropertiesViewController.swift */,
-				84D9518026526DDC00625C40 /* PropertiesConfigurator.swift */,
 				84D9518326526DEE00625C40 /* PropertiesPresenter.swift */,
 				84D9518626526E0100625C40 /* PropertiesInteractor.swift */,
 				84D9518926526E3500625C40 /* PropertiesProtocols.swift */,
 			);
-			path = PropertiesViewController;
+			path = PropertiesPresenter;
 			sourceTree = "<group>";
 		};
 		84E87E1825164DB3006A0E08 /* Fonts */ = {
@@ -458,6 +472,7 @@
 				84D951672652353A00625C40 /* ListConfigurator.swift in Sources */,
 				84D9518A26526E3500625C40 /* PropertiesProtocols.swift in Sources */,
 				84D9515126522AE000625C40 /* ListProtocols.swift in Sources */,
+				8418F60426539DF3005B6F14 /* EditConfigurator.swift in Sources */,
 				8417271025130CC000504EEA /* ListViewController.swift in Sources */,
 				848823342650C5B800453BB9 /* InitialConfigurator.swift in Sources */,
 				843CBE78263FAD5700A75177 /* ValueElement.swift in Sources */,
@@ -480,6 +495,7 @@
 				84D9517726525FF200625C40 /* ConfirmInteractor.swift in Sources */,
 				84D9517A2652600F00625C40 /* ConfirmRouter.swift in Sources */,
 				843CBE6F263FA6F100A75177 /* CarPropertyView.swift in Sources */,
+				8418F60726539DFA005B6F14 /* EditPresenter.swift in Sources */,
 				8418F5FE26537F60005B6F14 /* EditProtocols.swift in Sources */,
 				8488232C2650B95300453BB9 /* Database.swift in Sources */,
 				84D9517126525FD800625C40 /* ConfirmConfigurator.swift in Sources */,
@@ -489,12 +505,12 @@
 				84D9517426525FE200625C40 /* ConfirmPresenter.swift in Sources */,
 				8488233A2650C5D300453BB9 /* InitialProtocols.swift in Sources */,
 				8492147C25132D84005C4C36 /* OperatedCar.swift in Sources */,
+				8418F60A26539E07005B6F14 /* EditInteractor.swift in Sources */,
 				8424AE212517425E00BDB406 /* CarList.swift in Sources */,
+				8418F60D26539E13005B6F14 /* EditRouter.swift in Sources */,
 				843CBE7B263FB17900A75177 /* PropertyType.swift in Sources */,
 				84A4070B251378080067CDED /* EditViewController.swift in Sources */,
 				843CBE85263FC3CA00A75177 /* FontManager.swift in Sources */,
-				84CD8CED264125A2000988FB /* PropertiesViewController.swift in Sources */,
-				84D9518126526DDC00625C40 /* PropertiesConfigurator.swift in Sources */,
 				84F536D2251DB6CC00EB1F8B /* Constants.swift in Sources */,
 				8488233D2650C5E800453BB9 /* InitialInteractor.swift in Sources */,
 			);

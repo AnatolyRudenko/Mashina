@@ -14,18 +14,23 @@ protocol EditConfiguratorProtocol {
 
 protocol EditViewProtocol: class {
     var localCar: LocalCar? { get set }
+    func addActionToLoadImageButton(_ button: UIButton)
+    func presentImagePicker(_ picker: UIImagePickerController)
+    func showPopUp(_ view: PopUpView)
 }
 
 protocol EditPresenterProtocol: class {
     var router: EditRouterProtocol! { get set }
+    var image: UIImage? { get set }
     func configureView(with stackView: UIStackView)
-    
+    func setupImagePicker()
+    func arrowPressed()
 }
 
 protocol EditInteractorProtocol {
-    
+    func createPopUp() -> PopUpView
 }
 
 protocol EditRouterProtocol {
-    func goToListVC(from view: EditViewProtocol, with localCar: LocalCar)
+    func goToConfirmVC(with localCar: LocalCar)
 }

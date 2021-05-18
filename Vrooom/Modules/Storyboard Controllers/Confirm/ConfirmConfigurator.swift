@@ -16,8 +16,8 @@ final class ConfirmConfigurator: ConfirmConfiguratorProtocol {
         let router = ConfirmRouter(viewController: viewController)
         
         viewController.presenter = presenter
-        presenter.editable = false
         presenter.interactor = interactor
         presenter.router = router
+        presenter.editable = false
     }
 }

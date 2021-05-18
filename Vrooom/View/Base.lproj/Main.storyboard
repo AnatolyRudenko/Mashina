@@ -172,7 +172,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="jyN-5e-fWn" id="yT5-lr-ofl"/>
-                        <segue destination="cmf-ZT-gAR" kind="show" identifier="fromListToConfirm" id="mjw-4U-VWJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -202,7 +201,7 @@
                                                 <color key="tintColor" name="customBlue"/>
                                                 <state key="normal" image="продолжить"/>
                                                 <connections>
-                                                    <segue destination="cmf-ZT-gAR" kind="show" identifier="toConfirm" id="9gm-Mt-FAz"/>
+                                                    <action selector="arrowPressed:" destination="E6b-7E-fi8" eventType="touchUpInside" id="mWc-1Q-42h"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -320,8 +319,6 @@
                     <connections>
                         <outlet property="nameLabel" destination="EMU-MG-53a" id="05O-rK-xde"/>
                         <outlet property="stackView" destination="UYc-Lj-3fD" id="f5u-hc-Utt"/>
-                        <segue destination="E6b-7E-fi8" kind="show" identifier="toEditFromConfirm" id="nkP-0p-mvL"/>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="toListFromConfirm" id="u4P-O5-k7e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pWH-7J-5TN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -329,10 +326,6 @@
             <point key="canvasLocation" x="1644.9275362318842" y="-248.4375"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="nkP-0p-mvL"/>
-        <segue reference="9gm-Mt-FAz"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="иконка_добавить" width="170.66667175292969" height="170.66667175292969"/>
         <image name="иконка_каталог" width="170.66667175292969" height="170.66667175292969"/>
