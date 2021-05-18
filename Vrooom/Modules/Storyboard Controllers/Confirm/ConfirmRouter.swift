@@ -17,18 +17,15 @@ final class ConfirmRouter: ConfirmRouterProtocol {
     init(viewController: ConfirmViewController) {
         self.viewController = viewController
     }
-    func editButtonPressed(newCar: Bool) {
-    }
-
     
-    func goToEditVC(from view: ConfirmViewProtocol, with localCar: LocalCar) {
+    func goToEditVC(with localCar: LocalCar) {
         guard let dvc:EditViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Edit") as? EditViewController else { return }
         let dvcInterfaceInstance = dvc as EditViewProtocol
         dvcInterfaceInstance.localCar = localCar
         viewController.present(dvc, animated: true, completion: nil)
     }
     
-    func goToListVC(from view: ConfirmViewProtocol) {
+    func goToListVC() {
         guard let dvc:ListViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "List") as? ListViewController else { return }
         let dvcInterfaceInstance = dvc as ListViewProtocol
         dvcInterfaceInstance.prepareContent()

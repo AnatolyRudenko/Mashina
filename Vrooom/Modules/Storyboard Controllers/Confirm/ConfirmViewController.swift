@@ -9,10 +9,10 @@
 import UIKit
 
 final class ConfirmViewController: UIViewController, ConfirmViewProtocol {
-    var localCar: LocalCar?
     
     var presenter: ConfirmPresenterProtocol!
     let configurator: ConfirmConfiguratorProtocol = ConfirmConfigurator()
+    var localCar: LocalCar?
     
     @IBOutlet private weak var stackView: UIStackView!
     @IBOutlet private weak var nameLabel: UILabel!

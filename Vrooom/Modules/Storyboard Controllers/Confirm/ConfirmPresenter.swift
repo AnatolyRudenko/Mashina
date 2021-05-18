@@ -39,12 +39,12 @@ final class ConfirmPresenter: PropertiesPresenter, ConfirmPresenterProtocol {
     func editButtonPressed() {
         self.interactor.newCar ?
             self.router.dismiss() :
-            self.router.goToEditVC(from: self.view, with: super.buildLocalCar())
+            self.router.goToEditVC(with: super.buildLocalCar())
     }
     
     func deleteButtonPressed() {
         self.interactor.delete()
-        self.router.goToListVC(from: view)
+        self.router.goToListVC()
     }
     
     func arrowButtonPressed(carName: String) {
@@ -53,7 +53,7 @@ final class ConfirmPresenter: PropertiesPresenter, ConfirmPresenterProtocol {
             return
         }
         self.interactor.saveChanges(car: super.localCar)
-        self.router.goToListVC(from: self.view)
+        self.router.goToListVC()
     }
     
     private func createImageView() -> UIImageView {

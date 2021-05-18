@@ -16,13 +16,15 @@ final class InitialRouter: InitialRouterProtocol {
         self.viewController = viewController
     }
     
-    func goToEditVC(from view: InitialViewProtocol) {
-        guard let dvc:EditViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Edit") as? EditViewController else { return }
+    func goToEditVC() {
+        guard let dvc:EditViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Edit")
+                as? EditViewController else { return }
         viewController.present(dvc, animated: true, completion: nil)
     }
     
-    func goToListVC(from view: InitialViewProtocol) {
-        guard let dvc:ListViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "List") as? ListViewController else { return }
+    func goToListVC() {
+        guard let dvc:ListViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "List")
+                as? ListViewController else { return }
         let dvcInterfaceInstance = dvc as ListViewProtocol
         dvcInterfaceInstance.prepareContent()
         viewController.present(dvc, animated: true, completion: nil)

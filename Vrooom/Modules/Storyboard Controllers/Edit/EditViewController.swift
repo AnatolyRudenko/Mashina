@@ -9,10 +9,10 @@
 import UIKit
 
 final class EditViewController: UIViewController, EditViewProtocol {
-    var localCar: LocalCar?
     
     var presenter: EditPresenterProtocol!
     let configurator: EditConfiguratorProtocol = EditConfigurator()
+    var localCar: LocalCar?
 
     @IBOutlet private weak var stackView: UIStackView!
     

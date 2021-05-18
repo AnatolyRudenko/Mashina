@@ -20,7 +20,7 @@ class ListRouter: ListRouterProtocol {
         viewController.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-    func goToConfirmVC(from view: ListViewProtocol, with localCar: LocalCar) {
+    func goToConfirmVC(with localCar: LocalCar) {
         guard let dvc:ConfirmViewController = UIStoryboard(name: "Main",
                                                            bundle: nil).instantiateViewController(withIdentifier: "Confirm")
                 as? ConfirmViewController else { return }

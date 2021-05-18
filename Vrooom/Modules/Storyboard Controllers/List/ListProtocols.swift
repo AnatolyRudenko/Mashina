@@ -40,5 +40,5 @@ protocol ListInteractorProtocol {
 
 protocol ListRouterProtocol: class {
     func goBack()
-    func goToConfirmVC(from view: ListViewProtocol, with localCar: LocalCar)
+    func goToConfirmVC(with localCar: LocalCar)
 }

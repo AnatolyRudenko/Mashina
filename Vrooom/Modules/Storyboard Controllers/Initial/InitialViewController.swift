@@ -15,7 +15,7 @@ final class InitialViewController: UIViewController, InitialViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configurator.configure(with: self)
+        self.configurator.configure(with: self)
         self.presenter.switchIconIfNeeded(darkTheme: self.darkTheme)
     }
     

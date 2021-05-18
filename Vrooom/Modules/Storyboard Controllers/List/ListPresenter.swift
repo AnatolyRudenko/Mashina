@@ -48,6 +48,6 @@ class ListPresenter: ListPresenterProtocol {
     func carCellTapped(index: Int) {
         self.interactor.setGlobalCarProperties(index: index)
         let car = self.interactor.getLocalCar(at: index)
-        self.router.goToConfirmVC(from: self.view, with: car)
+        self.router.goToConfirmVC(with: car)
     }
 }

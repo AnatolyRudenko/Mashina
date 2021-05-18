@@ -27,6 +27,6 @@ protocol InitialInteractorProtocol {
 }
 
 protocol InitialRouterProtocol {
-    func goToEditVC(from view: InitialViewProtocol)
-    func goToListVC(from view: InitialViewProtocol)
+    func goToEditVC()
+    func goToListVC()
 }

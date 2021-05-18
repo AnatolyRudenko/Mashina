@@ -40,7 +40,7 @@ protocol ConfirmInteractorProtocol {
 }
 
 protocol ConfirmRouterProtocol {
-    func goToEditVC(from view: ConfirmViewProtocol, with localCar: LocalCar)
-    func goToListVC(from view: ConfirmViewProtocol)
+    func goToEditVC(with localCar: LocalCar)
+    func goToListVC()
     func dismiss()
 }

@@ -10,7 +10,6 @@ import Foundation
 
 final class ConfirmInteractor: ConfirmInteractorProtocol {
     
-    
     weak var presenter: ConfirmPresenterProtocol!
     
     var newCar: Bool {
