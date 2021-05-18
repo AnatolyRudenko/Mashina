@@ -20,11 +20,7 @@ final class InitialViewController: UIViewController, InitialViewProtocol {
     }
     
     private var darkTheme: Bool {
-        if #available(iOS 12.0, *) {
-            return self.traitCollection.userInterfaceStyle == .dark
-        } else {
-            return false
-        }
+        return self.traitCollection.userInterfaceStyle == .dark
     }
     
     @IBAction private func addButtonPressed(_ sender: UIButton) {

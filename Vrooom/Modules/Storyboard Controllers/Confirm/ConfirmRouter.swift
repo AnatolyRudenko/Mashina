@@ -10,8 +10,6 @@ import UIKit
 
 final class ConfirmRouter: ConfirmRouterProtocol {
     
-    
-    
     weak var viewController: ConfirmViewController!
     
     init(viewController: ConfirmViewController) {
@@ -19,14 +17,16 @@ final class ConfirmRouter: ConfirmRouterProtocol {
     }
     
     func goToEditVC(with localCar: LocalCar) {
-        guard let dvc:EditViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Edit") as? EditViewController else { return }
+        guard let dvc:EditViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Edit")
+                as? EditViewController else { return }
         let dvcInterfaceInstance = dvc as EditViewProtocol
         dvcInterfaceInstance.localCar = localCar
         viewController.present(dvc, animated: true, completion: nil)
     }
     
     func goToListVC() {
-        guard let dvc:ListViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "List") as? ListViewController else { return }
+        guard let dvc:ListViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "List")
+                as? ListViewController else { return }
         let dvcInterfaceInstance = dvc as ListViewProtocol
         dvcInterfaceInstance.prepareContent()
         viewController.present(dvc, animated: true, completion: nil)

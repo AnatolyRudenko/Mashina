@@ -26,6 +26,7 @@ final class ConfirmViewController: UIViewController, ConfirmViewProtocol {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.presenter.configureView(with: self.stackView)
+        self.view.layoutIfNeeded()
     }
     
     func addImageView(imageView: UIImageView) {

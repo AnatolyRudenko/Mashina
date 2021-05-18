@@ -14,7 +14,6 @@ protocol ConfirmConfiguratorProtocol {
 
 protocol ConfirmViewProtocol: class {
     var localCar: LocalCar? { get set }
-    
     func addImageView(imageView: UIImageView)
     func setName(_ text: String)
     func setImage(_ image: UIImage?)
@@ -24,7 +23,6 @@ protocol ConfirmViewProtocol: class {
 protocol ConfirmPresenterProtocol: class {
     var router: ConfirmRouterProtocol! { get set }
     func configureView(with stackView: UIStackView)
-    
     func editButtonPressed()
     func deleteButtonPressed()
     func arrowButtonPressed(carName: String)
@@ -32,10 +30,8 @@ protocol ConfirmPresenterProtocol: class {
 
 protocol ConfirmInteractorProtocol {
     var newCar: Bool { get }
-    
     func saveChanges(car: LocalCar?)
     func delete()
-    
     func createPopUp() -> PopUpView
 }
 
